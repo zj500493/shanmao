@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>支付页面-闪猫商城-你的一站式购物平台</title>
+		<link rel="shortcut icon" href="../img/index.gif" />
+		<link rel="stylesheet" href="../css/payFor.css" />
+		<link rel="stylesheet" href="../css/conHeaderFooter.css" />
+		<script type="text/javascript" src="../JS/jquery-1.12.4.min.js" ></script>
+		<script type="text/javascript" src="../JS/jquery.cookie.js" ></script>
+		<script type="text/javascript" src="../JS/conIndex.js" ></script>
+		<script type="text/javascript" src="../JS/payFor.js" ></script>
+	</head>
+	<body>
+	<div class="first-nav">
+			<div class="conFirstNav">
+				<ul class="RightFirstNavUl">
+					<li id="city-choice">
+						<dt>
+							<span>送货至：</span>
+							<div>
+								<span class="city-choice-span">成都 <img src="../img/searchTab1.jpg" /> </span>
+							</div>
+						</dt>
+					</li>
+				</ul>
+				<div class="LonginAndRegister">
+					<a href="#" class="login">请登录</a>
+					<a href="#" class="register">注册</a>
+				</div>
+				<ul class="LeftFirstNavUl">
+					<li><div id="dt"><a href="#">我的订单</a></div></li>
+					<li class="spacer"></li>
+					<li><div id="dt"><a href="#">我的浏览</a></div></li>
+					<li class="spacer"></li>
+					<li><div id="dt"><a href="#">我的收藏</a></div></li>
+					<li class="spacer"></li>
+					<li><div id="dt"><a href="#">客户服务</a></div></li>
+					<li class="spacer"></li>
+					<li class="li_dropdown">
+						<div id="dt">
+							<a href="#">促销活动</a>
+							<span class="spacer1"> > </span>
+						</div>
+						
+						<div class="dropdown">
+							<ul>
+								<li><a href="#">拍卖活动</a></li>
+								<li><a href="#">优惠活动</a></li>
+								<li><a href="#">批发市场</a></li>
+								<li><a href="#">超值礼包</a></li>
+							</ul>	
+						</div>
+					</li>
+					<script>
+						$(function(){
+							$(".li_dropdown").hover(function(){
+								$(this).css("background", "#FFFFFF");
+								$(".dropdown").stop().show();
+							},function(){
+								$(this).css("background", "#efefef");
+								$(".dropdown").stop().hide();
+							});
+						});
+					</script>
+				</ul>
+				<div class="shopcar">
+					<i class="shopcar-left"><img src="../img/shopcar1.jpg"></i>
+					<span class="shopcar-center">0</span>
+					<i class="shopcar-right"> > </i>
+					<a href="shopCar.html">购物车</a>
+				</div>
+			</div>
+		</div>
+		<!------定位在右边的黑色部分--------------------------------------------------------->
+		<div class="panne1">
+			<div class="quick_links">
+				<ul>
+					<li><a href="##"><i class="setting"></i></a></li>
+					sssssssssss
+				</ul>
+			</div>
+		</div>
+		<!------主要部分的头部----------------------------------------------------------------->
+		<div class="header w1200">
+			<div class="headerLogo">
+				<a href="index.html" class="logo"><img src="../img/logo.gif"/></a>
+			</div>
+			<div class="headerJoin">
+				<a href="#" class="logo"><img src="../img/ecsc-join.gif"/></a>
+			</div>
+			<div class="headerSearch">
+				<form id="searchForm">
+					<div class="searchTab">
+						<i><img src="../img/searchTab1.jpg"></i>
+						<ul class="searchFormUl">
+							<li class="searchFormLi">
+								<span>商品</span>
+							</li>
+							<li class="curr">
+								<span>店铺</span>
+							</li>
+						</ul>
+					</div>
+					<input type="text" class="searchForm-input" placeholder="周大福" id="search"/>
+					<div id="tip">
+						<ul id="tipList">
+							<!-- <li>aaa</li>
+							<li>aaa</li>
+							<li>aaa</li>
+							<li>aaa</li>
+							<li>aaa</li>
+							<li>aaa</li>
+							<li>aaa</li>
+							<li>aaa</li>
+							<li>aaa</li>
+							<li>aaa</li>-->
+						</ul>
+					</div>
+					<button class="searchForm-button">
+						<i><img src="../img/searchForm-buttonImg.jpg"></i>
+					</button>
+				</form>
+				<div class="keyword">
+					<ul>
+						<li><a href="#">周大福</a></li>
+						<li><a href="#">内衣</a></li>
+						<li><a href="#">Five Plus</a></li>
+						<li><a href="#" class="keywordFina">手机</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="headerRight">
+				<a href="index.html" target="_blank" class="font">
+					<img src="../img/headerRight.jpg" />
+				</a>
+				
+			</div>
+		</div>
+		<div class="clear"></div>
+		<!--------导航栏----------------------------------------------------------->
+		<div class="nav">
+			<div class="w1200">
+				<div class="nav-left">
+					<div class="dt">
+						<a href="#" target="_blank">全部商品分类</a>
+					</div>				
+				</div>
+				<div class="nav-right">
+					<ul>
+						<li>
+							<a href="#" class="selected">首页</a>
+						</li>
+						<li>
+							<a href="#">食品特产</a>
+						</li>
+						<li>
+							<a href="#">服装城</a>
+						</li>
+						<li>
+							<a href="#">大家电</a>
+						</li>
+						<li>
+							<a href="#">品牌专区</a>
+						</li>
+						<li>
+							<a href="#">团购</a>
+						</li>
+						<li>
+							<a href="#">夺宝奇兵</a>
+						</li>
+						<li>
+							<a href="#">积分商城</a>
+						</li>
+						<li>
+							<a href="#">预售频道</a>
+						</li>
+						<li>
+							<a href="#">店铺街</a>
+						</li>
+					</ul>
+					<div class="wrap-line">
+						
+					</div>
+				</div>
+			</div>
+		</div>
+		<!---------黑色部分---------------------->
+		<div class="panne1">
+			<div class="quick_links">
+				<ul>
+					<li><a href="##"><i class="setting"></i></a></li>
+					<li id="shopCart">
+						<a href="##" class="cart_list">
+							<i class="message"></i>
+							<span class="cart_num"></span>
+							<div class="span">购物车</div>
+						</a>	
+					</li>
+					<li class="panne1-li">
+                       <a href="##">
+                       		<i class="zhongzhi"></i>
+                       </a>
+                       <div class="div1">我的订单</div>
+                    </li>
+                    <li class="panne1-li">
+                    	<a href="##">
+                      	 	<i class="view"></i>
+                       </a>
+                        <div class="div2">我的资产</div>
+                    </li>
+                    <li class="panne1-li">
+                    	<a href="##">
+                       		<i class="zuji"></i>
+                       </a>
+                        <div class="div3">我的足迹</div>
+                    </li>
+                    <li>
+                    	<a href="##">
+                       		<i class="wdsc"></i>
+                       </a>
+                      
+                    </li>
+				</ul>
+				<div class="pannel-bottom">
+					<ul>
+						<li>
+							<a href="##" class="return_top">
+								<i class="top"></i>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>	
+	
+
+			
+<!--------显示主题部分----------------------------------------------------------------------->
+	<div>
+		<div class="con-right">
+			<div class="con-center">
+				<h3>确认订单信息</h3>
+				<img src="../img/confirm-pic.jpg"/>
+				<h5>收获信息</h5>	
+				
+				<!--收货信息的表单-->
+				<form class="receive">
+					<p class="checkbox"><input type="checkbox">使用其他地址   管理我的收货地址</p>
+					
+					<p class="receive-line line1"><span class="star">*</span> 
+						收货人：<input type="text" placeholder="收货人姓名" class=" receive-person" /></p>
+						
+					<p class="receive-line line2"><span class="star">*</span> 
+						地址：<select id="sc-p" name="sc-p" style="color: #888888;font-size: 12px;height: 28px;width: 120px;">
+								
+							</select>
+							
+					
+							<select id="sc-c" name="sc-c" style="color: #888888;font-size: 12px;height: 28px;width: 120px;margin-left: 15px;">
+								
+							</select>
+							
+							<select id="sc-a" name="sc-a" style="color: #888888;font-size: 12px;height: 28px;width: 120px;margin-left: 15px;">
+								
+							</select>
+							<script type="text/javascript" src="../JS/region_select.js" ></script>
+							<script>
+								new PCAS("sc-p","sc-c","sc-a","四川省",",");
+							</script>
+					</p>
+							
+						
+					<p class="receive-line "><span class="star">*</span> 
+						详细地址：<input type="text" placeholder="详细地址" class=" receive-fullAddress" /></p>
+						
+					<p class="receive-line "><span class="star">*</span> 
+						邮政编码：<input type="text" placeholder="邮政编码" class="receive-postalcode"/></p>
+						
+					<div class="receive-line line5" ><span class="star">*</span> 
+						手机号码：<input type="text"  placeholder="你的手机号" class="receive-phone"/>
+						<p class="fixed">固定电话：<input type="text"  placeholder="区号" class="fix-phone1"/> -
+							<input type="text"  placeholder="电话号码" class="fix-phone2"/> -
+							<input type="text"  placeholder="分机号" class="fix-phone3"/><p></div>
+					<h4><a href="#">保存收货地址</a></h4>		
+				</form>
+				
+				
+				<!--配送的表单-->
+				<h5>配送/优惠方式</h5>	
+				<div class="delivery">
+					<p>配送方式：<select class="delivery-ways" style="color: #888888;">
+							<option></option>
+							<option>送货上门</option>
+							<option>自取</option>
+						</select>
+					</p>
+					<p class="discount-coupon">优惠券：<select  class="delivery-ways" style="color: #888888;">
+							<option>不使用优惠券</option>
+							<option>使用优惠券</option>
+						</select>
+					</p>
+				</div>
+				
+				<h5>支付方式</h5>	
+				<div class="payfor">
+					<h5>网上付款</h5>	
+					<ul>
+						<li><input type="radio" name="pay"/><img src="../img/confirm_03.jpg"/></li>
+						<li><input type="radio" name="pay"/><img src="../img/confirm_05.jpg"/></li>
+						<li><input type="radio" name="pay"/><img src="../img/confirm_07.jpg"/></li>
+						<li><input type="radio" name="pay"/><img src="../img/confirm_09.jpg"/></li>
+						<li><input type="radio" name="pay"/><img src="../img/confirm_21.jpg"/></li>
+						<li><input type="radio" name="pay"/><img src="../img/confirm_22.jpg"/></li>
+						<li><input type="radio" name="pay"/><img src="../img/confirm_28.jpg"/></li>
+						<li><input type="radio" name="pay"/><img src="../img/confirm_29.jpg"/></li>
+						<li><input type="radio" name="pay"/><img src="../img/confirm_30.jpg"/></li>
+						<li><input type="radio" name="pay"/><img src="../img/confirm_31.jpg"/></li>
+						<li><input type="radio" name="pay"/><img src="../img/confirm_32.jpg"/></li>
+						<li><input type="radio" name="pay"/><img src="../img/confirm_39.jpg"/></li>
+						<li><input type="radio" name="pay"/><img src="../img/confirm_41.jpg"/></li>
+						<li><input type="radio" name="pay"/><img src="../img/confirm_42.jpg"/></li>
+						<li><input type="radio" name="pay"/><img src="../img/confirm_11.jpg"/></li>
+						<li><input type="radio" name="pay"/><img src="../img/confirm_18.jpg"/></li>
+						<li><input type="radio" name="pay"/><img src="../img/confirm_19.jpg"/></li>
+						<li><input type="radio" name="pay"/><img src="../img/confirm_20.jpg"/></li>
+					</ul>
+				</div>
+				
+				<!--商品清单-->
+				<h5></h5>
+				
+				
+				
+				<!--发票-->
+				<h5><input type="checkbox"> 索要发票</h5>
+					<div class="submit">
+						<button class="button"><a href="PARFOR.html">提交订单</a></button>
+						<b>实际付款:￥<span></span></b> 
+					</div>
+			</div>
+		</div>	
+	</div>		
+			
+	<!----------尾部的处理--------------------------------------------------------------------------------->
+		<div class="footer">
+			<div class="footer-top">
+				<div class="conFooterTop">
+					<ul class="conFooterTop-ul">
+						<li class="conFooterTop-li">
+							<i class="fonter-i1"></i>
+							<span>正品保健</span>
+						</li>
+						<li class="conFooterTop-li">
+							<i class="fonter-i2"></i>
+							<span>七天包退</span>
+						</li>
+						<li class="conFooterTop-li">
+							<i class="fonter-i3"></i>
+							<span>好评如潮</span>
+						</li>
+						<li class="conFooterTop-li">
+							<i class="fonter-i4"></i>
+							<span>闪电发货</span>
+						</li>
+						<li class="conFooterTop-li footer-last">
+							<i class="fonter-i5"></i>
+							<span>权威荣誉</span>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="footer-bottom">
+				<div class="footer-ul-list">
+					<ul class="footer-ul">
+						<li class="footer-li">
+							<h4>新手上路</h3>
+							<p> <a href="##">> 售后流程</a> </p>
+							<p> <a href="##">> 购物流程</a></p>
+							<p> <a href="##">> 订购方式</a></p>
+							<p> <a href="##">> 隐私申明</a></p>
+						</li>
+						<li class="footer-li">
+							<h4>配送支付</h3>
+							<p> <a href="##">> 货到付款区域</a> </p>
+							<p> <a href="##">> 赔送支付智能查询</a></p>
+							<p> <a href="##">> 支付方式说明</a></p>
+							<p> <a href="##">> 上门自提</a></p>
+						</li>
+						<li class="footer-li">
+							<h4>会员中心</h3>
+							<p> <a href="##">> 资金管理</a> </p>
+							<p> <a href="##">> 我的收藏</a></p>
+							<p> <a href="##">> 我的订单</a></p>
+						</li>
+						<li class="footer-li">
+							<h4>服务保证</h3>
+							<p> <a href="##">> 退换货原则</a> </p>
+							<p> <a href="##">> 售后服务保证</a></p>
+							<p> <a href="##">> 产品质量保证</a></p>
+						</li>
+						<li class="footer-li" id="last-li2">
+							<h4>联系我们</h3>
+							<p> <a href="##">> 网站故障报告</a> </p>
+							<p> <a href="##">> 随机咨询</a></p>
+							<p> <a href="##">> 投诉与建议</a></p>
+						</li>
+						<li class="footer-li" id="last-li1">
+							<ul class="footer-tab">
+								<li class="current">Ecjia</li>
+								<li>Ectouch</li>
+							</ul>
+							<div class="footer-wrap">
+								<div class="ft-wp-1">
+									<img src="../img/ECJia_code.png" />
+								</div>
+								<div class="ft-wp-1" style="display: none;">
+									<img src="../img/ECtouch_code.png" />
+								</div>		
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div class="footer-copyright">
+					<p class="footer-p1">
+						<a href="##" target="_blank">首页</a>|
+						<a href="##" target="_blank">隐私保护</a>|
+						<a href="##" target="_blank">联系我们</a>|
+						<a href="##" target="_blank">免责条款</a>|
+						<a href="##" target="_blank">公司简介</a>|
+						<a href="##" target="_blank">商家入驻</a>|
+						<a href="##" target="_blank">意见反馈</a>
+					</p>
+					<p class="footer-p1">
+						<a href="##" target="_blank">模板堂</a>|
+						<a href="##" target="_blank">Ecjia</a>|
+						<a href="##" target="_blank">Ectouch</a>|
+						<a href="##" target="_blank">电商学院</a>|
+						<a href="##" target="_blank">ecshop模板堂</a>|
+						<a href="##" target="_blank">Ecjia</a>|
+						<a href="##" target="_blank">Ectouch</a>|
+						<a href="##" target="_blank">大商创</a>
+					</p>
+					<p class="footer-p1">
+						<a href="##" target="_blank">Poweered by <span>大商创1.0</span></a>
+					</p>
+					<p class="footer-bt-img">
+						<a href="#" target="_blank">
+							<img src="../img/banquan_1.jpg" />
+						</a>
+						<a href="#" target="_blank">
+							<img src="../img/banquan_2.jpg" />
+						</a>
+						<a href="#" target="_blank">
+							<img src="../img/banquan_3.jpg" />
+						</a>
+						<a href="#" target="_blank">
+							<img src="../img/banquan_4.jpg" />
+						</a>
+						<a href="#" target="_blank">
+							<img src="../img/banquan_5.jpg" />
+						</a>
+					</p>
+				</div>
+			</div>
+		</div>		
+				
+			
+			
+		
+	</body>
+</html>

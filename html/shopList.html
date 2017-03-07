@@ -1,0 +1,2064 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>购物清单-闪猫商城-你的一站式购物平台</title>
+		<link rel="shortcut icon" href="../img/index.gif" />
+		<link rel="stylesheet" href="../css/conHeaderFooter.css" />
+		<link rel="stylesheet" href="../css/shopList.css" />
+		<script type="text/javascript" src="../JS/jquery-1.12.4.min.js" ></script>
+		<script type="text/javascript" src="../JS/jquery.cookie.js" ></script>
+		<script type="text/javascript" src="../JS/jquery.fly.min.js" ></script>
+		<script type="text/javascript" src="../JS/conIndex.js" ></script>
+		<script type="text/javascript" src="../JS/shoList.js" ></script>
+	</head>
+	<body>
+		<div class="first-nav">
+			<div class="conFirstNav">
+				<ul class="RightFirstNavUl">
+					<li id="city-choice">
+						<dt>
+							<span>送货至：</span>
+							<div>
+								<span class="city-choice-span">成都 <img src="../img/searchTab1.jpg" /> </span>
+							</div>
+						</dt>
+					</li>
+				</ul>
+				<div class="LonginAndRegister">
+					<a href="#" class="login">请登录</a>
+					<a href="#" class="register">注册</a>
+				</div>
+				<ul class="LeftFirstNavUl">
+					<li><div id="dt"><a href="#">我的订单</a></div></li>
+					<li class="spacer"></li>
+					<li><div id="dt"><a href="#">我的浏览</a></div></li>
+					<li class="spacer"></li>
+					<li><div id="dt"><a href="#">我的收藏</a></div></li>
+					<li class="spacer"></li>
+					<li><div id="dt"><a href="#">客户服务</a></div></li>
+					<li class="spacer"></li>
+					<li class="li_dropdown">
+						<div id="dt">
+							<a href="#">促销活动</a>
+							<span class="spacer1"> > </span>
+						</div>
+						
+						<div class="dropdown">
+							<ul>
+								<li><a href="#">拍卖活动</a></li>
+								<li><a href="#">优惠活动</a></li>
+								<li><a href="#">批发市场</a></li>
+								<li><a href="#">超值礼包</a></li>
+							</ul>	
+						</div>
+					</li>
+					<script>
+						$(function(){
+							$(".li_dropdown").hover(function(){
+								$(this).css("background", "#FFFFFF");
+								$(".dropdown").stop().show();
+							},function(){
+								$(this).css("background", "#efefef");
+								$(".dropdown").stop().hide();
+							});
+						});
+					</script>
+				</ul>
+				<div class="shopcar">
+					<i class="shopcar-left"><img src="../img/shopcar1.jpg"></i>
+					<span class="shopcar-center">0</span>
+					<i class="shopcar-right"> > </i>
+					<a href="#">购物车</a>
+				</div>
+			</div>
+		</div>
+		<!------定位在右边的黑色部分--------------------------------------------------------->
+		<div class="panne1">
+			<div class="quick_links">
+				<ul>
+					<li><a href="##"><i class="setting"></i></a></li>
+					<li id="shopCart">
+						<a href="##" class="cart_list">
+							<i class="message"></i>
+							<span class="cart_num">0</span>
+							<div class="span">购物车</div>
+						</a>	
+					</li>
+					<li class="panne1-li">
+                       <a href="##">
+                       		<i class="zhongzhi"></i>
+                       </a>
+                       <div class="div1">我的订单</div>
+                    </li>
+                    <li class="panne1-li">
+                    	<a href="##">
+                      	 	<i class="view"></i>
+                       </a>
+                        <div class="div2">我的资产</div>
+                    </li>
+                    <li class="panne1-li">
+                    	<a href="##">
+                       		<i class="zuji"></i>
+                       </a>
+                        <div class="div3">我的足迹</div>
+                    </li>
+                    <li>
+                    	<a href="##">
+                       		<i class="wdsc"></i>
+                       </a>
+                      
+                    </li>
+				</ul>
+				<div class="pannel-bottom">
+					<ul>
+						<li>
+							<a href="##" class="return_top">
+								<i class="top"></i>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!------主要部分的头部----------------------------------------------------------------->
+		<div class="header w1200">
+			<div class="headerLogo">
+				<a href="index.html" class="logo"><img src="../img/logo.gif"/></a>
+			</div>
+			<div class="headerJoin">
+				<a href="#" class="logo"><img src="../img/ecsc-join.gif"/></a>
+			</div>
+			<div class="headerSearch">
+				<form id="searchForm">
+					<div class="searchTab">
+						<i><img src="../img/searchTab1.jpg"></i>
+						<ul class="searchFormUl">
+							<li class="searchFormLi">
+								<span>商品</span>
+							</li>
+							<li class="curr">
+								<span>店铺</span>
+							</li>
+						</ul>
+					</div>
+					<input type="text" class="searchForm-input" placeholder="周大福" id="search"/>
+					<div id="tip">
+						<ul id="tipList">
+							<!-- <li>aaa</li>
+							<li>aaa</li>
+							<li>aaa</li>
+							<li>aaa</li>
+							<li>aaa</li>
+							<li>aaa</li>
+							<li>aaa</li>
+							<li>aaa</li>
+							<li>aaa</li>
+							<li>aaa</li>-->
+						</ul>
+					</div>
+					<button class="searchForm-button">
+						<i><img src="../img/searchForm-buttonImg.jpg"></i>
+					</button>
+				</form>
+				<div class="keyword">
+					<ul>
+						<li><a href="#">周大福</a></li>
+						<li><a href="#">内衣</a></li>
+						<li><a href="#">Five Plus</a></li>
+						<li><a href="#" class="keywordFina">手机</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="headerRight">
+				<a href="index.html" target="_blank" class="font">
+					<img src="../img/headerRight.jpg" />
+				</a>
+				
+			</div>
+		</div>
+		<div class="clear"></div>
+		<!--------导航栏----------------------------------------------------------->
+		<div class="nav">
+			<div class="w1200">
+				<div class="nav-left">
+					<div class="dt">
+						<a href="#" target="_blank">全部商品分类</a>
+					</div>
+					<div class="dd hide-dd">
+						<div class="cata-nav">
+							<div class="item fore1">
+								<div class="item-left">
+									<div class="cata-nav-name">
+										<h3>
+											<a href="#">家用电器</a>
+										</h3>
+										<b>></b>
+									</div>
+								</div>
+								<!---------三级菜单----------------->
+								<div class="nav-layer">
+									<div class="cata-nav-left">
+										<div class="item-channels">
+											<div class="channel">
+												<a href="##">品牌日<i>></i></a>
+												<a href="##">家电城<i>></i></a>
+												<a href="##">智能生活馆<i>></i></a>
+												<a href="##">京东净化馆<i>></i></a>
+												<a href="##">京东帮服务店<i>></i></a>
+												<a href="##">值得买精选<i>></i></a>	
+											</div>
+										</div>
+										<div class="subitems">
+											<dl class="dl_fore1">
+												<dt>
+													<a href="##">大家电<i>></i></a>
+												</dt>
+												<dd>
+													<a href="##">平板电视</a>
+													<a href="##">平板电视</a>
+													<a href="##">平板电视</a>
+													<a href="##">平板电视</a>
+													<a href="##">平板电视</a>
+													<a href="##">平板电视</a>
+													<a href="##">平板电视</a>
+													<a href="##">平板电视</a>
+													<a href="##">平板电视</a>
+												</dd>
+											</dl>
+											<dl class="dl_fore2">
+												<dt>
+													<a href="##">生活电器<i>></i></a>
+												</dt>
+												<dd>
+													<a href="##">平板电视</a>
+													<a href="##">平板电视</a>
+													<a href="##">平板电视</a>
+													<a href="##">平板电视</a>
+													<a href="##">平板电视</a>
+													<a href="##">平板电视</a>
+													<a href="##">平板电视</a>
+													<a href="##">平板电视</a>
+													<a href="##">平板电视</a>
+													<a href="##">平板电视</a>
+													<a href="##">平板电视</a>
+													<a href="##">平板电视</a>
+													<a href="##">平板电视</a>
+												</dd>
+											</dl>
+											<dl class="dl_fore2">
+												<dt>
+													<a href="##">厨房电器<i>></i></a>
+												</dt>
+												<dd>
+													<a href="##">平板电视</a>
+													<a href="##">平板电视</a>
+													<a href="##">平板电视</a>
+													<a href="##">平板电视</a>
+													<a href="##">平板电视</a>
+													<a href="##">平板电视</a>
+													<a href="##">平板电视</a>
+													<a href="##">平板电视</a>
+													<a href="##">平板电视</a>
+													<a href="##">平板电视</a>
+													<a href="##">平板电视</a>
+													<a href="##">平板电视</a>
+													<a href="##">平板电视</a>
+												</dd>
+											</dl>
+											<dl class="dl_fore2">
+												<dt>
+													<a href="##">个护健康<i>></i></a>
+												</dt>
+												<dd>
+													<a href="##">平板电视</a>
+													<a href="##">平板电视</a>
+													<a href="##">平板电视</a>
+													<a href="##">平板电视</a>
+													<a href="##">平板电视</a>
+													<a href="##">平板电视</a>
+													<a href="##">平板电视</a>
+													<a href="##">平板电视</a>
+													<a href="##">平板电视</a>
+													<a href="##">平板电视</a>
+													<a href="##">平板电视</a>
+													<a href="##">平板电视</a>
+													<a href="##">平板电视</a>
+												</dd>
+											</dl>
+											<dl class="dl_fore2">
+												<dt>
+													<a href="##">五金家装<i>></i></a>
+												</dt>
+												<dd>
+													<a href="##">平板电视</a>
+													<a href="##">平板电视</a>
+													<a href="##">平板电视</a>
+													<a href="##">平板电视</a>
+													<a href="##">平板电视</a>
+													<a href="##">平板电视</a>
+													<a href="##">平板电视</a>
+													<a href="##">平板电视</a>
+													<a href="##">平板电视</a>
+													<a href="##">平板电视</a>
+													<a href="##">平板电视</a>
+													<a href="##">平板电视</a>
+													<a href="##">平板电视</a>
+												</dd>
+											</dl>
+										</div>
+									</div>
+								</div>
+								<!-------------------------------->
+							</div>
+							
+							<div class="item fore2">
+								<div class="item-left">
+									<div class="cata-nav-name">
+										<h3>
+											<a href="#">手机</a>、
+											<a href="#">数码</a>、
+											<a href="#">通信</a>
+										</h3>
+										<b>></b>
+									</div>
+								</div>
+								<!---------三级菜单----------------->
+								<div class="nav-layer">
+									<div class="cata-nav-left">
+										<div class="item-channels">
+											<div class="channel">
+												<a href="##">品牌日<i>></i></a>
+												<a href="##">家电城<i>></i></a>
+												<a href="##">智能生活馆<i>></i></a>
+												<a href="##">京东净化馆<i>></i></a>
+												<a href="##">京东帮服务店<i>></i></a>
+												<a href="##">值得买精选<i>></i></a>	
+											</div>
+										</div>
+										<div class="subitems">
+											<dl class="dl_fore1">
+												<dt>
+													<a href="##">大家电<i>></i></a>
+												</dt>
+												<dd>
+													<a href="##">洗衣机冰箱</a>
+													<a href="##">洗衣机冰箱</a>
+													<a href="##">洗衣机冰箱</a>
+													<a href="##">洗衣机冰箱</a>
+													<a href="##">洗衣机冰箱</a>
+													<a href="##">洗衣机冰箱</a>
+													<a href="##">平板电视</a>
+													<a href="##">洗衣机冰箱</a>
+													<a href="##">平板电视</a>
+												</dd>
+											</dl>
+											<dl class="dl_fore2">
+												<dt>
+													<a href="##">生活电器<i>></i></a>
+												</dt>
+												<dd>
+													<a href="##">洗衣机冰箱</a>
+													<a href="##">洗衣机冰箱</a>
+													<a href="##">洗衣机冰箱</a>
+													<a href="##">洗衣机冰箱</a>
+													<a href="##">洗衣机冰箱</a>
+													<a href="##">洗衣机冰箱</a>
+													<a href="##">洗衣机冰箱</a>
+													<a href="##">洗衣机冰箱</a>
+													<a href="##">洗衣机冰箱</a>
+													<a href="##">洗衣机冰箱</a>
+													<a href="##">洗衣机冰箱</a>
+													<a href="##">洗衣机冰箱</a>
+													<a href="##">洗衣机冰箱</a>
+												</dd>
+											</dl>
+											<dl class="dl_fore2">
+												<dt>
+													<a href="##">厨房电器<i>></i></a>
+												</dt>
+												<dd>
+													<a href="##">洗衣机冰箱</a>
+													<a href="##">平板电视</a>
+													<a href="##">洗衣机冰箱</a>
+													<a href="##">平板电视</a>
+													<a href="##">洗衣机冰箱</a>
+													<a href="##">平板电视</a>
+													<a href="##">平板电视</a>
+													<a href="##">平板电视</a>
+													<a href="##">洗衣机冰箱</a>
+													<a href="##">洗衣机冰箱</a>
+													<a href="##">平板电视</a>
+													<a href="##">洗衣机冰箱</a>
+													<a href="##">平板电视</a>
+												</dd>
+											</dl>
+											<dl class="dl_fore2">
+												<dt>
+													<a href="##">个护健康<i>></i></a>
+												</dt>
+												<dd>
+													<a href="##">平板电视</a>
+													<a href="##">洗衣机冰箱洗衣机冰箱</a>
+													<a href="##">平板电视</a>
+													<a href="##">洗衣机冰箱</a>
+													<a href="##">平板电视</a>
+													<a href="##">平板电视</a>
+													<a href="##">洗衣机冰箱</a>
+													<a href="##">平板电视</a>
+													<a href="##">平板电视</a>
+													<a href="##">洗衣机冰箱</a>
+													<a href="##">平板电视</a>
+													<a href="##">平板电视</a>
+													<a href="##">洗衣机冰箱</a>
+												</dd>
+											</dl>
+											<dl class="dl_fore2">
+												<dt>
+													<a href="##">五金家装<i>></i></a>
+												</dt>
+												<dd>
+													<a href="##">洗衣机冰箱</a>
+													<a href="##">洗衣机冰箱洗衣机冰箱洗衣机冰箱</a>
+													<a href="##">平板电视</a>
+													<a href="##">平板电视</a>
+													<a href="##">平板电视</a>
+													<a href="##">洗衣机冰箱</a>
+													<a href="##">平板电视</a>
+													<a href="##">洗衣机冰箱</a>
+													<a href="##">平板电视</a>
+													<a href="##">洗衣机冰箱</a>
+													<a href="##">平板电视</a>
+													<a href="##">平板电视</a>
+													<a href="##">平板电视</a>
+												</dd>
+											</dl>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="item fore3">
+								<div class="item-left">
+									<div class="cata-nav-name">
+										<h3>
+											<a href="#">电脑</a>、
+											<a href="#">办公</a>
+										</h3>
+										<b>></b>
+									</div>
+								</div>
+								<!---------三级菜单----------------->
+								<div class="nav-layer">
+									<div class="cata-nav-left">
+										<div class="item-channels">
+											<div class="channel">
+												<a href="##">品牌日<i>></i></a>
+												<a href="##">家电城<i>></i></a>
+												<a href="##">智能生活馆<i>></i></a>
+												<a href="##">京东净化馆<i>></i></a>
+												<a href="##">京东帮服务店<i>></i></a>
+												<a href="##">值得买精选<i>></i></a>	
+											</div>
+										</div>
+										<div class="subitems">
+											<dl class="dl_fore1">
+												<dt>
+													<a href="##">大家电<i>></i></a>
+												</dt>
+												<dd>
+													<a href="##">3</a>
+													<a href="##">3</a>
+													<a href="##">3</a>
+													<a href="##">3</a>
+													<a href="##">3</a>
+													<a href="##">3</a>
+													<a href="##">3</a>
+													<a href="##">3</a>
+													<a href="##">3</a>
+												</dd>
+											</dl>
+											<dl class="dl_fore2">
+												<dt>
+													<a href="##">生活电器<i>></i></a>
+												</dt>
+												<dd>
+													<a href="##">3</a>
+													<a href="##">3</a>
+													<a href="##">3</a>
+													<a href="##">3</a>
+													<a href="##">3</a>
+													<a href="##">平板电视</a>
+													<a href="##">3</a>
+													<a href="##">3</a>
+													<a href="##">平板电视</a>
+													<a href="##">平板电视</a>
+													<a href="##">3</a>
+													<a href="##">平板电视</a>
+													<a href="##">3</a>
+												</dd>
+											</dl>
+											<dl class="dl_fore2">
+												<dt>
+													<a href="##">厨房电器<i>></i></a>
+												</dt>
+												<dd>
+													<a href="##">3</a>
+													<a href="##">平板电视</a>
+													<a href="##">3</a>
+													<a href="##">3</a>
+													<a href="##">平板电视</a>
+													<a href="##">3</a>
+													<a href="##">平板电视</a>
+													<a href="##">3</a>
+													<a href="##">平板电视</a>
+													<a href="##">平板电视</a>
+													<a href="##">3</a>
+													<a href="##">平板电视</a>
+													<a href="##">3</a>
+												</dd>
+											</dl>
+											<dl class="dl_fore2">
+												<dt>
+													<a href="##">个护健康<i>></i></a>
+												</dt>
+												<dd>
+													<a href="##">平板3电视</a>
+													<a href="##">平板电视</a>
+													<a href="##">3</a>
+													<a href="##">3</a>
+													<a href="##">平板电视</a>
+													<a href="##">3</a>
+													<a href="##">平板电视</a>
+													<a href="##">3</a>
+													<a href="##">平板电视</a>
+													<a href="##">3</a>
+													<a href="##">3</a>
+													<a href="##">平板电视</a>
+													<a href="##">3</a>
+												</dd>
+											</dl>
+											<dl class="dl_fore2">
+												<dt>
+													<a href="##">五金家装<i>></i></a>
+												</dt>
+												<dd>
+													<a href="##">平板电视</a>
+													<a href="##">3</a>
+													<a href="##">3</a>
+													<a href="##">平板电视</a>
+													<a href="##">3</a>
+													<a href="##">3</a>
+													<a href="##">平板电视</a>
+													<a href="##">3</a>
+													<a href="##">3</a>
+													<a href="##">平板电视</a>
+													<a href="##">3</a>
+													<a href="##">3</a>
+													<a href="##">3</a>
+												</dd>
+											</dl>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="item fore4">
+								<div class="item-left">
+									<div class="cata-nav-name">
+										<h3>
+											<a href="#">家居、</a>
+											<a href="#">家具、</a>
+											<a href="#">家装、</a>
+											<a href="#">厨具</a>
+										</h3>
+										<b>></b>
+									</div>
+								</div>
+								<!---------三级菜单----------------->
+								<div class="nav-layer">
+									<div class="cata-nav-left">
+										<div class="item-channels">
+											<div class="channel">
+												<a href="##">品牌日<i>></i></a>
+												<a href="##">家电城<i>></i></a>
+												<a href="##">智能生活馆<i>></i></a>
+												<a href="##">京东净化馆<i>></i></a>
+												<a href="##">京东帮服务店<i>></i></a>
+												<a href="##">值得买精选<i>></i></a>	
+											</div>
+										</div>
+										<div class="subitems">
+											<dl class="dl_fore1">
+												<dt>
+													<a href="##">大家电<i>></i></a>
+												</dt>
+												<dd>
+													<a href="##">444</a>
+													<a href="##">444</a>
+													<a href="##">44</a>
+													<a href="##">平板电视</a>
+													<a href="##">44</a>
+													<a href="##">44</a>
+													<a href="##">平板电视</a>
+													<a href="##">4</a>
+													<a href="##">4</a>
+												</dd>
+											</dl>
+											<dl class="dl_fore2">
+												<dt>
+													<a href="##">生活电器<i>></i></a>
+												</dt>
+												<dd>
+													<a href="##">444</a>
+													<a href="##">平板电视</a>
+													<a href="##">平板电视</a>
+													<a href="##">平板电视</a>
+													<a href="##">4444444444</a>
+													<a href="##">平板电视</a>
+													<a href="##">44</a>
+													<a href="##">44444444</a>
+													<a href="##">平板电视</a>
+													<a href="##">44444444444</a>
+													<a href="##">平板电视</a>
+													<a href="##">444444</a>
+													<a href="##">44</a>
+												</dd>
+											</dl>
+											<dl class="dl_fore2">
+												<dt>
+													<a href="##">厨房电器<i>></i></a>
+												</dt>
+												<dd>
+													<a href="##">平板电视</a>
+													<a href="##">444</a>
+													<a href="##">平板电视</a>
+													<a href="##">平板电视</a>
+													<a href="##">444</a>
+													<a href="##">平板电视</a>
+													<a href="##">44</a>
+													<a href="##">44</a>
+													<a href="##">平板电视</a>
+													<a href="##">44</a>
+													<a href="##">平板电视</a>
+													<a href="##">44444</a>
+													<a href="##">44</a>
+												</dd>
+											</dl>
+											<dl class="dl_fore2">
+												<dt>
+													<a href="##">个护健康<i>></i></a>
+												</dt>
+												<dd>
+													<a href="##">4</a>
+													<a href="##">平板电视</a>
+													<a href="##">4</a>
+													<a href="##">平板电视</a>
+													<a href="##">4</a>
+													<a href="##">平板电视</a>
+													<a href="##">4</a>
+													<a href="##">平板电视</a>
+													<a href="##">4</a>
+													<a href="##">平板电视</a>
+													<a href="##">4</a>
+													<a href="##">平板电视</a>
+													<a href="##">4</a>
+												</dd>
+											</dl>
+											<dl class="dl_fore2">
+												<dt>
+													<a href="##">五金家装<i>></i></a>
+												</dt>
+												<dd>
+													<a href="##">平板电视</a>
+													<a href="##">4</a>
+													<a href="##">4</a>
+													<a href="##">平板电视</a>
+													<a href="##">平板电视</a>
+													<a href="##">4</a>
+													<a href="##">平板电视</a>
+													<a href="##">4</a>
+													<a href="##">平板电视</a>
+													<a href="##">4</a>
+													<a href="##">平板电视</a>
+													<a href="##">4</a>
+													<a href="##">4</a>
+												</dd>
+											</dl>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="item fore5">
+								<div class="item-left">
+									<div class="cata-nav-name">
+										<h3>
+											<a href="#">男装、</a>
+											<a href="#">女装、</a>
+											<a href="#">内衣</a>
+										</h3>
+										<b>></b>
+									</div>
+								</div>
+								<!---------三级菜单----------------->
+								<div class="nav-layer">
+									<div class="cata-nav-left">
+										<div class="item-channels">
+											<div class="channel">
+												<a href="##">品牌日<i>></i></a>
+												<a href="##">家电城<i>></i></a>
+												<a href="##">智能生活馆<i>></i></a>
+												<a href="##">京东净化馆<i>></i></a>
+												<a href="##">京东帮服务店<i>></i></a>
+												<a href="##">值得买精选<i>></i></a>	
+											</div>
+										</div>
+										<div class="subitems">
+											<dl class="dl_fore1">
+												<dt>
+													<a href="##">大家电<i>></i></a>
+												</dt>
+												<dd>
+													<a href="##">555</a>
+													<a href="##">55</a>
+													<a href="##">平板电视</a>
+													<a href="##">55</a>
+													<a href="##">平板电视</a>
+													<a href="##">55</a>
+													<a href="##">55</a>
+													<a href="##">平板电视</a>
+													<a href="##">5</a>
+												</dd>
+											</dl>
+											<dl class="dl_fore2">
+												<dt>
+													<a href="##">生活电器<i>></i></a>
+												</dt>
+												<dd>
+													<a href="##">5555555</a>
+													<a href="##">平板电视</a>
+													<a href="##">5555555555555555555</a>
+													<a href="##">平板电视</a>
+													<a href="##">55</a>
+													<a href="##">平板电视</a>
+													<a href="##">5</a>
+													<a href="##">5</a>
+													<a href="##">平板电视</a>
+													<a href="##">5</a>
+													<a href="##">平板电视</a>
+													<a href="##">5</a>
+													<a href="##">5</a>
+												</dd>
+											</dl>
+											<dl class="dl_fore2">
+												<dt>
+													<a href="##">厨房电器<i>></i></a>
+												</dt>
+												<dd>
+													<a href="##">5</a>
+													<a href="##">平板电视</a>
+													<a href="##">5</a>
+													<a href="##">平板电视</a>
+													<a href="##">5</a>
+													<a href="##">平板电视</a>
+													<a href="##">5</a>
+													<a href="##">平板5电视</a>
+													<a href="##">5</a>
+													<a href="##">平板电视</a>
+													<a href="##">平板55电视</a>
+													<a href="##">5</a>
+													<a href="##">5</a>
+												</dd>
+											</dl>
+											<dl class="dl_fore2">
+												<dt>
+													<a href="##">个护健康<i>></i></a>
+												</dt>
+												<dd>
+													<a href="##">5</a>
+													<a href="##">平板电视</a>
+													<a href="##">5555555</a>
+													<a href="##">平板电视</a>
+													<a href="##">55</a>
+													<a href="##">平板电视</a>
+													<a href="##">55</a>
+													<a href="##">5</a>
+													<a href="##">5</a>
+													<a href="##">5</a>
+													<a href="##">5</a>
+													<a href="##">5</a>
+													<a href="##">5</a>
+												</dd>
+											</dl>
+											<dl class="dl_fore2">
+												<dt>
+													<a href="##">五金家装<i>></i></a>
+												</dt>
+												<dd>
+													<a href="##">5</a>
+													<a href="##">平板电视</a>
+													<a href="##">5</a>
+													<a href="##">5</a>
+													<a href="##">平板电视</a>
+													<a href="##">5</a>
+													<a href="##">平板电视</a>
+													<a href="##">平板电视</a>
+													<a href="##">5</a>
+													<a href="##">5</a>
+													<a href="##">5</a>
+													<a href="##">5</a>
+													<a href="##">5</a>
+												</dd>
+											</dl>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="item fore6">
+								<div class="item-left">
+									<div class="cata-nav-name">
+										<h3>
+											<a href="#">鞋靴、</a>
+											<a href="#">箱包、</a>
+											<a href="#">钟表、</a>
+											<a href="#">奢侈品</a>
+										</h3>
+										<b>></b>
+									</div>
+								</div>
+							</div>
+							<div class="item fore7">
+								<div class="item-left">
+									<div class="cata-nav-name">
+										<h3>
+											<a href="#">个人化妆、</a>
+											<a href="#">清洁用品</a>
+										</h3>
+										<b>></b>
+									</div>
+								</div>
+							</div>
+							<div class="item fore8">
+								<div class="item-left">
+									<div class="cata-nav-name">
+										<h3>
+											<a href="#">母婴、</a>
+											<a href="#">玩具乐器</a>
+										</h3>
+										<b>></b>
+									</div>
+								</div>
+							</div>
+							<div class="item fore9">
+								<div class="item-left">
+									<div class="cata-nav-name">
+										<h3>
+											<a href="#">图书、</a>
+											<a href="#">音响、</a>
+											<a href="#">电子书</a>
+										</h3>
+										<b>></b>
+									</div>
+								</div>
+							</div>
+							<div class="item fore10">
+								<div class="item-left">
+									<div class="cata-nav-name">
+										<h3>
+											<a href="#">休闲、</a>
+											<a href="#">运动、</a>
+											<a href="#">户外健身</a>
+										</h3>
+										<b>></b>
+									</div>
+								</div>
+							</div>
+							<div class="item fore11">
+								<div class="item-left">
+									<div class="cata-nav-name">
+										<h3>
+											<a href="#">腕表、</a>
+											<a href="#">珠宝配饰、</a>
+											<a href="#">眼镜</a>
+										</h3>
+										<b>></b>
+									</div>
+								</div>
+							</div>
+							<div class="item fore12">
+								<div class="item-left">
+									<div class="cata-nav-name">
+										<h3>
+											<a href="#">汽车、</a>
+											<a href="#">汽车用品</a>
+										</h3>
+										<b>></b>
+									</div>
+								</div>
+							</div>
+							<div class="item fore13">
+								<div class="item-left">
+									<div class="cata-nav-name">
+										<h3>
+											<a href="#">食品</a>
+											<a href="#">酒类</a>
+											<a href="#">生鲜</a>
+											<a href="#">特产</a>
+										</h3>
+										<b>></b>
+									</div>
+								</div>
+							</div>
+							<div class="item fore14">
+								<div class="item-left">
+									<div class="cata-nav-name">
+										<h3>
+											<a href="#">营养保健</a>
+										</h3>
+										<b>></b>
+									</div>
+								</div>
+							</div>
+							<div class="item fore15">
+								<div class="item-left">
+									<div class="cata-nav-name">
+										<h3>
+											<a href="#">保健滋补</a>
+											<a href="#">医药</a>
+											<a href="#">成人</a>
+										</h3>
+										<b>></b>
+									</div>
+								</div>
+							</div>
+							<div class="item fore16">
+								<div class="item-left">
+									<div class="cata-nav-name">
+										<h3>
+											<a href="#">礼品</a>
+											<a href="#">卡</a>
+											<a href="#">旅游</a>
+											<a href="#">充值</a>
+										</h3>
+										<b>></b>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="nav-right">
+					<ul>
+						<li>
+							<a href="#" class="selected">首页</a>
+						</li>
+						<li>
+							<a href="#">食品特产</a>
+						</li>
+						<li>
+							<a href="#">服装城</a>
+						</li>
+						<li>
+							<a href="#">大家电</a>
+						</li>
+						<li>
+							<a href="#">品牌专区</a>
+						</li>
+						<li>
+							<a href="#">团购</a>
+						</li>
+						<li>
+							<a href="#">夺宝奇兵</a>
+						</li>
+						<li>
+							<a href="#">积分商城</a>
+						</li>
+						<li>
+							<a href="#">预售频道</a>
+						</li>
+						<li>
+							<a href="#">店铺街</a>
+						</li>
+					</ul>
+					<div class="wrap-line">
+						
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--******这上面的都是公用部分***************************------------------------->
+		
+		
+		<!--------热门推荐---------------------------------------------------------------->
+		<div class="hot-sales">
+			<div class="w1200 hotsale">
+				<div class="hotsale-title">热门推荐</div>
+				<div class="hotsale-shop">
+					<ul>
+						<li class="hotsale-li">
+							<div class="item">
+								<div class="p-img">
+									<a href="##">
+										<img src="../img/shopList1.jpg" />
+									</a>
+								</div>
+								<div class="p-name">
+									<a href="goods.php?id=421" title="轻雅多维营养代餐粉 果蔬纤维 膳食纤维 魔芋粉产品低卡纤体奶昔饱腹非左旋肉碱减肥16天量" target="_blank">
+										轻雅多维营养代餐粉 果蔬纤维 膳食纤维 魔芋粉产品低卡纤体奶昔饱腹非左旋肉碱减肥16天量
+									</a>
+								</div>
+								<div class="p-price">
+									<em>￥</em>50.00
+								</div>
+								<a href="##" class="btn1">去抢购</a>
+							</div>
+						</li>
+						<li class="hotsale-li">
+							<div class="item">
+								<div class="p-img">
+									<a href="##">
+										<img src="../img/shopList1.jpg" />
+									</a>
+								</div>
+								<div class="p-name">
+									<a href="goods.php?id=421" title="轻雅多维营养代餐粉 果蔬纤维 膳食纤维 魔芋粉产品低卡纤体奶昔饱腹非左旋肉碱减肥16天量" target="_blank">
+										轻雅多维营养代餐粉 果蔬纤维 膳食纤维 魔芋粉产品低卡纤体奶昔饱腹非左旋肉碱减肥16天量
+									</a>
+								</div>
+								<div class="p-price">
+									<em>￥</em>50.00
+								</div>
+								<a href="##" class="btn1">去抢购</a>
+							</div>
+						</li>
+						<li class="hotsale-li">
+							<div class="item">
+								<div class="p-img">
+									<a href="##">
+										<img src="../img/shopList1.jpg" />
+									</a>
+								</div>
+								<div class="p-name">
+									<a href="goods.php?id=421" title="轻雅多维营养代餐粉 果蔬纤维 膳食纤维 魔芋粉产品低卡纤体奶昔饱腹非左旋肉碱减肥16天量" target="_blank">
+										轻雅多维营养代餐粉 果蔬纤维 膳食纤维 魔芋粉产品低卡纤体奶昔饱腹非左旋肉碱减肥16天量
+									</a>
+								</div>
+								<div class="p-price">
+									<em>￥</em>50.00
+								</div>
+								<a href="##" class="btn1">去抢购</a>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		
+		<!---------列表页的名字--------------------------------------------------------------->
+		<div class="shopListName w1200">
+			<h1>食品、酒类、生鲜、特产</h1>
+			<span class="filter-tabs">
+				<span class="filter-tab1">
+					<a href="##">地方特产</a>
+					<i class="sc-right"></i>
+				</span>
+				<div class="filtertabs-layer">
+					<div class="dd-spacer"></div>
+					<div class="content-wrap">
+						<ul>
+							<li><a href="##">四川</a></li>
+							<li><a href="##">四川</a></li>
+							<li><a href="##">四川</a></li>
+							<li><a href="##">四川</a></li>
+							<li><a href="##">四川</a></li>
+							<li><a href="##">四川</a></li>
+							<li><a href="##">四川</a></li>
+							<li><a href="##">四川</a></li>
+							<li><a href="##">四川</a></li>
+							<li><a href="##">其他</a></li>
+						</ul>
+					</div>
+				</div>
+			</span>
+			<div class="pre-num">共11件商品</div>
+			<div class="clear"></div>
+		</div>
+		
+		<!--商家的logo和下面的默认paixu栏中的内容-->
+		<div class="shopLogo">
+			<div class="w1200 shop-logo">
+				<div class="goods-list">
+					<ul class="attr_father">
+						<li>
+							<div class="goods-attr">
+								<div class="goods-logo-name">品牌：</div>
+								<div class="goods-select-more">
+									<div class="wrap-brand">
+										<div class="wrap-div">
+											<div class="wrap-div-img">
+												<a href="##">
+													<img src="../img/shop-logo1.jpg">
+													<strong>ELLE HOME</strong>
+												</a>
+											</div>
+											<div class="wrap-div-img">
+												<a href="##">
+													<img src="../img/shop-logo2.jpg">
+													<strong>梦特娇</strong>
+												</a>
+											</div>
+											<div class="wrap-div-img">
+												<a href="##">
+													<img src="../img/shop-logo3.jpg">
+													<strong>阿迪达斯</strong>
+												</a>
+											</div>
+											<div class="wrap-div-img">
+												<a href="##">
+													<img src="../img/shop-logo4.jpg">
+													<strong>李宁</strong>
+												</a>
+											</div>
+											<div class="wrap-div-img">
+												<a href="##">
+													<img src="../img/shop-logo5.jpg">
+													<strong>西门子</strong>
+												</a>
+											</div>
+											<div class="wrap-div-img">
+												<a href="##">
+													<img src="../img/shop-logo6.jpg">
+													<strong>自然派</strong>
+												</a>
+											</div>
+										</div>
+										<div class="wrap-div-space" style="display: none;height: 200px;background: #FFFFFF;"></div>
+									</div>
+								</div>
+								<div class="gs-select">
+									<div class="choice-open">
+										<i class="co-i"></i>
+									</div>
+									<div class="choice-more">
+										<i class="cm-i"></i>多选
+									</div>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="w1200 shop-sort">
+				<div class="filter-sortbanner">
+					<form class="sort">
+						<ul class="sort-ul">
+							<li class="on5"> <a href="##">默认</a></li>
+							<li> <a href="##">销量</a></li>
+							<li> <a href="##">新品</a></li>
+							<li> <a href="##">评论数</a></li>
+							<li> <a href="##">价格</a></li>
+							<li class="li-input">
+								<input type="text" placeholder="￥" /> ~ <input type="text" placeholder="￥" />
+							</li>
+						</ul>
+					</form>
+					<div class="isSelf">
+						<div class="self-store">
+							<input type="checkbox" class="checkbox1" /> 包邮
+						</div>
+						<div class="other-store">
+							<input type="checkbox" class="checkbox1"/> 自营商品
+						</div>
+					</div>
+					<div class="pages">
+						<span class="page-num">1/1</span>
+						<a href="##" class="page-a"> > </a>
+						<a href="##" class="page-a"> < </a>
+					</div>
+					<div class="styles"></div>
+				</div>
+			</div>
+		</div>
+		
+		<!----------所有商品信息------------------------------------------------------------------>
+		<div class="content w1200">
+			<div class="car-goods-list">
+				<ul class="goods-ul">
+					<li class="goods-li">
+							<!-----------图片----------------------->
+							<div class="g-img">
+								<a href="Detail.html"></a>	
+							</div>
+							<!--------------价格和销量--------------->
+							<div class="p-ad">
+								<div class="g-price">
+									<strong></strong>
+								</div>
+								<div class="g-num"></div>
+							</div>
+							<!--------------名字-------------->
+							<div class="g-name"></div>
+							<!---------------颜色------------>
+							<div class="p-color">
+								<ul>
+									<li class=" item select"><a href="##">蓝色</a></li>
+									<li class="item"><a href="##">黑色</a></li>
+									<li class="item"><a href="##">白色</a></li>
+									<li class="item"><a href="##">红色</a></li>		
+								</ul>
+							</div>
+							<!--------------按钮-------------->	
+							<a href="##" class="btn2">加入购物车</a>
+					</li>
+					<li class="goods-li">
+							<!-----------图片----------------------->
+							<div class="g-img">
+								<a href="Detail.html"></a>	
+							</div>
+							<!--------------价格和销量--------------->
+							<div class="p-ad">
+								<div class="g-price">
+									<strong></strong>
+								</div>
+								<div class="g-num"></div>
+							</div>
+							<!--------------名字-------------->
+							<div class="g-name"></div>
+							<!---------------颜色------------>
+							<div class="p-color">
+								<ul>
+									<li class=" item select"><a href="##">蓝色</a></li>
+									<li class="item"><a href="##">黑色</a></li>
+									<li class="item"><a href="##">白色</a></li>
+									<li class="item"><a href="##">红色</a></li>		
+								</ul>
+							</div>
+							<!--------------按钮-------------->	
+							<a href="##" class="btn2">加入购物车</a>
+					</li>
+					<li class="goods-li">
+							<!-----------图片----------------------->
+							<div class="g-img">
+								<a href="Detail.html"></a>	
+							</div>
+							<!--------------价格和销量--------------->
+							<div class="p-ad">
+								<div class="g-price">
+									<strong></strong>
+								</div>
+								<div class="g-num"></div>
+							</div>
+							<!--------------名字-------------->
+							<div class="g-name"></div>
+							<!---------------颜色------------>
+							<div class="p-color">
+								<ul>
+									<li class=" item select"><a href="##">蓝色</a></li>
+									<li class="item"><a href="##">黑色</a></li>
+									<li class="item"><a href="##">白色</a></li>
+									<li class="item"><a href="##">红色</a></li>		
+								</ul>
+							</div>
+							<!--------------按钮-------------->	
+							<a href="##" class="btn2">加入购物车</a>
+					</li>
+					<li class="goods-li">
+							<!-----------图片----------------------->
+							<div class="g-img">
+								<a href="Detail.html"></a>	
+							</div>
+							<!--------------价格和销量--------------->
+							<div class="p-ad">
+								<div class="g-price">
+									<strong></strong>
+								</div>
+								<div class="g-num"></div>
+							</div>
+							<!--------------名字-------------->
+							<div class="g-name"></div>
+							<!---------------颜色------------>
+							<div class="p-color">
+								<ul>
+									<li class=" item select"><a href="##">蓝色</a></li>
+									<li class="item"><a href="##">黑色</a></li>
+									<li class="item"><a href="##">白色</a></li>
+									<li class="item"><a href="##">红色</a></li>		
+								</ul>
+							</div>
+							<!--------------按钮-------------->	
+							<a href="##" class="btn2">加入购物车</a>
+					</li>
+					<li class="goods-li">
+							<!-----------图片----------------------->
+							<div class="g-img">
+								<a href="Detail.html"></a>	
+							</div>
+							<!--------------价格和销量--------------->
+							<div class="p-ad">
+								<div class="g-price">
+									<strong></strong>
+								</div>
+								<div class="g-num"></div>
+							</div>
+							<!--------------名字-------------->
+							<div class="g-name"></div>
+							<!---------------颜色------------>
+							<div class="p-color">
+								<ul>
+									<li class=" item select"><a href="##">蓝色</a></li>
+									<li class="item"><a href="##">黑色</a></li>
+									<li class="item"><a href="##">白色</a></li>
+									<li class="item"><a href="##">红色</a></li>		
+								</ul>
+							</div>
+							<!--------------按钮-------------->	
+							<a href="##" class="btn2">加入购物车</a>
+					</li>
+					<li class="goods-li">
+							<!-----------图片----------------------->
+							<div class="g-img">
+								<a href="Detail.html"></a>	
+							</div>
+							<!--------------价格和销量--------------->
+							<div class="p-ad">
+								<div class="g-price">
+									<strong></strong>
+								</div>
+								<div class="g-num"></div>
+							</div>
+							<!--------------名字-------------->
+							<div class="g-name"></div>
+							<!---------------颜色------------>
+							<div class="p-color">
+								<ul>
+									<li class=" item select"><a href="##">蓝色</a></li>
+									<li class="item"><a href="##">黑色</a></li>
+									<li class="item"><a href="##">白色</a></li>
+									<li class="item"><a href="##">红色</a></li>		
+								</ul>
+							</div>
+							<!--------------按钮-------------->	
+							<a href="##" class="btn2">加入购物车</a>
+					</li>
+					<li class="goods-li">
+							<!-----------图片----------------------->
+							<div class="g-img">
+								<a href="Detail.html"></a>	
+							</div>
+							<!--------------价格和销量--------------->
+							<div class="p-ad">
+								<div class="g-price">
+									<strong></strong>
+								</div>
+								<div class="g-num"></div>
+							</div>
+							<!--------------名字-------------->
+							<div class="g-name"></div>
+							<!---------------颜色------------>
+							<div class="p-color">
+								<ul>
+									<li class=" item select"><a href="##">蓝色</a></li>
+									<li class="item"><a href="##">黑色</a></li>
+									<li class="item"><a href="##">白色</a></li>
+									<li class="item"><a href="##">红色</a></li>		
+								</ul>
+							</div>
+							<!--------------按钮-------------->	
+							<a href="##" class="btn2">加入购物车</a>
+					</li>
+					<li class="goods-li">
+							<!-----------图片----------------------->
+							<div class="g-img">
+								<a href="Detail.html"></a>	
+							</div>
+							<!--------------价格和销量--------------->
+							<div class="p-ad">
+								<div class="g-price">
+									<strong></strong>
+								</div>
+								<div class="g-num"></div>
+							</div>
+							<!--------------名字-------------->
+							<div class="g-name"></div>
+							<!---------------颜色------------>
+							<div class="p-color">
+								<ul>
+									<li class=" item select"><a href="##">蓝色</a></li>
+									<li class="item"><a href="##">黑色</a></li>
+									<li class="item"><a href="##">白色</a></li>
+									<li class="item"><a href="##">红色</a></li>		
+								</ul>
+							</div>
+							<!--------------按钮-------------->	
+							<a href="##" class="btn2">加入购物车</a>
+					</li>
+					<li class="goods-li">
+							<!-----------图片----------------------->
+							<div class="g-img">
+								<a href="Detail.html"></a>	
+							</div>
+							<!--------------价格和销量--------------->
+							<div class="p-ad">
+								<div class="g-price">
+									<strong></strong>
+								</div>
+								<div class="g-num"></div>
+							</div>
+							<!--------------名字-------------->
+							<div class="g-name"></div>
+							<!---------------颜色------------>
+							<div class="p-color">
+								<ul>
+									<li class=" item select"><a href="##">蓝色</a></li>
+									<li class="item"><a href="##">黑色</a></li>
+									<li class="item"><a href="##">白色</a></li>
+									<li class="item"><a href="##">红色</a></li>		
+								</ul>
+							</div>
+							<!--------------按钮-------------->	
+							<a href="##" class="btn2">加入购物车</a>
+					</li>
+					<li class="goods-li">
+							<!-----------图片----------------------->
+							<div class="g-img">
+								<a href="Detail.html"></a>	
+							</div>
+							<!--------------价格和销量--------------->
+							<div class="p-ad">
+								<div class="g-price">
+									<strong></strong>
+								</div>
+								<div class="g-num"></div>
+							</div>
+							<!--------------名字-------------->
+							<div class="g-name"></div>
+							<!---------------颜色------------>
+							<div class="p-color">
+								<ul>
+									<li class=" item select"><a href="##">蓝色</a></li>
+									<li class="item"><a href="##">黑色</a></li>
+									<li class="item"><a href="##">白色</a></li>
+									<li class="item"><a href="##">红色</a></li>		
+								</ul>
+							</div>
+							<!--------------按钮-------------->	
+							<a href="##" class="btn2">加入购物车</a>
+					</li>
+					<li class="goods-li">
+							<!-----------图片----------------------->
+							<div class="g-img">
+								<a href="Detail.html"></a>	
+							</div>
+							<!--------------价格和销量--------------->
+							<div class="p-ad">
+								<div class="g-price">
+									<strong></strong>
+								</div>
+								<div class="g-num"></div>
+							</div>
+							<!--------------名字-------------->
+							<div class="g-name"></div>
+							<!---------------颜色------------>
+							<div class="p-color">
+								<ul>
+									<li class=" item select"><a href="##">蓝色</a></li>
+									<li class="item"><a href="##">黑色</a></li>
+									<li class="item"><a href="##">白色</a></li>
+									<li class="item"><a href="##">红色</a></li>		
+								</ul>
+							</div>
+							<!--------------按钮-------------->	
+							<a href="##" class="btn2">加入购物车</a>
+					</li>
+					<li class="goods-li">
+							<!-----------图片----------------------->
+							<div class="g-img">
+								<a href="Detail.html"></a>	
+							</div>
+							<!--------------价格和销量--------------->
+							<div class="p-ad">
+								<div class="g-price">
+									<strong></strong>
+								</div>
+								<div class="g-num"></div>
+							</div>
+							<!--------------名字-------------->
+							<div class="g-name"></div>
+							<!---------------颜色------------>
+							<div class="p-color">
+								<ul>
+									<li class=" item select"><a href="##">蓝色</a></li>
+									<li class="item"><a href="##">黑色</a></li>
+									<li class="item"><a href="##">白色</a></li>
+									<li class="item"><a href="##">红色</a></li>		
+								</ul>
+							</div>
+							<!--------------按钮-------------->	
+							<a href="##" class="btn2">加入购物车</a>
+					</li>
+					<li class="goods-li">
+							<!-----------图片----------------------->
+							<div class="g-img">
+								<a href="Detail.html"></a>	
+							</div>
+							<!--------------价格和销量--------------->
+							<div class="p-ad">
+								<div class="g-price">
+									<strong></strong>
+								</div>
+								<div class="g-num"></div>
+							</div>
+							<!--------------名字-------------->
+							<div class="g-name"></div>
+							<!---------------颜色------------>
+							<div class="p-color">
+								<ul>
+									<li class=" item select"><a href="##">蓝色</a></li>
+									<li class="item"><a href="##">黑色</a></li>
+									<li class="item"><a href="##">白色</a></li>
+									<li class="item"><a href="##">红色</a></li>		
+								</ul>
+							</div>
+							<!--------------按钮-------------->	
+							<a href="##" class="btn2">加入购物车</a>
+					</li>
+					<li class="goods-li">
+							<!-----------图片----------------------->
+							<div class="g-img">
+								<a href="Detail.html"></a>	
+							</div>
+							<!--------------价格和销量--------------->
+							<div class="p-ad">
+								<div class="g-price">
+									<strong></strong>
+								</div>
+								<div class="g-num"></div>
+							</div>
+							<!--------------名字-------------->
+							<div class="g-name"></div>
+							<!---------------颜色------------>
+							<div class="p-color">
+								<ul>
+									<li class=" item select"><a href="##">蓝色</a></li>
+									<li class="item"><a href="##">黑色</a></li>
+									<li class="item"><a href="##">白色</a></li>
+									<li class="item"><a href="##">红色</a></li>		
+								</ul>
+							</div>
+							<!--------------按钮-------------->	
+							<a href="##" class="btn2">加入购物车</a>
+					</li>
+					<li class="goods-li">
+							<!-----------图片----------------------->
+							<div class="g-img">
+								<a href="Detail.html"></a>	
+							</div>
+							<!--------------价格和销量--------------->
+							<div class="p-ad">
+								<div class="g-price">
+									<strong></strong>
+								</div>
+								<div class="g-num"></div>
+							</div>
+							<!--------------名字-------------->
+							<div class="g-name"></div>
+							<!---------------颜色------------>
+							<div class="p-color">
+								<ul>
+									<li class=" item select"><a href="##">蓝色</a></li>
+									<li class="item"><a href="##">黑色</a></li>
+									<li class="item"><a href="##">白色</a></li>
+									<li class="item"><a href="##">红色</a></li>		
+								</ul>
+							</div>
+							<!--------------按钮-------------->	
+							<a href="##" class="btn2">加入购物车</a>
+					</li>
+					<li class="goods-li">
+							<!-----------图片----------------------->
+							<div class="g-img">
+								<a href="Detail.html"></a>	
+							</div>
+							<!--------------价格和销量--------------->
+							<div class="p-ad">
+								<div class="g-price">
+									<strong></strong>
+								</div>
+								<div class="g-num"></div>
+							</div>
+							<!--------------名字-------------->
+							<div class="g-name"></div>
+							<!---------------颜色------------>
+							<div class="p-color">
+								<ul>
+									<li class=" item select"><a href="##">蓝色</a></li>
+									<li class="item"><a href="##">黑色</a></li>
+									<li class="item"><a href="##">白色</a></li>
+									<li class="item"><a href="##">红色</a></li>		
+								</ul>
+							</div>
+							<!--------------按钮-------------->	
+							<a href="##" class="btn2">加入购物车</a>
+					</li>
+					<li class="goods-li">
+							<!-----------图片----------------------->
+							<div class="g-img">
+								<a href="Detail.html"></a>	
+							</div>
+							<!--------------价格和销量--------------->
+							<div class="p-ad">
+								<div class="g-price">
+									<strong></strong>
+								</div>
+								<div class="g-num"></div>
+							</div>
+							<!--------------名字-------------->
+							<div class="g-name"></div>
+							<!---------------颜色------------>
+							<div class="p-color">
+								<ul>
+									<li class=" item select"><a href="##">蓝色</a></li>
+									<li class="item"><a href="##">黑色</a></li>
+									<li class="item"><a href="##">白色</a></li>
+									<li class="item"><a href="##">红色</a></li>		
+								</ul>
+							</div>
+							<!--------------按钮-------------->	
+							<a href="##" class="btn2">加入购物车</a>
+					</li>
+					<li class="goods-li">
+							<!-----------图片----------------------->
+							<div class="g-img">
+								<a href="Detail.html"></a>	
+							</div>
+							<!--------------价格和销量--------------->
+							<div class="p-ad">
+								<div class="g-price">
+									<strong></strong>
+								</div>
+								<div class="g-num"></div>
+							</div>
+							<!--------------名字-------------->
+							<div class="g-name"></div>
+							<!---------------颜色------------>
+							<div class="p-color">
+								<ul>
+									<li class=" item select"><a href="##">蓝色</a></li>
+									<li class="item"><a href="##">黑色</a></li>
+									<li class="item"><a href="##">白色</a></li>
+									<li class="item"><a href="##">红色</a></li>		
+								</ul>
+							</div>
+							<!--------------按钮-------------->	
+							<a href="##" class="btn2">加入购物车</a>
+					</li>
+					<li class="goods-li">
+							<!-----------图片----------------------->
+							<div class="g-img">
+								<a href="Detail.html"></a>	
+							</div>
+							<!--------------价格和销量--------------->
+							<div class="p-ad">
+								<div class="g-price">
+									<strong></strong>
+								</div>
+								<div class="g-num"></div>
+							</div>
+							<!--------------名字-------------->
+							<div class="g-name"></div>
+							<!---------------颜色------------>
+							<div class="p-color">
+								<ul>
+									<li class=" item select"><a href="##">蓝色</a></li>
+									<li class="item"><a href="##">黑色</a></li>
+									<li class="item"><a href="##">白色</a></li>
+									<li class="item"><a href="##">红色</a></li>		
+								</ul>
+							</div>
+							<!--------------按钮-------------->	
+							<a href="##" class="btn2">加入购物车</a>
+					</li>
+					<li class="goods-li">
+							<!-----------图片----------------------->
+							<div class="g-img">
+								<a href="Detail.html"></a>	
+							</div>
+							<!--------------价格和销量--------------->
+							<div class="p-ad">
+								<div class="g-price">
+									<strong></strong>
+								</div>
+								<div class="g-num"></div>
+							</div>
+							<!--------------名字-------------->
+							<div class="g-name"></div>
+							<!---------------颜色------------>
+							<div class="p-color">
+								<ul>
+									<li class=" item select"><a href="##">蓝色</a></li>
+									<li class="item"><a href="##">黑色</a></li>
+									<li class="item"><a href="##">白色</a></li>
+									<li class="item"><a href="##">红色</a></li>		
+								</ul>
+							</div>
+							<!--------------按钮-------------->	
+							<a href="##" class="btn2">加入购物车</a>
+					</li>
+					<li class="goods-li">
+							<!-----------图片----------------------->
+							<div class="g-img">
+								<a href="Detail.html"></a>	
+							</div>
+							<!--------------价格和销量--------------->
+							<div class="p-ad">
+								<div class="g-price">
+									<strong></strong>
+								</div>
+								<div class="g-num"></div>
+							</div>
+							<!--------------名字-------------->
+							<div class="g-name"></div>
+							<!---------------颜色------------>
+							<div class="p-color">
+								<ul>
+									<li class=" item select"><a href="##">蓝色</a></li>
+									<li class="item"><a href="##">黑色</a></li>
+									<li class="item"><a href="##">白色</a></li>
+									<li class="item"><a href="##">红色</a></li>		
+								</ul>
+							</div>
+							<!--------------按钮-------------->	
+							<a href="##" class="btn2">加入购物车</a>
+					</li>
+					<li class="goods-li">
+							<!-----------图片----------------------->
+							<div class="g-img">
+								<a href="Detail.html"></a>	
+							</div>
+							<!--------------价格和销量--------------->
+							<div class="p-ad">
+								<div class="g-price">
+									<strong></strong>
+								</div>
+								<div class="g-num"></div>
+							</div>
+							<!--------------名字-------------->
+							<div class="g-name"></div>
+							<!---------------颜色------------>
+							<div class="p-color">
+								<ul>
+									<li class=" item select"><a href="##">蓝色</a></li>
+									<li class="item"><a href="##">黑色</a></li>
+									<li class="item"><a href="##">白色</a></li>
+									<li class="item"><a href="##">红色</a></li>		
+								</ul>
+							</div>
+							<!--------------按钮-------------->	
+							<a href="##" class="btn2">加入购物车</a>
+					</li>
+					<li class="goods-li">
+							<!-----------图片----------------------->
+							<div class="g-img">
+								<a href="Detail.html"></a>	
+							</div>
+							<!--------------价格和销量--------------->
+							<div class="p-ad">
+								<div class="g-price">
+									<strong></strong>
+								</div>
+								<div class="g-num"></div>
+							</div>
+							<!--------------名字-------------->
+							<div class="g-name"></div>
+							<!---------------颜色------------>
+							<div class="p-color">
+								<ul>
+									<li class=" item select"><a href="##">蓝色</a></li>
+									<li class="item"><a href="##">黑色</a></li>
+									<li class="item"><a href="##">白色</a></li>
+									<li class="item"><a href="##">红色</a></li>		
+								</ul>
+							</div>
+							<!--------------按钮-------------->	
+							<a href="##" class="btn2">加入购物车</a>
+					</li>
+					<li class="goods-li">
+							<!-----------图片----------------------->
+							<div class="g-img">
+								<a href="Detail.html"></a>	
+							</div>
+							<!--------------价格和销量--------------->
+							<div class="p-ad">
+								<div class="g-price">
+									<strong></strong>
+								</div>
+								<div class="g-num"></div>
+							</div>
+							<!--------------名字-------------->
+							<div class="g-name"></div>
+							<!---------------颜色------------>
+							<div class="p-color">
+								<ul>
+									<li class=" item select"><a href="##">蓝色</a></li>
+									<li class="item"><a href="##">黑色</a></li>
+									<li class="item"><a href="##">白色</a></li>
+									<li class="item"><a href="##">红色</a></li>		
+								</ul>
+							</div>
+							<!--------------按钮-------------->	
+							<a href="##" class="btn2">加入购物车</a>
+					</li>
+					<li class="goods-li">
+							<!-----------图片----------------------->
+							<div class="g-img">
+								<a href="Detail.html"></a>	
+							</div>
+							<!--------------价格和销量--------------->
+							<div class="p-ad">
+								<div class="g-price">
+									<strong></strong>
+								</div>
+								<div class="g-num"></div>
+							</div>
+							<!--------------名字-------------->
+							<div class="g-name"></div>
+							<!---------------颜色------------>
+							<div class="p-color">
+								<ul>
+									<li class=" item select"><a href="##">蓝色</a></li>
+									<li class="item"><a href="##">黑色</a></li>
+									<li class="item"><a href="##">白色</a></li>
+									<li class="item"><a href="##">红色</a></li>		
+								</ul>
+							</div>
+							<!--------------按钮-------------->	
+							<a href="##" class="btn2">加入购物车</a>
+					</li>
+					<li class="goods-li">
+							<!-----------图片----------------------->
+							<div class="g-img">
+								<a href="Detail.html"></a>	
+							</div>
+							<!--------------价格和销量--------------->
+							<div class="p-ad">
+								<div class="g-price">
+									<strong></strong>
+								</div>
+								<div class="g-num"></div>
+							</div>
+							<!--------------名字-------------->
+							<div class="g-name"></div>
+							<!---------------颜色------------>
+							<div class="p-color">
+								<ul>
+									<li class=" item select"><a href="##">蓝色</a></li>
+									<li class="item"><a href="##">黑色</a></li>
+									<li class="item"><a href="##">白色</a></li>
+									<li class="item"><a href="##">红色</a></li>		
+								</ul>
+							</div>
+							<!--------------按钮-------------->	
+							<a href="##" class="btn2">加入购物车</a>
+					</li>
+					<li class="goods-li">
+							<!-----------图片----------------------->
+							<div class="g-img">
+								<a href="Detail.html"></a>	
+							</div>
+							<!--------------价格和销量--------------->
+							<div class="p-ad">
+								<div class="g-price">
+									<strong></strong>
+								</div>
+								<div class="g-num"></div>
+							</div>
+							<!--------------名字-------------->
+							<div class="g-name"></div>
+							<!---------------颜色------------>
+							<div class="p-color">
+								<ul>
+									<li class=" item select"><a href="##">蓝色</a></li>
+									<li class="item"><a href="##">黑色</a></li>
+									<li class="item"><a href="##">白色</a></li>
+									<li class="item"><a href="##">红色</a></li>		
+								</ul>
+							</div>
+							<!--------------按钮-------------->	
+							<a href="##" class="btn2">加入购物车</a>
+					</li>
+					<li class="goods-li">
+							<!-----------图片----------------------->
+							<div class="g-img">
+								<a href="Detail.html"></a>	
+							</div>
+							<!--------------价格和销量--------------->
+							<div class="p-ad">
+								<div class="g-price">
+									<strong></strong>
+								</div>
+								<div class="g-num"></div>
+							</div>
+							<!--------------名字-------------->
+							<div class="g-name"></div>
+							<!---------------颜色------------>
+							<div class="p-color">
+								<ul>
+									<li class=" item select"><a href="##">蓝色</a></li>
+									<li class="item"><a href="##">黑色</a></li>
+									<li class="item"><a href="##">白色</a></li>
+									<li class="item"><a href="##">红色</a></li>		
+								</ul>
+							</div>
+							<!--------------按钮-------------->	
+							<a href="##" class="btn2">加入购物车</a>
+					</li>
+					<li class="goods-li">
+							<!-----------图片----------------------->
+							<div class="g-img">
+								<a href="Detail.html"></a>	
+							</div>
+							<!--------------价格和销量--------------->
+							<div class="p-ad">
+								<div class="g-price">
+									<strong></strong>
+								</div>
+								<div class="g-num"></div>
+							</div>
+							<!--------------名字-------------->
+							<div class="g-name"></div>
+							<!---------------颜色------------>
+							<div class="p-color">
+								<ul>
+									<li class=" item select"><a href="##">蓝色</a></li>
+									<li class="item"><a href="##">黑色</a></li>
+									<li class="item"><a href="##">白色</a></li>
+									<li class="item"><a href="##">红色</a></li>		
+								</ul>
+							</div>
+							<!--------------按钮-------------->	
+							<a href="##" class="btn2">加入购物车</a>
+					</li>
+					<li class="goods-li">
+							<!-----------图片----------------------->
+							<div class="g-img">
+								<a href="Detail.html"></a>	
+							</div>
+							<!--------------价格和销量--------------->
+							<div class="p-ad">
+								<div class="g-price">
+									<strong></strong>
+								</div>
+								<div class="g-num"></div>
+							</div>
+							<!--------------名字-------------->
+							<div class="g-name"></div>
+							<!---------------颜色------------>
+							<div class="p-color">
+								<ul>
+									<li class=" item select"><a href="##">蓝色</a></li>
+									<li class="item"><a href="##">黑色</a></li>
+									<li class="item"><a href="##">白色</a></li>
+									<li class="item"><a href="##">红色</a></li>		
+								</ul>
+							</div>
+							<!--------------按钮-------------->	
+							<a href="##" class="btn2">加入购物车</a>
+					</li>
+					<li class="goods-li">
+							<!-----------图片----------------------->
+							<div class="g-img">
+								<a href="Detail.html"></a>	
+							</div>
+							<!--------------价格和销量--------------->
+							<div class="p-ad">
+								<div class="g-price">
+									<strong></strong>
+								</div>
+								<div class="g-num"></div>
+							</div>
+							<!--------------名字-------------->
+							<div class="g-name"></div>
+							<!---------------颜色------------>
+							<div class="p-color">
+								<ul>
+									<li class=" item select"><a href="##">蓝色</a></li>
+									<li class="item"><a href="##">黑色</a></li>
+									<li class="item"><a href="##">白色</a></li>
+									<li class="item"><a href="##">红色</a></li>		
+								</ul>
+							</div>
+							<!--------------按钮-------------->	
+							<a href="##" class="btn2">加入购物车</a>
+					</li>
+					<li class="goods-li">
+							<!-----------图片----------------------->
+							<div class="g-img">
+								<a href="Detail.html"></a>	
+							</div>
+							<!--------------价格和销量--------------->
+							<div class="p-ad">
+								<div class="g-price">
+									<strong></strong>
+								</div>
+								<div class="g-num"></div>
+							</div>
+							<!--------------名字-------------->
+							<div class="g-name"></div>
+							<!---------------颜色------------>
+							<div class="p-color">
+								<ul>
+									<li class=" item select"><a href="##">蓝色</a></li>
+									<li class="item"><a href="##">黑色</a></li>
+									<li class="item"><a href="##">白色</a></li>
+									<li class="item"><a href="##">红色</a></li>		
+								</ul>
+							</div>
+							<!--------------按钮-------------->	
+							<a href="##" class="btn2">加入购物车</a>
+					</li>
+										
+					</ul>
+				</div>
+				<div class="footer-copyright">
+					<p class="footer-p1">
+						<a href="##" target="_blank">首页</a>|
+						<a href="##" target="_blank">隐私保护</a>|
+						<a href="##" target="_blank">联系我们</a>|
+						<a href="##" target="_blank">免责条款</a>|
+						<a href="##" target="_blank">公司简介</a>|
+						<a href="##" target="_blank">商家入驻</a>|
+						<a href="##" target="_blank">意见反馈</a>
+					</p>
+					<p class="footer-p1">
+						<a href="##" target="_blank">模板堂</a>|
+						<a href="##" target="_blank">Ecjia</a>|
+						<a href="##" target="_blank">Ectouch</a>|
+						<a href="##" target="_blank">电商学院</a>|
+						<a href="##" target="_blank">ecshop模板堂</a>|
+						<a href="##" target="_blank">Ecjia</a>|
+						<a href="##" target="_blank">Ectouch</a>|
+						<a href="##" target="_blank">大商创</a>
+					</p>
+					<p class="footer-p1">
+						<a href="##" target="_blank">Poweered by <span>大商创1.0</span></a>
+					</p>
+					<p class="footer-bt-img">
+						<a href="#" target="_blank">
+							<img src="../img/banquan_1.jpg" />
+						</a>
+						<a href="#" target="_blank">
+							<img src="../img/banquan_2.jpg" />
+						</a>
+						<a href="#" target="_blank">
+							<img src="../img/banquan_3.jpg" />
+						</a>
+						<a href="#" target="_blank">
+							<img src="../img/banquan_4.jpg" />
+						</a>
+						<a href="#" target="_blank">
+							<img src="../img/banquan_5.jpg" />
+						</a>
+					</p>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

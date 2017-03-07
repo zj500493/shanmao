@@ -1,0 +1,342 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+a{
+	text-decoration: none;
+}
+ul,li{
+	list-style: none;
+}
+body{
+	font-family: "微软雅黑";
+	font-size: 12px;
+}
+img{
+	border: 0;
+	display: block;
+}
+.clear{
+	clear: both;
+}
+
+/*------------------------------------------------------------------*/
+.registerLogin{
+	width: 100%;
+	height: 70px;
+	border-bottom: 1px solid #ccc;
+}
+.w1200{
+	width: 1200px;
+}
+.register-header{
+	height: auto;
+	margin: 0 auto;
+	position: relative;
+}
+.register-header b{
+	display: inline-block;
+	position: absolute;
+	top: 15px;
+	left: 255px;
+	width: 330px;
+	height: 35px;
+	background: url(../img/regist-word.png);
+}
+.registerHeader-lg{
+	position: absolute;
+	right: 0;
+	bottom: 26px;
+	color: #696969;
+}
+.registerHeader-lg a{
+	color: #3894ea;
+}
+.registerHeader-lg a:hover{
+	text-decoration: underline;
+	color: #EC5051;
+}
+/*------主体部分--------------------------------------------------------------------*/
+.main-register{
+	margin: 0 auto;
+	overflow: hidden;
+}
+.mainRegister-pic{
+	float: left;
+	padding: 64px 105px 64px 65px;
+}
+.mainRegister-formtext{
+	float: right;
+	width: 570px;
+	height: 505px;
+	min-height: 475px;
+	border: 1px solid #dad6d6;
+	padding-bottom: 20px;
+	box-shadow: -2px 0 1px #e9e7e7,2px 0 1px #e9e7e7,0 -2px 1px #e9e7e7,0 2px 1px #e9e7e7;
+	margin: 28px 2px 2px 2px;
+}
+.registerForm{
+	padding: 25px 0 0 35px;
+}
+.registerForm .tab{
+	overflow: hidden;
+}
+.registerForm .tab li{
+	float: left;
+	font-size: 16px;
+	color: #727171;
+	height: 42px;
+	line-height: 40px;
+	padding: 0 38px;
+	border-bottom: 2px solid #fff;
+	cursor: pointer;
+}
+.registerForm .tab li.curr{
+	border-bottom-color: #ec5151;
+	color: #333;
+}
+.registerTxet{
+	overflow: hidden;
+}
+.registerForm .all-item{
+	padding-top: 20px;
+}
+.registerForm .item{
+	position: relative;
+	width: 280px;
+	float: left;
+	padding-top: 20px;
+	overflow: hidden;
+}
+.registerForm .error{
+	color: #ec5151;
+	margin-left: 16px;
+	height: 40px;
+	line-height: 40px;
+	padding-left: 20px;
+	position: relative;
+	float: left;
+	width: 200px;
+	margin-left: 10px;
+	padding-top: 20px;
+	display: none;
+}
+.registerForm .success{
+	margin-left: 16px;
+	height: 40px;
+	line-height: 40px;
+	padding-left: 20px;
+	position: relative;
+	float: left;
+	width: 200px;
+	margin-left: 10px;
+	padding-top: 20px;
+	display: none;
+}
+ .success .success-span{
+	top: 31px;
+	left: 13;
+	background: url(../img/login_icons_new.png) no-repeat;
+	width: 16px;
+	height: 18px;
+	position: absolute;
+}
+.success .success-span{
+ 	background-position: -25px -2px;
+}
+.registerForm .error i{
+	top: 30px;
+	left: 0;
+	background-position: -3px -2px;
+	background: url(../img/login_icons_new.png) no-repeat;
+	width: 16px;
+	height: 18px;
+	position: absolute;
+}
+.registerForm .item .text{
+	width: 238px;
+	height: 18px;
+	padding: 10px 25px 10px 15px;
+	border: 1px solid #c9c9c9;
+	font-size: 14px;
+	float: left;
+}
+
+.registerForm .item i{
+	position: absolute;
+	top: 30px;
+	right: 8px;
+	background: url(../img/login_icons_new.png) no-repeat;
+	width: 16px;
+	height: 18px;
+	position: absolute;
+}
+.registerForm .item .item-i1{
+	background-position: -27px -25px;
+}
+.registerForm .item .item-i2{
+	background-position: -77px -3px;
+}
+.registerForm .item .item-i3{
+	background-position: -25px -48px;
+}
+.registerForm .item .item-i4{
+	background-position: -25px -48px;
+}
+.registerForm .item .item-i5{
+	background-position: -77px -23px;
+}
+.registerForm .item-info{
+	position: relative;
+	width: 280px;
+	float: left;
+	margin: 20px 0;
+}
+
+.registerForm .item .text-1{
+	padding: 5px 15px 5px 15px;
+	width: 100px;
+	height: 24px;
+	float: left;
+	font-size: 14px;
+	color: #333;
+}
+.registerForm .item .zphone{
+	width: 122px;
+    height: 36px;
+    line-height: 36px;
+    border: 1px solid #a0a0a0;
+    color: #727171;
+    text-align: center;
+    border-radius: 5px;
+    float: left;
+    margin: 0px 0 0 10px;
+}
+
+
+.checkbox, .checkbox1{
+	float: left;
+	margin-top: 14px;
+	color: #3a78bf;
+}
+.registerForm .item-info .hoel{
+	height: 40px;
+	line-height: 40px;
+	float: left;
+	padding-left: 0px;
+	cursor: pointer;
+	width: 200px;
+	margin-left: 5px;
+	cursor: pointer;
+	position: relative;
+	display: block;
+}
+.registerForm .item-info .hoel .agreement{
+	color: #3a78bf;
+	display: inline-block;
+}
+.registerForm .item-info .hoel .agreement:hover{
+	color: #EC5151;
+}
+.registerForm .registerSubmit, .registerForm .registerSubmit1{
+	width: 278px;
+	height: 40px;
+	line-height: 40px;
+	color: #FFFFFF;
+	background: #ec5151;
+	font-size: 14px;
+	text-align: center;
+	border-radius: 5px;
+	border: 0;
+	outline: 0;
+	cursor: pointer;
+	display: block;
+}
+/*-------尾部---------------------------------------------------------------*/
+.registerFooter{
+	width: 100%;
+	border-top: 1px solid #CCCCCC;
+	margin-top: 40px;
+    text-align: center;
+    clear: both;
+    padding: 70px 0 0 0;
+    background: #fff;
+    position: relative;
+    bottom: 0;
+}
+.conFooter{
+	width: 1200px;
+	margin: 0 auto;
+	text-align: center;
+}
+.registerFooter .conFooter a:hover{
+	color: #EC5051;
+}
+.conFooter .footerFirst a{
+	padding: 0 5px;
+	display: inline-block;
+	color: #666;
+	line-height: 25px;
+}
+.conFooter .footerSecend a{
+	padding: 0 5px;
+	display: inline-block;
+	color: #666;
+	line-height: 20px;
+}
+.conFooter b, .conFooter b a{
+	line-height: 25px;
+	font-weight: 400;
+	color: #666;
+}
+.conFooter .footerThird{
+	color: #666;
+	line-height: 20px;
+}
+.conFooter .footerThird a{
+	color: #e23435;
+}
+.conFooter .footer-img{
+	padding-top: 10px;
+	opacity: 1;
+}
+.conFooter .footer-img a{
+	display: inline-block;
+	padding: 0 5px;
+	color: #666666;	
+}
+
+/*成功以后显示的框*/
+.bg{
+	position: fixed;
+	height: 100%;	
+	width:100% ;
+	top: 0%;
+	left: 0%;
+	background: #000000;
+	display: block;
+	opacity: 0.1;
+	z-index: 10;
+	display: none;
+}
+.showSuccess{
+	position: fixed;
+	z-index: 12;
+	top: 40%;
+	right: 50%;
+	margin-top: -40px;
+	margin-right: -150px;
+	display: block;
+	width: 300px;
+	height: 80px;
+	line-height: 80px;
+	font-size: 18px;
+	background: #000000;
+	opacity: .8;
+	border-radius: 20px;
+	text-align: center;
+	display: none;
+}
+.showSuccess a{
+	color: #EC5151;
+}

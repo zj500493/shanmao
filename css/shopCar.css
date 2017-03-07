@@ -1,0 +1,348 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+a{
+	text-decoration: none;
+}
+ul,li{
+	list-style: none;
+}
+body{
+	font-family: "微软雅黑";
+	font-size: 12px;
+}
+img{
+	border: 0;
+	display: block;
+}
+.clear{
+	clear: both;
+}
+
+/****************购物车中的东西*******************************/
+.contents{
+	width: 100%;
+	margin-top: 15px;
+	border-top: 1px solid #EC5051;
+	position: relative;
+}
+.content{
+	padding: 20px 0;
+	overflow: hidden;
+}
+.shopcar-logo{
+	 float: left;
+    height: 25px;
+    line-height: 25px;
+}
+.shopcar-logo .shopcar-car{
+	display: block;
+    float: left;
+    width: 26px;
+    height: 26px;
+    background: url(../img/ecsc_icon.png) -490px -196px no-repeat;
+    margin-left: 6px;
+}
+.shopcar-logo .shopcarH3{
+	 float: left;
+    font-size: 18px;
+    color: #727171;
+    font-weight: normal;
+    margin-left: 15px;
+}
+.mainner{
+	padding-bottom: 40px;
+	background: #FFFFFF;
+	overflow: hidden;
+}
+.shop-main{
+	position: relative;	
+}
+.row{
+	line-height: 40px;
+	padding: 5px 32px 5px 27px;
+	margin-bottom: 20px;
+	background: #eee;
+	height: 40px;
+}
+.cloumn{
+	float: left;
+}
+.all{
+	 width: 122px;
+    height: 40px;
+    text-align: left; 
+}
+.all label{
+	color: #333;
+	cursor: pointer;
+}
+.shop-name{
+	width: 236px;
+	height: 40px;
+	text-align: left;
+	padding-right: 79px;
+	line-height: 40px;
+	color: #666666;
+}
+.shop-attr{
+	width: 210px;
+	height: 40px;
+	text-align: left;
+}
+.shop-price{
+	width: 150px;
+	height: 40px;
+	text-align: left;
+}
+.shop-num{
+	 width: 140px;
+    height: 40px;
+    text-align: left;
+}
+.shop-sub{
+	width: 120px;
+	height: 40px;
+	text-align: left;
+}
+.shop-action{
+	width: 74px;
+	height: 40px;
+	text-align: left;
+}
+/******展示的商品页面*******/
+.cart-item-list{
+	margin-bottom: 20px;
+}
+.cart-tbody{
+	background: #FFFFFF;
+}
+.cart-tbody .shop{
+	height: 28px;
+	padding-left: 27px;
+	font-weight: bold;
+}
+.cart-tbody .shop a{
+	font-size: 12px;
+	line-height: 18px;
+	float: left;
+	color: #666;
+	font-weight: bold;
+}
+.item-body{
+	margin-bottom: 5px;
+	border: 1px solid #d2d2d2;
+	background: #FFFFFF;
+	float: left;
+	width: 1198px;
+}
+.item-item{
+	position: relative;
+	padding: 0 10px 1px 51px;
+	line-height: 20px;
+}
+.item-form{
+	display: block;
+}
+.item-form .p-checkbox{
+	position: absolute;
+	z-index: 3;
+	left: 26px;
+	top: 0;
+	top: 12px;
+	width: 13px;
+	min-height: 10px;
+}
+.item-form .p-img{
+	float: left;
+	width: 80px;
+	height: 80px;
+	border: 1px solid #eee;
+	margin-right: 16px;
+	background: #fff;
+	padding: 0;
+	text-align: center;
+	overflow: hidden;
+}
+.item-form .p-img img{
+	width: 80px;
+	height: 80px;
+	float: left;
+	vertical-align: middle;
+}
+.item-form .p-name{
+	width: auto;
+	height: auto;
+	line-height: 20px;
+	overflow: hidden;
+	width: 217px;
+	line-height: 20px;
+}
+.item-form .p-name a{
+	color: #666666;
+	line-height: 20px;
+}
+.item-form .p-name a:hover{
+	color: #EC5051;
+}
+.item-form .p-attr{
+	width: 148px;
+	margin-left: 90px;
+	position: relative;
+	border: 1px dashed transparent;
+}
+.item-form .p-price{
+	margin-left: 70px;
+    width: 120px;
+    color: #666;
+}
+.item-form .p-price span{
+	font-size: 18px;
+}
+.item-form .p-quantity{
+	width: 80px;
+	margin-left: 8px;
+	text-align: center;
+}
+.item-form .p-quantity .quantity-form{
+	position: relative;
+	overflow: hidden;
+	height: 22px;
+	width: 80px;
+	margin-top: 2px;
+}
+.item-form .p-quantity span{
+	border: 1px solid #cacbcb;
+	height: 18px;
+	line-height: 18px;
+	padding: 1px 0;
+	width: 25px;
+	text-align: center;
+	color: #666;
+	margin: 0;
+	background: #fff;
+	cursor: pointer;
+}
+.minus{
+	float: left;
+}
+.add{
+	float: right;
+}
+.item-form .p-quantity input{
+	position: absolute;
+	left: 25px;
+	top: 0;
+	border: 1px solid #cacbcb;
+	width: 26px;
+	height: 18px;
+	line-height: 18px;
+	text-align: center;
+	padding: 1px;
+	margin: 0;
+	font-size: 12px;
+	font-family: verdana;
+	color: #333;
+	-webkit-appearance: none;
+	outline: 0;
+}
+.item-form .p-sum{
+	width: 100px;
+	margin-left: 83px;
+	color: #EC5151;
+	font-size: 14px;
+}
+.item-form .p-sum .sums{
+	font-size: 14px;
+	font-weight: inherit;
+	display: inline-block;
+}
+.item-form .p-ops{
+	width: 76px;
+	margin-left: 23px;
+}
+.item-form .cell{
+	float: left;
+	padding: 15px 0 10px;
+}
+
+.carBottom{
+	margin-top: 10px;
+	position: relative;
+}
+.cart-toolbar{
+	width: 1198px;
+	height: 48px;
+	line-height: 48px;
+	border: 1px solid #f0f0f0;
+}
+.select-all{
+	padding-left: 27px;
+}
+.select-all label{
+	padding-left: 5px;
+}
+.clearshop{
+	margin-left: 130px;
+}
+.clearshop a{
+	color: #727171;
+}
+.clearshop a:hover{
+	color: #EC5051;
+}
+.select-shopnum{
+	margin-left: 400px;
+	color: #333333;
+}
+.select-shopnum .amount-sum{
+	display: inline-block;
+	width: 20px;
+	text-align: center;
+}
+.select-pricenum{
+	margin-left: 70px;
+	color: #333333;
+}
+.select-pricenum .amount-price{
+	color: #EC5051;
+	display: inline-block;
+	width: 40px;
+	text-align: center;
+}
+.select-payfor{
+	float: right;
+	width: 114px;
+	height: 50px;
+	line-height: 50px;
+	color: #fff;
+	text-align: center;
+	font-size: 18px;
+	background: #EC5051;
+	cursor: pointer;
+}
+
+
+/******购物车位空是弹出来的效果*****************/
+.car-empty{
+	height: 98px;
+	padding: 80px 0 120px;
+	color: #666;
+	display: none;
+}
+.car-empty .car-empty-text{
+	font-size: 14px;
+	line-height: 26px;
+	margin-left: 45%;
+	width: 160px;
+}
+.car-empty .car-empty-text span{
+	color: #EC5051;
+	display: block;
+	margin-left: 35%;
+	cursor: pointer;
+}
+.car-empty .car-empty-text span:hover{
+	text-decoration: underline;
+}

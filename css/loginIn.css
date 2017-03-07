@@ -1,0 +1,278 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+a{
+	text-decoration: none;
+}
+ul,li{
+	list-style: none;
+}
+body{
+	font-family: "微软雅黑";
+	font-size: 12px;
+}
+img{
+	border: 0;
+	display: block;
+}
+.clear{
+	clear: both;
+}
+/******头部*******************************************************************/
+.login-Top{
+	width: 100%;
+	padding: 50px 0;
+}
+.registerLogin{
+	width: 1200px;
+	height: 70px;
+	margin: 0 auto;
+	position: relative;
+}
+.logo{
+	display: block;
+	height: 70px;
+	width: 220px;
+	float: left;
+}
+.registerLogin b{
+	display: inline-block;
+	position: absolute;
+	top: 15px;
+	left: 255px;
+	width: 330px;
+	height: 35px;
+	background: url(../img/regist-word.png);
+}
+.longin-layout{
+	width: 100%;
+	height: auto;
+	position: relative;
+	background: rgb(226, 4, 89) none repeat scroll 0% 0%;
+}
+.login-banner{
+	height: 500px;
+	width: 1200px;
+	margin: 0 auto;
+	position: relative;
+}
+.longin-banner-img img{
+	width: 1200px;
+	height: 500px;
+}
+/**********登录的表单*********/
+.form-login{
+	width: 1200px;
+	height: 500px;
+	margin: 0 auto;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.login-wraps{
+	width: 300px;
+	position: absolute;
+	top: 70px;
+	right: 108px;
+	background: #FFFFFF;
+}
+#form{
+	padding: 20px 32px 10px;
+	position: relative;
+}
+#form .form-header{
+	height: 40px;
+	line-height: 40px;
+	width: 100%;
+	margin-bottom: 10px;
+}
+#form .form-header h2{
+	float: left;
+	font-size: 20px;
+	font-weight: 700;
+	color: #727171;
+}
+#form .form-header .jump{
+	float: right;
+	color: #3894ea;
+}
+#form .form-header .jump:hover{
+	text-decoration: underline;
+	color: #EC5051;
+}
+.form-body {
+	overflow: hidden;
+	width: 236px;
+}
+.form-body .item{
+	width: 100%;
+	padding-top: 20px;
+	overflow: hidden;
+	width: 236px;
+
+	position: relative;
+} 
+.form-body .item i{
+	width: 16px;
+	height: 18px;
+	background: url(../img/login_icons_new.png) no-repeat; 
+	position: absolute;
+	top: 10px;
+	left: 8px;
+}
+.form-body .item .form-iname{
+	background-position: -25px -25px;
+}
+.form-body .item .form-ipassword{
+	background-position: -25px -48px;
+	top: 30px;
+}
+.form-body .item input{
+	padding: 10px 10px 10px 30px;
+	width: 192px;
+}
+.safe{
+	margin-top: 10px;
+	height: 18px;
+}
+.safe #reader{
+	margin-right: 5px;
+	vertical-align: middle;
+}
+.safe label{
+	color: #666666;
+	line-height: 18px;
+}
+.form-body .item .forget-password{
+	margin: 13px 0 0 30px;
+	float: left;
+}
+.forget-password a{
+	color: #666666;
+}
+.forget-password a:hover{
+	color: #EC5151;
+}
+.form-body .item .login-btn{
+	float: right;
+	display: inline-block;
+	font-size: 18px;
+	color: #fff;
+	height: 40px;
+	line-height: 40px;
+	padding: 0 40px;
+	border-radius: 5px;
+	background: #ec5151;
+	border: 0;
+	cursor: pointer;
+	font-weight: normal;
+}
+.form-footer{
+	margin-top: 25px;
+	overflow: hidden;
+	line-height: 22px;
+}
+.form-footer h4{
+	font-weight: 400;
+	color: #9fa0a0;
+}
+.form-footer ul{
+	float: left;
+}
+.form-footer ul li{
+	float: left;
+	margin: 4px 6px 0 0;
+}
+.form-footer ul li a{
+	float: left;
+	display: inline-block;
+	background: url(../img/ecsc_icon.png) no-repeat;
+	width: 24px;
+	height: 24px;
+	background: auto;
+	border-radius: 100%;
+}
+/*.form-footer ul li .qq:hover {
+	background: #3894EA url(../img/ecsc_icon.png) no-repeat -306px -307px;
+}
+.form-footer ul li  .weixin:hover{
+	background: #EC5151 url(../img/ecsc_icon.png) no-repeat -369px -307px;
+}*/
+.form-footer ul li a.qq{
+	background-position: -306px -307px;
+}
+.form-footer ul li a.weixin{
+	background-position: -369px -307px;
+}
+
+/*-------尾部---------------------------------------------------------------*/
+.registerFooter{
+	width: 100%;
+	border-top: 1px solid #CCCCCC;
+    text-align: center;
+    clear: both;
+    padding: 70px 0 0 0;
+    background: #fff;
+    position: relative;
+    bottom: 0;
+    padding-bottom: 50px;
+}
+.registerFooter .conFooter a:hover{
+	color: #EC5051;
+}
+.conFooter{
+	width: 1200px;
+	margin: 0 auto;
+	text-align: center;
+}
+.conFooter .footerFirst a{
+	padding: 0 5px;
+	display: inline-block;
+	color: #666;
+	line-height: 25px;
+}
+.conFooter .footerSecend a{
+	padding: 0 5px;
+	display: inline-block;
+	color: #666;
+	line-height: 20px;
+}
+.conFooter b, .conFooter b a{
+	line-height: 25px;
+	font-weight: 400;
+	color: #666;
+}
+.conFooter .footerThird{
+	color: #666;
+	line-height: 20px;
+}
+.conFooter .footerThird a{
+	color: #e23435;
+}
+.conFooter .footer-img{
+	padding-top: 10px;
+	opacity: 1;
+}
+.conFooter .footer-img a{
+	display: inline-block;
+	padding: 0 5px;
+	color: #666666;
+}
+
+/*出错时候的弹出框*/
+.error{
+	padding: 50px;
+	background: #000000;
+	opacity: 0.8;
+	border-radius: 15px;
+	position: absolute;
+	top: 0;
+	left: 35%;
+	z-index: 2;
+	display: none;
+}
+.error a{
+	color: #EC5051;
+	font-size: 24px;
+}

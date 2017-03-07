@@ -1,0 +1,245 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+a{
+	text-decoration: none;
+}
+ul,li{
+	list-style: none;
+}
+body{
+	font-family: "微软雅黑";
+}
+.clear{
+	clear: both;
+}
+
+
+
+/*主体白色部分********************************************************************/
+.con-right{
+	width: 980px;
+	margin: 0 auto;
+	background: #fff;
+}
+.con-center{
+	width: 940px;
+	padding-top: 30px;
+	padding-bottom: 70px;
+	margin: 0 auto;
+}
+.con-center h3{
+	font-size: 17px;
+	color: #333;
+	height: 35px;
+	vertical-align: top;
+}
+.con-center h5{
+	font-size: 14px;
+	color: #888888;
+	height: 46px;
+	line-height: 46px;
+}
+
+
+
+/*收货信息的表单*/
+.con-center .receive{
+	width: 915px;
+	height: auto;
+	border: 1px solid #eee;
+	padding: 20px 0 25px 15px;
+}
+.receive p{
+	margin-top: 12px;
+}
+.checkbox{
+	color: #333;
+	font-size: 12px;
+}
+.receive .star{
+	color: red;
+}
+.receive-line{
+	font-size: 12px;
+	color: #666666;
+	margin-left: 72px;
+}
+.line1{
+	margin-left: 84px;
+}
+.line2{
+	margin-left: 96px;
+}
+.receive input{
+	padding-left: 11px;
+}
+.receive-person{
+	height: 28px;
+	width: 158px;
+}
+.receive-fullAddress{
+	width: 422px;
+	height: 38px;
+}
+.receive-postalcode{
+	height: 28px;
+	width: 98px;
+}
+.receive-phone{
+	width: 161px;
+	height: 28px;
+}
+.fix-phone1{
+	height: 28px;
+	width: 71px;
+}
+.fix-phone2{
+	height: 28px;
+	width: 101px;
+}
+.fix-phone3{
+	height: 28px;
+	width: 101px;
+}
+.receive h4{
+	height: 30px;
+	width: 120px;
+	background: #EC5151;
+	line-height: 30px;
+	text-align: center;
+	margin: 15px 0 0 140px;
+	border: 1px solid #fff;
+	border-radius: 5px;
+}
+.receive h4 a{
+	color: #fff;
+	font-size: 14px;
+}
+.fixed{
+	display: inline-block;
+	margin-left: 60px;
+}
+.fixed{
+	font-size: 12px;
+	color: #666666;
+}
+
+
+/*配送的表单*/
+.delivery{
+	width: 900px;
+	margin: 0 auto;
+    border: 1px solid #eee;
+    padding: 30px 0 15px 40px;
+}
+.delivery p{
+	margin-bottom: 15px;
+	font-size: 12px;
+	color: #666666;
+}
+.delivery option{
+	width: 50px;
+	height: 20px;
+}
+.delivery-ways{
+	width: 130px;
+	height: 28px;
+}
+.discount-coupon{
+	margin-left:12px ;
+}
+
+
+/*支付方式的框*/
+.payfor{
+	width: 925px;
+	margin: 0 auto;
+    border: 1px solid #eee;
+    padding: 5px 0 20px 15px;
+    overflow: hidden;
+}
+.payfor ul li{
+	float: left;
+	margin-right: 60px;
+	margin-top: 20px;
+}
+.payfor ul li img{
+	margin-left: 10px;
+}
+
+/*商品清单*/
+.goods-list{
+	width: 910px;
+	margin: 0 auto;
+    border: 1px solid #eee;
+    padding: 25px 15px 15px 15px;
+}
+.list-box{
+	height: 110px;
+	border-bottom: 1px dashed #eee;
+}
+.list-thing, .list-amount, .list-price{
+	float: left;
+	margin-left: 5px;
+	padding-left: 20px;
+	height: 100px;
+	width: 265px;
+	border: 1px solid #ccc;
+	text-align: center;
+}
+.list-thing{
+	
+}
+.list-amount{
+
+	line-height: 100px;
+}
+.list-price{
+	line-height: 100px;
+}
+.amount{
+	font-size: 12px;
+	color: #888888;
+	float: right;
+	margin-top: 20px;
+}
+
+/*提交清单*/
+.submit{
+	width: 940px;
+	height: 57px;
+	padding-top: 13px;
+	border-top: 3px solid #eee;
+	box-shadow: #666666;
+	border-left: 1px solid #eee;
+	border-right: 1px solid #eee;
+	border-bottom: 1px solid #fbfbfb;
+	border-radius: 5px;
+
+}
+.submit b{
+	font-size: 16px;
+	color: #888888;
+	font-weight: normal;
+	float: right;
+	margin-top: 9px;
+	margin-right: 16px;
+}
+.submit span{
+	font-size: 18px;
+	color: #EC5151;
+}
+.button{
+	border: 0;
+	border-radius: 3px;
+	width: 105px;
+	height: 40px;
+	background: #EC5151;
+	float: right;
+}
+.button a {
+	color: #fff;
+	font-size: 16px;
+}

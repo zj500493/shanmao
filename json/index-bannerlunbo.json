@@ -1,0 +1,14 @@
+{
+	"img1":{
+		"img":"../img/bannerLunBo1.jpg"		
+	},
+	"img2":{
+		"img":"../img/bannerLunBo2.jpg"	
+	},
+	"img3":{
+		"img":"../img/bannerLunBo3.jpg"	
+	},
+	"img4":{
+		"img":"../img/bannerLunBo4.jpg"	
+	}
+}

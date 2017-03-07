@@ -1,0 +1,3177 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>闪猫商城-你的一站式购物平台</title>
+		<link rel="shortcut icon" href="../img/index.gif" />
+		<link rel="stylesheet" href="../css/conHeaderFooter.css" />
+		<link rel="stylesheet" href="../css/index.css" />
+		<script type="text/javascript" src="../JS/jquery-1.12.4.min.js" ></script>
+		<script type="text/javascript" src="../JS/jquery.cookie.js" ></script>
+		<script type="text/javascript" src="../JS/indexJson.js" ></script>
+		<script type="text/javascript" src="../JS/index.js" ></script>
+		
+	</head>
+	<body>
+		<div class="first-nav">
+			<div class="conFirstNav">
+				<ul class="RightFirstNavUl">
+					<li id="city-choice">
+						<dt>
+							<span>送货至：</span>
+							<div>
+								<span class="city-choice-span">成都 <img src="../img/searchTab1.jpg" /> </span>
+							</div>
+						</dt>
+					</li>
+				</ul>
+				<div class="LonginAndRegister">
+					<a href="loginIn.html" class="login">请登录</a>
+					<a href="register.html" class="register">注册</a>
+				</div>
+				<ul class="LeftFirstNavUl">
+					<li><div id="dt"><a href="#">我的订单</a></div></li>
+					<li class="spacer"></li>
+					<li><div id="dt"><a href="#">我的浏览</a></div></li>
+					<li class="spacer"></li>
+					<li><div id="dt"><a href="#">我的收藏</a></div></li>
+					<li class="spacer"></li>
+					<li><div id="dt"><a href="#">客户服务</a></div></li>
+					<li class="spacer"></li>
+					<li class="li_dropdown">
+						<div id="dt">
+							<a href="#">促销活动</a>
+							<span class="spacer1"> > </span>
+						</div>
+						
+						<div class="dropdown">
+							<ul>
+								<li><a href="#">拍卖活动</a></li>
+								<li><a href="#">优惠活动</a></li>
+								<li><a href="#">批发市场</a></li>
+								<li><a href="#">超值礼包</a></li>
+							</ul>	
+						</div>
+					</li>
+					<script>
+						$(function(){
+							$(".li_dropdown").hover(function(){
+								$(this).css("background", "#FFFFFF");
+								$(".dropdown").stop().show();
+							},function(){
+								$(this).css("background", "#efefef");
+								$(".dropdown").stop().hide();
+							});
+						});
+					</script>
+				</ul>
+				<div class="shopcar">
+					<i class="shopcar-left"><img src="../img/shopcar1.jpg"></i>
+					<span class="shopcar-center">0</span>
+					<i class="shopcar-right"> > </i>
+					<a href="shopCar.html">购物车</a>
+				</div>
+			</div>
+		</div>
+		
+		<!------定位在右边的黑色部分--------------------------------------------------------->
+		<div class="panne1">
+			<div class="quick_links">
+				<ul>
+					<li><a href="##"><i class="setting"></i></a></li>
+					<li id="shopCart">
+						<a href="##" class="cart_list">
+							<i class="message"></i>
+							<span class="cart_num">0</span>
+							<div class="span">购物车</div>
+						</a>	
+					</li>
+					<li class="panne1-li">
+                       <a href="##">
+                       		<i class="zhongzhi"></i>
+                       </a>
+                       <div class="div1">我的订单</div>
+                    </li>
+                    <li class="panne1-li">
+                    	<a href="##">
+                      	 	<i class="view"></i>
+                       </a>
+                        <div class="div2">我的资产</div>
+                    </li>
+                    <li class="panne1-li">
+                    	<a href="##">
+                       		<i class="zuji"></i>
+                       </a>
+                        <div class="div3">我的足迹</div>
+                    </li>
+                    <li>
+                    	<a href="##">
+                       		<i class="wdsc"></i>
+                       </a>
+                      
+                    </li>
+				</ul>
+				<div class="pannel-bottom">
+					<ul>
+						<li>
+							<a href="##" class="return_top">
+								<i class="top"></i>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!------主要部分的头部----------------------------------------------------------------->
+		<div class="header w1200">
+			<div class="headerLogo">
+				<a href="#" class="logo"><img src="../img/logo.gif"/></a>
+			</div>
+			<div class="headerJoin">
+				<a href="#" class="logo"><img src="../img/ecsc-join.gif"/></a>
+			</div>
+			<div class="headerSearch">
+				<form id="searchForm">
+					<div class="searchTab">
+						<i><img src="../img/searchTab1.jpg"></i>
+						<ul class="searchFormUl">
+							<li class="searchFormLi">
+								<span>商品</span>
+							</li>
+							<li class="curr">
+								<span>店铺</span>
+							</li>
+						</ul>
+					</div>
+					<input type="text" class="searchForm-input" placeholder="周大福" id="search"/>
+					<div id="tip">
+						<ul id="tipList">
+							<!-- <li>aaa</li>
+							<li>aaa</li>
+							<li>aaa</li>
+							<li>aaa</li>
+							<li>aaa</li>
+							<li>aaa</li>
+							<li>aaa</li>
+							<li>aaa</li>
+							<li>aaa</li>
+							<li>aaa</li>-->
+						</ul>
+					</div>
+					<button class="searchForm-button">
+						<i><img src="../img/searchForm-buttonImg.jpg"></i>
+					</button>
+				</form>
+				<div class="keyword">
+					<ul>
+						<li><a href="#">周大福</a></li>
+						<li><a href="#">内衣</a></li>
+						<li><a href="#">Five Plus</a></li>
+						<li><a href="#" class="keywordFina">手机</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="headerRight">
+				<a href="index.html" target="_blank" class="font">
+					<img src="../img/headerRight.jpg" />
+				</a>
+				
+			</div>
+		</div>
+		<div class="clear"></div>
+		<!--------导航栏----------------------------------------------------------->
+		<div class="nav">
+			<div class="w1200">
+				<div class="nav-left">
+					<div class="dt">
+						<a href="#" target="_blank">全部商品分类</a>
+					</div>
+					<div class="dd">
+						<div class="cata-nav">
+							<div class="item fore1">
+								<div class="item-left">
+									<div class="cata-nav-name">
+										<h3>
+											<a href="#">家用电器</a>
+										</h3>
+										<b>></b>
+									</div>
+								</div>
+								<!---------三级菜单----------------->
+								<div class="nav-layer">
+									<div class="cata-nav-left">
+										<div class="item-channels">
+											<div class="channel">
+												<a href="##">品牌日<i>></i></a>
+												<a href="##">家电城<i>></i></a>
+												<a href="##">智能生活馆<i>></i></a>
+												<a href="##">京东净化馆<i>></i></a>
+												<a href="##">京东帮服务店<i>></i></a>
+												<a href="##">值得买精选<i>></i></a>	
+											</div>
+										</div>
+										<div class="subitems">
+											<dl class="dl_fore1">
+												<dt>
+													<a href="##">大家电<i>></i></a>
+												</dt>
+												<dd>
+													<a href="##">平板电视</a>
+													<a href="##">平板电视</a>
+													<a href="##">平板电视</a>
+													<a href="##">平板电视</a>
+													<a href="##">平板电视</a>
+													<a href="##">平板电视</a>
+													<a href="##">平板电视</a>
+													<a href="##">平板电视</a>
+													<a href="##">平板电视</a>
+												</dd>
+											</dl>
+											<dl class="dl_fore2">
+												<dt>
+													<a href="##">生活电器<i>></i></a>
+												</dt>
+												<dd>
+													<a href="##">平板电视</a>
+													<a href="##">平板电视</a>
+													<a href="##">平板电视</a>
+													<a href="##">平板电视</a>
+													<a href="##">平板电视</a>
+													<a href="##">平板电视</a>
+													<a href="##">平板电视</a>
+													<a href="##">平板电视</a>
+													<a href="##">平板电视</a>
+													<a href="##">平板电视</a>
+													<a href="##">平板电视</a>
+													<a href="##">平板电视</a>
+													<a href="##">平板电视</a>
+												</dd>
+											</dl>
+											<dl class="dl_fore2">
+												<dt>
+													<a href="##">厨房电器<i>></i></a>
+												</dt>
+												<dd>
+													<a href="##">平板电视</a>
+													<a href="##">平板电视</a>
+													<a href="##">平板电视</a>
+													<a href="##">平板电视</a>
+													<a href="##">平板电视</a>
+													<a href="##">平板电视</a>
+													<a href="##">平板电视</a>
+													<a href="##">平板电视</a>
+													<a href="##">平板电视</a>
+													<a href="##">平板电视</a>
+													<a href="##">平板电视</a>
+													<a href="##">平板电视</a>
+													<a href="##">平板电视</a>
+												</dd>
+											</dl>
+											<dl class="dl_fore2">
+												<dt>
+													<a href="##">个护健康<i>></i></a>
+												</dt>
+												<dd>
+													<a href="##">平板电视</a>
+													<a href="##">平板电视</a>
+													<a href="##">平板电视</a>
+													<a href="##">平板电视</a>
+													<a href="##">平板电视</a>
+													<a href="##">平板电视</a>
+													<a href="##">平板电视</a>
+													<a href="##">平板电视</a>
+													<a href="##">平板电视</a>
+													<a href="##">平板电视</a>
+													<a href="##">平板电视</a>
+													<a href="##">平板电视</a>
+													<a href="##">平板电视</a>
+												</dd>
+											</dl>
+											<dl class="dl_fore2">
+												<dt>
+													<a href="##">五金家装<i>></i></a>
+												</dt>
+												<dd>
+													<a href="##">平板电视</a>
+													<a href="##">平板电视</a>
+													<a href="##">平板电视</a>
+													<a href="##">平板电视</a>
+													<a href="##">平板电视</a>
+													<a href="##">平板电视</a>
+													<a href="##">平板电视</a>
+													<a href="##">平板电视</a>
+													<a href="##">平板电视</a>
+													<a href="##">平板电视</a>
+													<a href="##">平板电视</a>
+													<a href="##">平板电视</a>
+													<a href="##">平板电视</a>
+												</dd>
+											</dl>
+										</div>
+									</div>
+								</div>
+								<!-------------------------------->
+							</div>
+							
+							<div class="item fore2">
+								<div class="item-left">
+									<div class="cata-nav-name">
+										<h3>
+											<a href="#">手机</a>、
+											<a href="#">数码</a>、
+											<a href="#">通信</a>
+										</h3>
+										<b>></b>
+									</div>
+								</div>
+								<!---------三级菜单----------------->
+								<div class="nav-layer">
+									<div class="cata-nav-left">
+										<div class="item-channels">
+											<div class="channel">
+												<a href="##">品牌日<i>></i></a>
+												<a href="##">家电城<i>></i></a>
+												<a href="##">智能生活馆<i>></i></a>
+												<a href="##">京东净化馆<i>></i></a>
+												<a href="##">京东帮服务店<i>></i></a>
+												<a href="##">值得买精选<i>></i></a>	
+											</div>
+										</div>
+										<div class="subitems">
+											<dl class="dl_fore1">
+												<dt>
+													<a href="##">大家电<i>></i></a>
+												</dt>
+												<dd>
+													<a href="##">洗衣机冰箱</a>
+													<a href="##">洗衣机冰箱</a>
+													<a href="##">洗衣机冰箱</a>
+													<a href="##">洗衣机冰箱</a>
+													<a href="##">洗衣机冰箱</a>
+													<a href="##">洗衣机冰箱</a>
+													<a href="##">平板电视</a>
+													<a href="##">洗衣机冰箱</a>
+													<a href="##">平板电视</a>
+												</dd>
+											</dl>
+											<dl class="dl_fore2">
+												<dt>
+													<a href="##">生活电器<i>></i></a>
+												</dt>
+												<dd>
+													<a href="##">洗衣机冰箱</a>
+													<a href="##">洗衣机冰箱</a>
+													<a href="##">洗衣机冰箱</a>
+													<a href="##">洗衣机冰箱</a>
+													<a href="##">洗衣机冰箱</a>
+													<a href="##">洗衣机冰箱</a>
+													<a href="##">洗衣机冰箱</a>
+													<a href="##">洗衣机冰箱</a>
+													<a href="##">洗衣机冰箱</a>
+													<a href="##">洗衣机冰箱</a>
+													<a href="##">洗衣机冰箱</a>
+													<a href="##">洗衣机冰箱</a>
+													<a href="##">洗衣机冰箱</a>
+												</dd>
+											</dl>
+											<dl class="dl_fore2">
+												<dt>
+													<a href="##">厨房电器<i>></i></a>
+												</dt>
+												<dd>
+													<a href="##">洗衣机冰箱</a>
+													<a href="##">平板电视</a>
+													<a href="##">洗衣机冰箱</a>
+													<a href="##">平板电视</a>
+													<a href="##">洗衣机冰箱</a>
+													<a href="##">平板电视</a>
+													<a href="##">平板电视</a>
+													<a href="##">平板电视</a>
+													<a href="##">洗衣机冰箱</a>
+													<a href="##">洗衣机冰箱</a>
+													<a href="##">平板电视</a>
+													<a href="##">洗衣机冰箱</a>
+													<a href="##">平板电视</a>
+												</dd>
+											</dl>
+											<dl class="dl_fore2">
+												<dt>
+													<a href="##">个护健康<i>></i></a>
+												</dt>
+												<dd>
+													<a href="##">平板电视</a>
+													<a href="##">洗衣机冰箱洗衣机冰箱</a>
+													<a href="##">平板电视</a>
+													<a href="##">洗衣机冰箱</a>
+													<a href="##">平板电视</a>
+													<a href="##">平板电视</a>
+													<a href="##">洗衣机冰箱</a>
+													<a href="##">平板电视</a>
+													<a href="##">平板电视</a>
+													<a href="##">洗衣机冰箱</a>
+													<a href="##">平板电视</a>
+													<a href="##">平板电视</a>
+													<a href="##">洗衣机冰箱</a>
+												</dd>
+											</dl>
+											<dl class="dl_fore2">
+												<dt>
+													<a href="##">五金家装<i>></i></a>
+												</dt>
+												<dd>
+													<a href="##">洗衣机冰箱</a>
+													<a href="##">洗衣机冰箱洗衣机冰箱洗衣机冰箱</a>
+													<a href="##">平板电视</a>
+													<a href="##">平板电视</a>
+													<a href="##">平板电视</a>
+													<a href="##">洗衣机冰箱</a>
+													<a href="##">平板电视</a>
+													<a href="##">洗衣机冰箱</a>
+													<a href="##">平板电视</a>
+													<a href="##">洗衣机冰箱</a>
+													<a href="##">平板电视</a>
+													<a href="##">平板电视</a>
+													<a href="##">平板电视</a>
+												</dd>
+											</dl>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="item fore3">
+								<div class="item-left">
+									<div class="cata-nav-name">
+										<h3>
+											<a href="#">电脑</a>、
+											<a href="#">办公</a>
+										</h3>
+										<b>></b>
+									</div>
+								</div>
+								<!---------三级菜单----------------->
+								<div class="nav-layer">
+									<div class="cata-nav-left">
+										<div class="item-channels">
+											<div class="channel">
+												<a href="##">品牌日<i>></i></a>
+												<a href="##">家电城<i>></i></a>
+												<a href="##">智能生活馆<i>></i></a>
+												<a href="##">京东净化馆<i>></i></a>
+												<a href="##">京东帮服务店<i>></i></a>
+												<a href="##">值得买精选<i>></i></a>	
+											</div>
+										</div>
+										<div class="subitems">
+											<dl class="dl_fore1">
+												<dt>
+													<a href="##">大家电<i>></i></a>
+												</dt>
+												<dd>
+													<a href="##">3</a>
+													<a href="##">3</a>
+													<a href="##">3</a>
+													<a href="##">3</a>
+													<a href="##">3</a>
+													<a href="##">3</a>
+													<a href="##">3</a>
+													<a href="##">3</a>
+													<a href="##">3</a>
+												</dd>
+											</dl>
+											<dl class="dl_fore2">
+												<dt>
+													<a href="##">生活电器<i>></i></a>
+												</dt>
+												<dd>
+													<a href="##">3</a>
+													<a href="##">3</a>
+													<a href="##">3</a>
+													<a href="##">3</a>
+													<a href="##">3</a>
+													<a href="##">平板电视</a>
+													<a href="##">3</a>
+													<a href="##">3</a>
+													<a href="##">平板电视</a>
+													<a href="##">平板电视</a>
+													<a href="##">3</a>
+													<a href="##">平板电视</a>
+													<a href="##">3</a>
+												</dd>
+											</dl>
+											<dl class="dl_fore2">
+												<dt>
+													<a href="##">厨房电器<i>></i></a>
+												</dt>
+												<dd>
+													<a href="##">3</a>
+													<a href="##">平板电视</a>
+													<a href="##">3</a>
+													<a href="##">3</a>
+													<a href="##">平板电视</a>
+													<a href="##">3</a>
+													<a href="##">平板电视</a>
+													<a href="##">3</a>
+													<a href="##">平板电视</a>
+													<a href="##">平板电视</a>
+													<a href="##">3</a>
+													<a href="##">平板电视</a>
+													<a href="##">3</a>
+												</dd>
+											</dl>
+											<dl class="dl_fore2">
+												<dt>
+													<a href="##">个护健康<i>></i></a>
+												</dt>
+												<dd>
+													<a href="##">平板3电视</a>
+													<a href="##">平板电视</a>
+													<a href="##">3</a>
+													<a href="##">3</a>
+													<a href="##">平板电视</a>
+													<a href="##">3</a>
+													<a href="##">平板电视</a>
+													<a href="##">3</a>
+													<a href="##">平板电视</a>
+													<a href="##">3</a>
+													<a href="##">3</a>
+													<a href="##">平板电视</a>
+													<a href="##">3</a>
+												</dd>
+											</dl>
+											<dl class="dl_fore2">
+												<dt>
+													<a href="##">五金家装<i>></i></a>
+												</dt>
+												<dd>
+													<a href="##">平板电视</a>
+													<a href="##">3</a>
+													<a href="##">3</a>
+													<a href="##">平板电视</a>
+													<a href="##">3</a>
+													<a href="##">3</a>
+													<a href="##">平板电视</a>
+													<a href="##">3</a>
+													<a href="##">3</a>
+													<a href="##">平板电视</a>
+													<a href="##">3</a>
+													<a href="##">3</a>
+													<a href="##">3</a>
+												</dd>
+											</dl>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="item fore4">
+								<div class="item-left">
+									<div class="cata-nav-name">
+										<h3>
+											<a href="#">家居、</a>
+											<a href="#">家具、</a>
+											<a href="#">家装、</a>
+											<a href="#">厨具</a>
+										</h3>
+										<b>></b>
+									</div>
+								</div>
+								<!---------三级菜单----------------->
+								<div class="nav-layer">
+									<div class="cata-nav-left">
+										<div class="item-channels">
+											<div class="channel">
+												<a href="##">品牌日<i>></i></a>
+												<a href="##">家电城<i>></i></a>
+												<a href="##">智能生活馆<i>></i></a>
+												<a href="##">京东净化馆<i>></i></a>
+												<a href="##">京东帮服务店<i>></i></a>
+												<a href="##">值得买精选<i>></i></a>	
+											</div>
+										</div>
+										<div class="subitems">
+											<dl class="dl_fore1">
+												<dt>
+													<a href="##">大家电<i>></i></a>
+												</dt>
+												<dd>
+													<a href="##">444</a>
+													<a href="##">444</a>
+													<a href="##">44</a>
+													<a href="##">平板电视</a>
+													<a href="##">44</a>
+													<a href="##">44</a>
+													<a href="##">平板电视</a>
+													<a href="##">4</a>
+													<a href="##">4</a>
+												</dd>
+											</dl>
+											<dl class="dl_fore2">
+												<dt>
+													<a href="##">生活电器<i>></i></a>
+												</dt>
+												<dd>
+													<a href="##">444</a>
+													<a href="##">平板电视</a>
+													<a href="##">平板电视</a>
+													<a href="##">平板电视</a>
+													<a href="##">4444444444</a>
+													<a href="##">平板电视</a>
+													<a href="##">44</a>
+													<a href="##">44444444</a>
+													<a href="##">平板电视</a>
+													<a href="##">44444444444</a>
+													<a href="##">平板电视</a>
+													<a href="##">444444</a>
+													<a href="##">44</a>
+												</dd>
+											</dl>
+											<dl class="dl_fore2">
+												<dt>
+													<a href="##">厨房电器<i>></i></a>
+												</dt>
+												<dd>
+													<a href="##">平板电视</a>
+													<a href="##">444</a>
+													<a href="##">平板电视</a>
+													<a href="##">平板电视</a>
+													<a href="##">444</a>
+													<a href="##">平板电视</a>
+													<a href="##">44</a>
+													<a href="##">44</a>
+													<a href="##">平板电视</a>
+													<a href="##">44</a>
+													<a href="##">平板电视</a>
+													<a href="##">44444</a>
+													<a href="##">44</a>
+												</dd>
+											</dl>
+											<dl class="dl_fore2">
+												<dt>
+													<a href="##">个护健康<i>></i></a>
+												</dt>
+												<dd>
+													<a href="##">4</a>
+													<a href="##">平板电视</a>
+													<a href="##">4</a>
+													<a href="##">平板电视</a>
+													<a href="##">4</a>
+													<a href="##">平板电视</a>
+													<a href="##">4</a>
+													<a href="##">平板电视</a>
+													<a href="##">4</a>
+													<a href="##">平板电视</a>
+													<a href="##">4</a>
+													<a href="##">平板电视</a>
+													<a href="##">4</a>
+												</dd>
+											</dl>
+											<dl class="dl_fore2">
+												<dt>
+													<a href="##">五金家装<i>></i></a>
+												</dt>
+												<dd>
+													<a href="##">平板电视</a>
+													<a href="##">4</a>
+													<a href="##">4</a>
+													<a href="##">平板电视</a>
+													<a href="##">平板电视</a>
+													<a href="##">4</a>
+													<a href="##">平板电视</a>
+													<a href="##">4</a>
+													<a href="##">平板电视</a>
+													<a href="##">4</a>
+													<a href="##">平板电视</a>
+													<a href="##">4</a>
+													<a href="##">4</a>
+												</dd>
+											</dl>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="item fore5">
+								<div class="item-left">
+									<div class="cata-nav-name">
+										<h3>
+											<a href="#">男装、</a>
+											<a href="#">女装、</a>
+											<a href="#">内衣</a>
+										</h3>
+										<b>></b>
+									</div>
+								</div>
+								<!---------三级菜单----------------->
+								<div class="nav-layer">
+									<div class="cata-nav-left">
+										<div class="item-channels">
+											<div class="channel">
+												<a href="##">品牌日<i>></i></a>
+												<a href="##">家电城<i>></i></a>
+												<a href="##">智能生活馆<i>></i></a>
+												<a href="##">京东净化馆<i>></i></a>
+												<a href="##">京东帮服务店<i>></i></a>
+												<a href="##">值得买精选<i>></i></a>	
+											</div>
+										</div>
+										<div class="subitems">
+											<dl class="dl_fore1">
+												<dt>
+													<a href="##">大家电<i>></i></a>
+												</dt>
+												<dd>
+													<a href="##">555</a>
+													<a href="##">55</a>
+													<a href="##">平板电视</a>
+													<a href="##">55</a>
+													<a href="##">平板电视</a>
+													<a href="##">55</a>
+													<a href="##">55</a>
+													<a href="##">平板电视</a>
+													<a href="##">5</a>
+												</dd>
+											</dl>
+											<dl class="dl_fore2">
+												<dt>
+													<a href="##">生活电器<i>></i></a>
+												</dt>
+												<dd>
+													<a href="##">5555555</a>
+													<a href="##">平板电视</a>
+													<a href="##">5555555555555555555</a>
+													<a href="##">平板电视</a>
+													<a href="##">55</a>
+													<a href="##">平板电视</a>
+													<a href="##">5</a>
+													<a href="##">5</a>
+													<a href="##">平板电视</a>
+													<a href="##">5</a>
+													<a href="##">平板电视</a>
+													<a href="##">5</a>
+													<a href="##">5</a>
+												</dd>
+											</dl>
+											<dl class="dl_fore2">
+												<dt>
+													<a href="##">厨房电器<i>></i></a>
+												</dt>
+												<dd>
+													<a href="##">5</a>
+													<a href="##">平板电视</a>
+													<a href="##">5</a>
+													<a href="##">平板电视</a>
+													<a href="##">5</a>
+													<a href="##">平板电视</a>
+													<a href="##">5</a>
+													<a href="##">平板5电视</a>
+													<a href="##">5</a>
+													<a href="##">平板电视</a>
+													<a href="##">平板55电视</a>
+													<a href="##">5</a>
+													<a href="##">5</a>
+												</dd>
+											</dl>
+											<dl class="dl_fore2">
+												<dt>
+													<a href="##">个护健康<i>></i></a>
+												</dt>
+												<dd>
+													<a href="##">5</a>
+													<a href="##">平板电视</a>
+													<a href="##">5555555</a>
+													<a href="##">平板电视</a>
+													<a href="##">55</a>
+													<a href="##">平板电视</a>
+													<a href="##">55</a>
+													<a href="##">5</a>
+													<a href="##">5</a>
+													<a href="##">5</a>
+													<a href="##">5</a>
+													<a href="##">5</a>
+													<a href="##">5</a>
+												</dd>
+											</dl>
+											<dl class="dl_fore2">
+												<dt>
+													<a href="##">五金家装<i>></i></a>
+												</dt>
+												<dd>
+													<a href="##">5</a>
+													<a href="##">平板电视</a>
+													<a href="##">5</a>
+													<a href="##">5</a>
+													<a href="##">平板电视</a>
+													<a href="##">5</a>
+													<a href="##">平板电视</a>
+													<a href="##">平板电视</a>
+													<a href="##">5</a>
+													<a href="##">5</a>
+													<a href="##">5</a>
+													<a href="##">5</a>
+													<a href="##">5</a>
+												</dd>
+											</dl>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="item fore6">
+								<div class="item-left">
+									<div class="cata-nav-name">
+										<h3>
+											<a href="#">鞋靴、</a>
+											<a href="#">箱包、</a>
+											<a href="#">钟表、</a>
+											<a href="#">奢侈品</a>
+										</h3>
+										<b>></b>
+									</div>
+								</div>
+							</div>
+							<div class="item fore7">
+								<div class="item-left">
+									<div class="cata-nav-name">
+										<h3>
+											<a href="#">个人化妆、</a>
+											<a href="#">清洁用品</a>
+										</h3>
+										<b>></b>
+									</div>
+								</div>
+							</div>
+							<div class="item fore8">
+								<div class="item-left">
+									<div class="cata-nav-name">
+										<h3>
+											<a href="#">母婴、</a>
+											<a href="#">玩具乐器</a>
+										</h3>
+										<b>></b>
+									</div>
+								</div>
+							</div>
+							<div class="item fore9">
+								<div class="item-left">
+									<div class="cata-nav-name">
+										<h3>
+											<a href="#">图书、</a>
+											<a href="#">音响、</a>
+											<a href="#">电子书</a>
+										</h3>
+										<b>></b>
+									</div>
+								</div>
+							</div>
+							<div class="item fore10">
+								<div class="item-left">
+									<div class="cata-nav-name">
+										<h3>
+											<a href="#">休闲、</a>
+											<a href="#">运动、</a>
+											<a href="#">户外健身</a>
+										</h3>
+										<b>></b>
+									</div>
+								</div>
+							</div>
+							<div class="item fore11">
+								<div class="item-left">
+									<div class="cata-nav-name">
+										<h3>
+											<a href="#">腕表、</a>
+											<a href="#">珠宝配饰、</a>
+											<a href="#">眼镜</a>
+										</h3>
+										<b>></b>
+									</div>
+								</div>
+							</div>
+							<div class="item fore12">
+								<div class="item-left">
+									<div class="cata-nav-name">
+										<h3>
+											<a href="#">汽车、</a>
+											<a href="#">汽车用品</a>
+										</h3>
+										<b>></b>
+									</div>
+								</div>
+							</div>
+							<div class="item fore13">
+								<div class="item-left">
+									<div class="cata-nav-name">
+										<h3>
+											<a href="#">食品</a>
+											<a href="#">酒类</a>
+											<a href="#">生鲜</a>
+											<a href="#">特产</a>
+										</h3>
+										<b>></b>
+									</div>
+								</div>
+							</div>
+							<div class="item fore14">
+								<div class="item-left">
+									<div class="cata-nav-name">
+										<h3>
+											<a href="#">营养保健</a>
+										</h3>
+										<b>></b>
+									</div>
+								</div>
+							</div>
+							<div class="item fore15">
+								<div class="item-left">
+									<div class="cata-nav-name">
+										<h3>
+											<a href="#">保健滋补</a>
+											<a href="#">医药</a>
+											<a href="#">成人</a>
+										</h3>
+										<b>></b>
+									</div>
+								</div>
+							</div>
+							<div class="item fore16">
+								<div class="item-left">
+									<div class="cata-nav-name">
+										<h3>
+											<a href="#">礼品</a>
+											<a href="#">卡</a>
+											<a href="#">旅游</a>
+											<a href="#">充值</a>
+										</h3>
+										<b>></b>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="nav-right">
+					<ul>
+						<li>
+							<a href="#" class="selected">首页</a>
+						</li>
+						<li>
+							<a href="#">食品特产</a>
+						</li>
+						<li>
+							<a href="#">服装城</a>
+						</li>
+						<li>
+							<a href="#">大家电</a>
+						</li>
+						<li>
+							<a href="#">品牌专区</a>
+						</li>
+						<li>
+							<a href="#">团购</a>
+						</li>
+						<li>
+							<a href="#">夺宝奇兵</a>
+						</li>
+						<li>
+							<a href="#">积分商城</a>
+						</li>
+						<li>
+							<a href="#">预售频道</a>
+						</li>
+						<li>
+							<a href="#">店铺街</a>
+						</li>
+					</ul>
+					<div class="wrap-line">
+						
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!--------banner部分--------------------------------------------->
+		
+		<div class="banner">
+			<div class="banner-box">
+				<!---------轮播图部分-------------->
+				<div class="bd">
+						<div id="box1">
+							<ul class="containner">
+								<li>
+									<a href="#">	
+									</a>
+								</li>
+								<li>
+									<a href="#">										
+									</a>
+								</li>
+								<li>
+									<a href="#">
+									</a>
+								</li>
+								<li>
+									<a href="#">	
+									</a>
+								</li>
+								<div class="circle">
+									<span class="on1"></span>
+									<span></span>
+									<span></span>
+									<span></span>
+								</div>
+							</ul>
+						</div>
+				</div>
+				<!------------------------------>
+				<div class="scsc-wrap">
+					<div class="wufenglunbo">
+						<div class="wf-lunbo">
+							<ul class="wf-tab">
+								<li>
+									<a href="#">
+										
+									</a>
+									<a href="#">
+										
+									</a>
+									<a href="#">
+										
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										
+									</a>
+									<a href="#">
+										
+									</a>
+									<a href="#">
+										
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										
+									</a>
+									<a href="#">
+										
+									</a>
+									<a href="#">
+										
+									</a>
+								</li>
+							</ul>
+						</div>
+						<div  class="wf-prev"><</div>
+						<div  class="wf-next">></div>
+					</div>
+					<div class="right-banner">
+						<div class="rightBuy">
+							<h3>限时抢购</h3>
+							<div class="rightBuy-bottom">
+								<div class="tempwrap">
+									<ul>
+										<li>
+											<div class="time" data-time="2020-07-07 17:00:00">
+												<span class="days"></span>天
+												<span class="hours"></span>时
+												<span class="minutes"></span>分
+												<span class="secends"></span>秒
+											</div>
+											<div class="buy-img">
+												<a href="#">
+													<img src="../img/buy-img.jpg" />
+												</a>
+											</div>
+											<div class="buy-name">
+												<a href="#">
+													乐视超级电视 S40 Air L 全配版 三星屏 高配 40英寸智能LED液晶网络智
+													能电视 官方标配+无线游戏手柄
+												</a>
+											</div>
+											<div class="buy-price">
+												<span class="shop-price">
+													<em>￥</em>
+													115.00
+												</span>
+												<span class="original-price">
+													<del>￥1350.00</del>
+												</span>
+											</div>
+											<div class="buy-btn">
+												<a href="#" class="btn" target="_blank">立即抢 > </a>
+												<div class="buy-num">1人已抢购</div>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="proclamation">
+							<ul class="proclamation-tab">
+								<li class="on">商城公告</li>
+								<li>招商入驻</li>
+							</ul>
+							<div class="tabs">
+								<div class="tabs-first">
+									<ul>
+										<li><a href="#">官方使用提示信息</a>[2014-03-19]
+											
+										</li>
+										<li><a href="#">整合说明</a>[2014-03-19]
+											
+										</li>
+										<li><a href="#">管理功能说明</a>	[2014-03-19]
+										
+										</li>
+										<li><a href="#">联系方式</a>	[2014-03-19]
+											
+										</li>
+										<li><a href="#">火爆销售中</a>	[2014-03-19]
+											
+										</li>
+									</ul>
+								</div>
+								<div class="tabs-first" style="display: none;">
+									<div class="shopPeople">
+										<a href="#" class="store-join-btn"></a>
+										<a href="#" class="store-join-help">查看开店协议</a>
+									</div>
+								</div>
+							</div>							
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!----content部分------------------------------------------>
+		<!-----louti--------------------->
+		<div id="loutiNav">
+			<ul>
+				<li>1F<span>鞋靴</span></li>
+				<li>2F<span>箱包</span></li>
+				<li>3F<span>钟表</span></li>
+				<li>4F<span>美酒</span></li>
+				<li>顶部</li>
+			</ul>
+		</div>
+		<div class="content">
+			<div class="con-content w1200">
+				<div class="contentFirst">
+					<div class="contentFirst-left">
+						<div class="contentFirst-tab">
+							<ul class="contentFirst-tab-ul">
+								<li class="on">热门推荐<i></i></li>
+								<li>疯狂抢购<i></i></li>
+								<li>商城推荐<i></i></li>
+								<li>热评商品<i></i></li>
+							</ul>
+						</div>
+						<div class="contentFirst-picture">
+							<div class="dom1">
+								<ul class="dom1-ul">
+									<li>
+										<div class="dom1-img">
+											<a href="#"></a>
+										</div>
+										<div class="dom1-name">
+											<a href="#"></a>
+										</div>
+										<div class="dom1-price">
+											<span class="shop-price"></span>
+											<span class="original-price"></span>
+										</div>
+									</li>
+									<li>
+										<div class="dom1-img">
+											<a href="#"></a>
+										</div>
+										<div class="dom1-name">
+											<a href="#"></a>
+										</div>
+										<div class="dom1-price">
+											<span class="shop-price"></span>
+											<span class="original-price"></span>
+										</div>
+									</li>
+									<li>
+										<div class="dom1-img">
+											<a href="#"></a>
+										</div>
+										<div class="dom1-name">
+											<a href="#"></a>
+										</div>
+										<div class="dom1-price">
+											<span class="shop-price"></span>
+											<span class="original-price"></span>
+										</div>
+									</li>
+									<li>
+										<div class="dom1-img">
+											<a href="#"></a>
+										</div>
+										<div class="dom1-name">
+											<a href="#"></a>
+										</div>
+										<div class="dom1-price">
+											<span class="shop-price"></span>
+											<span class="original-price"></span>
+										</div>
+									</li>
+									<li>
+										<div class="dom1-img">
+											<a href="#"></a>
+										</div>
+										<div class="dom1-name">
+											<a href="#"></a>
+										</div>
+										<div class="dom1-price">
+											<span class="shop-price"></span>
+											<span class="original-price"></span>
+										</div>
+									</li>
+									<li>
+										<div class="dom1-img">
+											<a href="#"></a>
+										</div>
+										<div class="dom1-name">
+											<a href="#"></a>
+										</div>
+										<div class="dom1-price">
+											<span class="shop-price"></span>
+											<span class="original-price"></span>
+										</div>
+									</li>
+									<li>
+										<div class="dom1-img">
+											<a href="#"></a>
+										</div>
+										<div class="dom1-name">
+											<a href="#"></a>
+										</div>
+										<div class="dom1-price">
+											<span class="shop-price"></span>
+											<span class="original-price"></span>
+										</div>
+									</li>	
+								</ul>
+								<div class="dom1-prev"> < </div>
+								<div class="dom1-next"> > </div>
+							</div>
+							<div class="dom2">
+								<ul class="dom1-ul">
+									<li>
+										<div class="dom1-img">
+											<a href="#"></a>
+										</div>
+										<div class="dom1-name">
+											<a href="#"></a>
+										</div>
+										<div class="dom1-price">
+											<span class="shop-price"></span>
+											<span class="original-price"></span>
+										</div>
+									</li>	
+									<li>
+										<div class="dom1-img">
+											<a href="#"></a>
+										</div>
+										<div class="dom1-name">
+											<a href="#"></a>
+										</div>
+										<div class="dom1-price">
+											<span class="shop-price"></span>
+											<span class="original-price"></span>
+										</div>
+									</li>	
+									<li>
+										<div class="dom1-img">
+											<a href="#"></a>
+										</div>
+										<div class="dom1-name">
+											<a href="#"></a>
+										</div>
+										<div class="dom1-price">
+											<span class="shop-price"></span>
+											<span class="original-price"></span>
+										</div>
+									</li>	
+									<li>
+										<div class="dom1-img">
+											<a href="#"></a>
+										</div>
+										<div class="dom1-name">
+											<a href="#"></a>
+										</div>
+										<div class="dom1-price">
+											<span class="shop-price"></span>
+											<span class="original-price"></span>
+										</div>
+									</li>	
+									<li>
+										<div class="dom1-img">
+											<a href="#"></a>
+										</div>
+										<div class="dom1-name">
+											<a href="#"></a>
+										</div>
+										<div class="dom1-price">
+											<span class="shop-price"></span>
+											<span class="original-price"></span>
+										</div>
+									</li>	
+									<li>
+										<div class="dom1-img">
+											<a href="#"></a>
+										</div>
+										<div class="dom1-name">
+											<a href="#"></a>
+										</div>
+										<div class="dom1-price">
+											<span class="shop-price"></span>
+											<span class="original-price"></span>
+										</div>
+									</li>	
+									<li>
+										<div class="dom1-img">
+											<a href="#"></a>
+										</div>
+										<div class="dom1-name">
+											<a href="#"></a>
+										</div>
+										<div class="dom1-price">
+											<span class="shop-price"></span>
+											<span class="original-price"></span>
+										</div>
+									</li>	
+								</ul>
+								<div class="dom1-prev"> < </div>
+								<div class="dom1-next"> > </div>
+							</div>
+							<div class="dom3">
+								<ul class="dom1-ul">
+									<li>
+										<div class="dom1-img">
+											<a href="#"></a>
+										</div>
+										<div class="dom1-name">
+											<a href="#"></a>
+										</div>
+										<div class="dom1-price">
+											<span class="shop-price"></span>
+											<span class="original-price"></span>
+										</div>
+									</li>	
+									<li>
+										<div class="dom1-img">
+											<a href="#"></a>
+										</div>
+										<div class="dom1-name">
+											<a href="#"></a>
+										</div>
+										<div class="dom1-price">
+											<span class="shop-price"></span>
+											<span class="original-price"></span>
+										</div>
+									</li>	
+									<li>
+										<div class="dom1-img">
+											<a href="#"></a>
+										</div>
+										<div class="dom1-name">
+											<a href="#"></a>
+										</div>
+										<div class="dom1-price">
+											<span class="shop-price"></span>
+											<span class="original-price"></span>
+										</div>
+									</li>	
+									<li>
+										<div class="dom1-img">
+											<a href="#"></a>
+										</div>
+										<div class="dom1-name">
+											<a href="#"></a>
+										</div>
+										<div class="dom1-price">
+											<span class="shop-price"></span>
+											<span class="original-price"></span>
+										</div>
+									</li>	
+									<li>
+										<div class="dom1-img">
+											<a href="#"></a>
+										</div>
+										<div class="dom1-name">
+											<a href="#"></a>
+										</div>
+										<div class="dom1-price">
+											<span class="shop-price"></span>
+											<span class="original-price"></span>
+										</div>
+									</li>	
+									<li>
+										<div class="dom1-img">
+											<a href="#"></a>
+										</div>
+										<div class="dom1-name">
+											<a href="#"></a>
+										</div>
+										<div class="dom1-price">
+											<span class="shop-price"></span>
+											<span class="original-price"></span>
+										</div>
+									</li>	
+									<li>
+										<div class="dom1-img">
+											<a href="#"></a>
+										</div>
+										<div class="dom1-name">
+											<a href="#"></a>
+										</div>
+										<div class="dom1-price">
+											<span class="shop-price"></span>
+											<span class="original-price"></span>
+										</div>
+									</li>	
+								</ul>
+								<div class="dom1-prev"> < </div>
+								<div class="dom1-next"> > </div>
+							</div>
+							<div class="dom4">
+								<ul class="dom1-ul">
+									<li>
+										<div class="dom1-img">
+											<a href="#"></a>
+										</div>
+										<div class="dom1-name">
+											<a href="#"></a>
+										</div>
+										<div class="dom1-price">
+											<span class="shop-price"></span>
+											<span class="original-price"></span>
+										</div>
+									</li>	
+									<li>
+										<div class="dom1-img">
+											<a href="#"></a>
+										</div>
+										<div class="dom1-name">
+											<a href="#"></a>
+										</div>
+										<div class="dom1-price">
+											<span class="shop-price"></span>
+											<span class="original-price"></span>
+										</div>
+									</li>	
+									<li>
+										<div class="dom1-img">
+											<a href="#"></a>
+										</div>
+										<div class="dom1-name">
+											<a href="#"></a>
+										</div>
+										<div class="dom1-price">
+											<span class="shop-price"></span>
+											<span class="original-price"></span>
+										</div>
+									</li>	
+									<li>
+										<div class="dom1-img">
+											<a href="#"></a>
+										</div>
+										<div class="dom1-name">
+											<a href="#"></a>
+										</div>
+										<div class="dom1-price">
+											<span class="shop-price"></span>
+											<span class="original-price"></span>
+										</div>
+									</li>	
+									<li>
+										<div class="dom1-img">
+											<a href="#"></a>
+										</div>
+										<div class="dom1-name">
+											<a href="#"></a>
+										</div>
+										<div class="dom1-price">
+											<span class="shop-price"></span>
+											<span class="original-price"></span>
+										</div>
+									</li>	
+									<li>
+										<div class="dom1-img">
+											<a href="#"></a>
+										</div>
+										<div class="dom1-name">
+											<a href="#"></a>
+										</div>
+										<div class="dom1-price">
+											<span class="shop-price"></span>
+											<span class="original-price"></span>
+										</div>
+									</li>	
+									<li>
+										<div class="dom1-img">
+											<a href="#"></a>
+										</div>
+										<div class="dom1-name">
+											<a href="#"></a>
+										</div>
+										<div class="dom1-price">
+											<span class="shop-price"></span>
+											<span class="original-price"></span>
+										</div>
+									</li>	
+								</ul>
+								<div class="dom1-prev"> < </div>
+								<div class="dom1-next"> > </div>
+							</div>
+						</div>	
+					</div>
+					<div class="contentFirst-right">
+						<div>
+							<div id="dom2">
+								<ul id="dom2-ul">
+									<li>
+										<a href="#">
+											<img class="lazy" src="../img/dom2-img1.jpg" />
+										</a>
+										<div class="dom2-time">
+											<div class="dom2-cdTime">
+												<span class="days"></span>天
+												<span class="hours"></span>时
+												<span class="minutes"></span>分
+												<span class="secends"></span>秒
+											</div>
+										</div>
+									</li>
+									<li>
+										<a href="#">
+											<img class="lazy" src="../img/dom2-img2.jpg" />
+										</a>
+										<div class="dom2-time">
+											<div class="dom2-cdTime">
+												<span class="days">10</span>天
+												<span class="hours">10</span>时
+												<span class="minutes">10</span>分
+												<span class="secends">10</span>秒
+											</div>
+										</div>
+									</li>
+									<li>
+										<a href="#">
+											<img class="lazy" src="../img/dom2-img3.jpg" />
+										</a>
+										<div class="dom2-time">
+											<div class="dom2-cdTime">
+												<span class="days">10</span>天
+												<span class="hours">10</span>时
+												<span class="minutes">10</span>分
+												<span class="secends">10</span>秒
+											</div>
+										</div>
+									</li>
+								</ul>
+								<div class="dom2-prev"> < </div>
+								<div class="dom2-next"> > </div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="content-brand w1200">
+				<div class="in-title">
+					<span class="in-title-p">R</span>
+					<a href="#" class="in-title-text">品牌街</a>
+				</div>
+				<div class="brand-wraps">
+					<div class="brand-logos">
+						<ul class="brand-logos-ul">
+							<li>
+								<a href="#">
+									
+								</a>
+							</li>
+							<li>
+								<a href="#">
+								
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									
+								</a>
+							</li>
+							<li>
+								<a href="#">
+								
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="brand-tab">
+						<div id="dom3">
+							<ul id="dom3-ul">
+								<li><a href="#"></a></li>
+								<li><a href="#"></a></li>
+								<li><a href="#"></a></li>
+								<li><a href="#"></a></li>
+							</ul>
+							<div class="dom3-rail">
+								<ul class="dom3-rail-ul">
+									<li class="on2">1</li>
+									<li>2</li>
+									<li>3</li>
+									<li>4</li>
+								</ul>
+							</div>
+						</div>	
+					</div>
+				</div>
+			</div>
+			<!---------陈列所有物品，楼梯----------------------------------------------------->
+			<div class="goods-cat-level">
+				<!--------------第一层------------------------------->
+				<div class="floor-startPicture">
+					<div class="floor-startPictureImg w1200">
+						<a href="#">
+							
+						</a>
+					</div>
+				</div>
+				<div class="floor w1200" id="floor_1">
+					<div class="floor-title">
+						<h2>
+							<b class="floor-icon">1F</b>
+							<span class="floor-title-span" rev="8">鞋靴、箱包、钟表、奢侈品</span>
+						</h2>
+						<ul class="floorTab">
+							<li class="floorTab-li">
+								奢侈品
+								<span class="floorTab-span" style="width: 44px;"></span>
+							</li>
+							<li class="floorTab-li">
+								功能箱包
+								<span  class="floorTab-span" style="width: 60px;"></span>
+							</li>
+						</ul>
+					</div>
+					<div class="floor-content">
+						<div class="floor-left">
+							<!--轮播---------------->
+							<div class="floor-left-banner">
+								<ul class="floor-tab1">
+									<li>
+										<a href="#">
+											
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											
+										</a>
+									</li>
+									<li>
+										<a href="#">
+			
+										</a>
+									</li>
+								</ul>
+								<div class="hd">
+									<ul class="hd-ul">
+										<li class="on3">1</li>
+										<li>2</li>
+										<li>3</li>
+										<li>4</li>
+									</ul>
+								</div>
+							</div>
+							<!--二级菜单-------------->
+							<div class="banner-nav">
+								<ul class="banner-nav-ul">
+									<li class="banner-nav-li">
+										<a href="#" class="banner-nav-a">奢侈品</a>
+										<i class="banner-nav-i">></i>
+									</li>
+									<li class="banner-nav-li">
+										<a href="#" class="banner-nav-a">功能箱包</a>
+										<i class="banner-nav-i">></i>
+									</li>
+									<li class="banner-nav-li">
+										<a href="#" class="banner-nav-a">流行男鞋</a>
+										<i class="banner-nav-i">></i>
+									</li>
+									<li class="banner-nav-li">
+										<a href="#" class="banner-nav-a">精品男包</a>
+										<i class="banner-nav-i">></i>
+									</li>
+									<li class="banner-nav-li">
+										<a href="#" class="banner-nav-a">奢侈品</a>
+										<i class="banner-nav-i">></i>
+									</li>
+									<li class="banner-nav-li">
+										<a href="#" class="banner-nav-a">奢侈品</a>
+										<i class="banner-nav-i">></i>
+									</li>
+									<li class="banner-nav-li">
+										<a href="#" class="banner-nav-a">时尚女鞋</a>
+										<i class="banner-nav-i">></i>
+									</li>
+									<li class="banner-nav-li">
+										<a href="#" class="banner-nav-a">礼品</a>
+										<i class="banner-nav-i">></i>
+									</li>
+									<li class="banner-nav-li">
+										<a href="#" class="banner-nav-a">潮流女包</a>
+										<i class="banner-nav-i">></i>
+									</li>
+									<li class="banner-nav-li">
+										<a href="#" class="banner-nav-a">钟表</a>
+										<i class="banner-nav-i">></i>
+									</li>
+								</ul>
+							</div>
+							<!--轮播切换----------------->
+							<div class="floor-left-tab">
+								<div class="floor-tab-list">
+									<ul class="floor-tab-ul">
+										<li class="floor-tab-li">
+											<a href="#">
+												<img src="../img/floor-left-tab1.jpg"/>
+											</a>
+										</li>
+										<li class="floor-tab-li">
+											<a href="#">
+												<img src="../img/floor-left-tab1.jpg"/>
+											</a>
+										</li>
+										<li class="floor-tab-li">
+											<a href="#">
+												<img src="../img/floor-left-tab1.jpg"/>
+											</a>
+										</li>
+										<li class="floor-tab-li">
+											<a href="#">
+												<img src="../img/floor-left-tab1.jpg"/>
+											</a>
+										</li>
+										<li class="floor-tab-li">
+											<a href="#">
+												<img src="../img/floor-left-tab1.jpg"/>
+											</a>
+										</li>
+									</ul>
+									<ul class="floor-tab-ul">
+										<li class="floor-tab-li">
+											<a href="#">
+												<img src="../img/floor-left-tab2.jpg"/>
+											</a>
+										</li>
+										<li class="floor-tab-li">
+											<a href="#">
+												<img src="../img/floor-left-tab2.jpg"/>
+											</a>
+										</li>
+										<li class="floor-tab-li">
+											<a href="#">
+												<img src="../img/floor-left-tab2.jpg"/>
+											</a>
+										</li>
+										<li class="floor-tab-li">
+											<a href="#">
+												<img src="../img/floor-left-tab2.jpg"/>
+											</a>
+										</li>
+										<li class="floor-tab-li">
+											<a href="#">
+												<img src="../img/floor-left-tab2.jpg"/>
+											</a>
+										</li>
+									</ul>
+								</div>							
+								<div class="prev"> < </div>
+								<div class="next"> > </div>
+							</div>
+						</div>
+						<!-------所有的图片---------------->
+						<div class="floor-right">
+							<ul class="floor-right-ul">
+								<li class="f-li">
+									<div class="f-img">
+										<a href="#">
+											
+										</a>
+									</div>
+									<div class="f-name">
+										<a href="#">
+										
+										</a>
+									</div>
+									<div class="f-price">
+										<span class="shop-price">
+											
+										</span>
+										<span class="original-price">
+										
+										</span>
+									</div>
+								</li>
+								<li class="f-li">
+									<div class="f-img">
+										<a href="#">
+											
+										</a>
+									</div>
+									<div class="f-name">
+										<a href="#">
+											
+										</a>
+									</div>
+									<div class="f-price">
+										<span class="shop-price">
+											
+										</span>
+										<span class="original-price">
+											
+										</span>
+									</div>
+								</li>
+								<li class="f-li">
+									<div class="f-img">
+										<a href="#">
+										
+										</a>
+									</div>
+									<div class="f-name">
+										<a href="#">
+											
+										</a>
+									</div>
+									<div class="f-price">
+										<span class="shop-price">
+											
+										</span>
+										<span class="original-price">
+										
+										</span>
+									</div>
+								</li>
+								<li class="f-li">
+									<div class="f-img">
+										<a href="#">
+											
+										</a>
+									</div>
+									<div class="f-name">
+										<a href="#">
+										
+										</a>
+									</div>
+									<div class="f-price">
+										<span class="shop-price">
+											
+										</span>
+										<span class="original-price">
+											
+										</span>
+									</div>
+								</li>
+								<li class="f-li">
+									<div class="f-img">
+										<a href="#">
+											
+										</a>
+									</div>
+									<div class="f-name">
+										<a href="#">
+											
+										</a>
+									</div>
+									<div class="f-price">
+										<span class="shop-price">
+											
+										</span>
+										<span class="original-price">
+										
+										</span>
+									</div>
+								</li>
+								<li class="f-li">
+									<div class="f-img">
+										<a href="#">
+											
+										</a>
+									</div>
+									<div class="f-name">
+										<a href="#">
+											
+										</a>
+									</div>
+									<div class="f-price">
+										<span class="shop-price">
+										
+										</span>
+										<span class="original-price">
+									
+										</span>
+									</div>
+								</li>
+								<li class="f-li">
+									<div class="f-img">
+										<a href="#">
+											
+										</a>
+									</div>
+									<div class="f-name">
+										<a href="#">
+											
+										</a>
+									</div>
+									<div class="f-price">
+										<span class="shop-price">
+										
+										</span>
+										<span class="original-price">
+										
+										</span>
+									</div>
+								</li>
+								<li class="f-li">
+									<div class="f-img">
+										<a href="#">
+											
+										</a>
+									</div>
+									<div class="f-name">
+										<a href="#">
+											
+										</a>
+									</div>
+									<div class="f-price">
+										<span class="shop-price">
+										
+										</span>
+										<span class="original-price">
+											
+										</span>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<!--------------第二层------------------------------->
+				<div class="floor-startPicture">
+					<div class="floor-startPictureImg w1200">
+						<a href="#">
+							
+						</a>
+					</div>
+				</div>
+				<div class="floor w1200" id="floor_2">
+					<div class="floor-title">
+						<h2>
+							<b class="floor-icon">2F</b>
+							<span class="floor-title-span" rev="8">鞋靴、箱包、钟表、奢侈品</span>
+						</h2>
+						<ul class="floorTab">
+							<li class="floorTab-li">
+								奢侈品
+								<span class="floorTab-span" style="width: 44px;"></span>
+							</li>
+							<li class="floorTab-li">
+								功能箱包
+								<span  class="floorTab-span" style="width: 60px;"></span>
+							</li>
+						</ul>
+					</div>
+					<div class="floor-content">
+						<div class="floor-left">
+							<div class="floor-left-banner"></div>
+							<div class="banner-nav">
+								<ul class="banner-nav-ul">
+									<li class="banner-nav-li">
+										<a href="#" class="banner-nav-a">奢侈品</a>
+										<i class="banner-nav-i">></i>
+									</li>
+									<li class="banner-nav-li">
+										<a href="#" class="banner-nav-a">功能箱包</a>
+										<i class="banner-nav-i">></i>
+									</li>
+									<li class="banner-nav-li">
+										<a href="#" class="banner-nav-a">流行男鞋</a>
+										<i class="banner-nav-i">></i>
+									</li>
+									<li class="banner-nav-li">
+										<a href="#" class="banner-nav-a">精品男包</a>
+										<i class="banner-nav-i">></i>
+									</li>
+									<li class="banner-nav-li">
+										<a href="#" class="banner-nav-a">奢侈品</a>
+										<i class="banner-nav-i">></i>
+									</li>
+									<li class="banner-nav-li">
+										<a href="#" class="banner-nav-a">奢侈品</a>
+										<i class="banner-nav-i">></i>
+									</li>
+									<li class="banner-nav-li">
+										<a href="#" class="banner-nav-a">时尚女鞋</a>
+										<i class="banner-nav-i">></i>
+									</li>
+									<li class="banner-nav-li">
+										<a href="#" class="banner-nav-a">礼品</a>
+										<i class="banner-nav-i">></i>
+									</li>
+									<li class="banner-nav-li">
+										<a href="#" class="banner-nav-a">潮流女包</a>
+										<i class="banner-nav-i">></i>
+									</li>
+									<li class="banner-nav-li">
+										<a href="#" class="banner-nav-a">钟表</a>
+										<i class="banner-nav-i">></i>
+									</li>
+								</ul>
+							</div>
+							<div class="floor-left-tab">
+								<ul class="floor-tab-ul">
+									<li class="floor-tab-li">
+										<a href="#">
+											<img src="../img/floor-left-tab1.jpg"/>
+										</a>
+									</li>
+									<li class="floor-tab-li">
+										<a href="#">
+											<img src="../img/floor-left-tab2.jpg"/>
+										</a>
+									</li>
+								</ul>
+								<ul class="floor-tab-ul">
+									<li class="floor-tab-li">
+										<a href="#">
+											<img src="../img/floor-left-tab1.jpg"/>
+										</a>
+									</li>
+									<li class="floor-tab-li">
+										<a href="#">
+											<img src="../img/floor-left-tab2.jpg"/>
+										</a>
+									</li>
+								</ul>
+								<div class="prev"> < </div>
+								<div class="next"> > </div>
+							</div>
+						</div>
+						<div class="floor-right">
+							<ul class="floor-right-ul">
+								<li class="f-li">
+									<div class="f-img">
+										<a href="#">
+											<img src="../img/floorRightUlImg2.jpg" />
+										</a>
+									</div>
+									<div class="f-name">
+										<a href="#">
+											爱华仕oiwas 荷兰风车大容量旅行男女休闲双肩14寸15.6寸电脑背包4000黑色
+										</a>
+									</div>
+									<div class="f-price">
+										<span class="shop-price">
+											<em>￥</em>83.80
+										</span>
+										<span class="original-price">
+											<del>￥118.80</del>
+										</span>
+									</div>
+								</li>
+								<li class="f-li">
+									<div class="f-img">
+										<a href="#">
+											<img src="../img/floorRightUlImg1.jpg" />
+										</a>
+									</div>
+									<div class="f-name">
+										<a href="#">
+											国产鞋子
+										</a>
+									</div>
+									<div class="f-price">
+										<span class="shop-price">
+											<em>￥</em> 83.80
+										</span>
+										<span class="original-price">
+											<del>￥118.80</del>
+										</span>
+									</div>
+								</li>
+								<li class="f-li">
+									<div class="f-img">
+										<a href="#">
+											<img src="../img/floorRightUlImg3.jpg" />
+										</a>
+									</div>
+									<div class="f-name">
+										<a href="#">
+											爱华仕oiwas 荷兰风车大容量旅行男女休闲双肩14寸15.6寸电脑背包4000黑色
+										</a>
+									</div>
+									<div class="f-price">
+										<span class="shop-price">
+											<em>￥</em> 83.80
+										</span>
+										<span class="original-price">
+											<del>￥118.80</del>
+										</span>
+									</div>
+								</li>
+								<li class="f-li">
+									<div class="f-img">
+										<a href="#">
+											<img src="../img/floorRightUlImg4.jpg" />
+										</a>
+									</div>
+									<div class="f-name">
+										<a href="#">
+											爱华仕oiwas 荷兰风车大容量旅行男女休闲双肩14寸15.6寸电脑背包4000黑色
+										</a>
+									</div>
+									<div class="f-price">
+										<span class="shop-price">
+											<em>￥</em> 83.80
+										</span>
+										<span class="original-price">
+											<del>￥118.80</del>
+										</span>
+									</div>
+								</li>
+								<li class="f-li">
+									<div class="f-img">
+										<a href="#">
+											<img src="../img/floorRightUlImg5.jpg" />
+										</a>
+									</div>
+									<div class="f-name">
+										<a href="#">
+											爱华仕oiwas 荷兰风车大容量旅行男女休闲双肩14寸15.6寸电脑背包4000黑色
+										</a>
+									</div>
+									<div class="f-price">
+										<span class="shop-price">
+											<em>￥</em> 83.80
+										</span>
+										<span class="original-price">
+											<del>￥118.80</del>
+										</span>
+									</div>
+								</li>
+								<li class="f-li">
+									<div class="f-img">
+										<a href="#">
+											<img src="../img/floorRightUlImg6.jpg" />
+										</a>
+									</div>
+									<div class="f-name">
+										<a href="#">
+											爱华仕oiwas 荷兰风车大容量旅行男女休闲双肩14寸15.6寸电脑背包4000黑色
+										</a>
+									</div>
+									<div class="f-price">
+										<span class="shop-price">
+											<em>￥</em> 83.80
+										</span>
+										<span class="original-price">
+											<del>￥118.80</del>
+										</span>
+									</div>
+								</li>
+								<li class="f-li">
+									<div class="f-img">
+										<a href="#">
+											<img src="../img/floorRightUlImg7.jpg" />
+										</a>
+									</div>
+									<div class="f-name">
+										<a href="#">
+											爱华仕oiwas 荷兰风车大容量旅行男女休闲双肩14寸15.6寸电脑背包4000黑色
+										</a>
+									</div>
+									<div class="f-price">
+										<span class="shop-price">
+											<em>￥</em> 83.80
+										</span>
+										<span class="original-price">
+											<del>￥118.80</del>
+										</span>
+									</div>
+								</li>
+								<li class="f-li">
+									<div class="f-img">
+										<a href="#">
+											<img src="../img/floorRightUlImg8.jpg" />
+										</a>
+									</div>
+									<div class="f-name">
+										<a href="#">
+											爱华仕oiwas 荷兰风车大容量旅行男女休闲双肩14寸15.6寸电脑背包4000黑色
+										</a>
+									</div>
+									<div class="f-price">
+										<span class="shop-price">
+											<em>￥</em> 83.80
+										</span>
+										<span class="original-price">
+											<del>￥118.80</del>
+										</span>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<!--------------第三层------------------------------->
+				<div class="floor-startPicture">
+					<div class="floor-startPictureImg w1200">
+						<a href="#">
+							
+						</a>
+					</div>
+				</div>
+				<div class="floor w1200" id="floor_3">
+					<div class="floor-title">
+						<h2>
+							<b class="floor-icon">3F</b>
+							<span class="floor-title-span" rev="8">鞋靴、箱包、钟表、奢侈品</span>
+						</h2>
+						<ul class="floorTab">
+							<li class="floorTab-li">
+								奢侈品
+								<span class="floorTab-span" style="width: 44px;"></span>
+							</li>
+							<li class="floorTab-li">
+								功能箱包
+								<span  class="floorTab-span" style="width: 60px;"></span>
+							</li>
+						</ul>
+					</div>
+					<div class="floor-content">
+						<div class="floor-left">
+							<div class="floor-left-banner"></div>
+							<div class="banner-nav">
+								<ul class="banner-nav-ul">
+									<li class="banner-nav-li">
+										<a href="#" class="banner-nav-a">奢侈品</a>
+										<i class="banner-nav-i">></i>
+									</li>
+									<li class="banner-nav-li">
+										<a href="#" class="banner-nav-a">功能箱包</a>
+										<i class="banner-nav-i">></i>
+									</li>
+									<li class="banner-nav-li">
+										<a href="#" class="banner-nav-a">流行男鞋</a>
+										<i class="banner-nav-i">></i>
+									</li>
+									<li class="banner-nav-li">
+										<a href="#" class="banner-nav-a">精品男包</a>
+										<i class="banner-nav-i">></i>
+									</li>
+									<li class="banner-nav-li">
+										<a href="#" class="banner-nav-a">奢侈品</a>
+										<i class="banner-nav-i">></i>
+									</li>
+									<li class="banner-nav-li">
+										<a href="#" class="banner-nav-a">奢侈品</a>
+										<i class="banner-nav-i">></i>
+									</li>
+									<li class="banner-nav-li">
+										<a href="#" class="banner-nav-a">时尚女鞋</a>
+										<i class="banner-nav-i">></i>
+									</li>
+									<li class="banner-nav-li">
+										<a href="#" class="banner-nav-a">礼品</a>
+										<i class="banner-nav-i">></i>
+									</li>
+									<li class="banner-nav-li">
+										<a href="#" class="banner-nav-a">潮流女包</a>
+										<i class="banner-nav-i">></i>
+									</li>
+									<li class="banner-nav-li">
+										<a href="#" class="banner-nav-a">钟表</a>
+										<i class="banner-nav-i">></i>
+									</li>
+								</ul>
+							</div>
+							<div class="floor-left-tab">
+								<ul class="floor-tab-ul">
+									<li class="floor-tab-li">
+										<a href="#">
+											<img src="../img/floor-left-tab1.jpg"/>
+										</a>
+									</li>
+									<li class="floor-tab-li">
+										<a href="#">
+											<img src="../img/floor-left-tab2.jpg"/>
+										</a>
+									</li>
+								</ul>
+								<ul class="floor-tab-ul">
+									<li class="floor-tab-li">
+										<a href="#">
+											<img src="../img/floor-left-tab1.jpg"/>
+										</a>
+									</li>
+									<li class="floor-tab-li">
+										<a href="#">
+											<img src="../img/floor-left-tab2.jpg"/>
+										</a>
+									</li>
+								</ul>
+								<div class="prev"> < </div>
+								<div class="next"> > </div>
+							</div>
+						</div>
+						<div class="floor-right">
+							<ul class="floor-right-ul">
+								<li class="f-li">
+									<div class="f-img">
+										<a href="#">
+											<img src="../img/floorRightUlImg2.jpg" />
+										</a>
+									</div>
+									<div class="f-name">
+										<a href="#">
+											爱华仕oiwas 荷兰风车大容量旅行男女休闲双肩14寸15.6寸电脑背包4000黑色
+										</a>
+									</div>
+									<div class="f-price">
+										<span class="shop-price">
+											<em>￥</em>83.80
+										</span>
+										<span class="original-price">
+											<del>￥118.80</del>
+										</span>
+									</div>
+								</li>
+								<li class="f-li">
+									<div class="f-img">
+										<a href="#">
+											<img src="../img/floorRightUlImg1.jpg" />
+										</a>
+									</div>
+									<div class="f-name">
+										<a href="#">
+											国产鞋子
+										</a>
+									</div>
+									<div class="f-price">
+										<span class="shop-price">
+											<em>￥</em> 83.80
+										</span>
+										<span class="original-price">
+											<del>￥118.80</del>
+										</span>
+									</div>
+								</li>
+								<li class="f-li">
+									<div class="f-img">
+										<a href="#">
+											<img src="../img/floorRightUlImg3.jpg" />
+										</a>
+									</div>
+									<div class="f-name">
+										<a href="#">
+											爱华仕oiwas 荷兰风车大容量旅行男女休闲双肩14寸15.6寸电脑背包4000黑色
+										</a>
+									</div>
+									<div class="f-price">
+										<span class="shop-price">
+											<em>￥</em> 83.80
+										</span>
+										<span class="original-price">
+											<del>￥118.80</del>
+										</span>
+									</div>
+								</li>
+								<li class="f-li">
+									<div class="f-img">
+										<a href="#">
+											<img src="../img/floorRightUlImg4.jpg" />
+										</a>
+									</div>
+									<div class="f-name">
+										<a href="#">
+											爱华仕oiwas 荷兰风车大容量旅行男女休闲双肩14寸15.6寸电脑背包4000黑色
+										</a>
+									</div>
+									<div class="f-price">
+										<span class="shop-price">
+											<em>￥</em> 83.80
+										</span>
+										<span class="original-price">
+											<del>￥118.80</del>
+										</span>
+									</div>
+								</li>
+								<li class="f-li">
+									<div class="f-img">
+										<a href="#">
+											<img src="../img/floorRightUlImg5.jpg" />
+										</a>
+									</div>
+									<div class="f-name">
+										<a href="#">
+											爱华仕oiwas 荷兰风车大容量旅行男女休闲双肩14寸15.6寸电脑背包4000黑色
+										</a>
+									</div>
+									<div class="f-price">
+										<span class="shop-price">
+											<em>￥</em> 83.80
+										</span>
+										<span class="original-price">
+											<del>￥118.80</del>
+										</span>
+									</div>
+								</li>
+								<li class="f-li">
+									<div class="f-img">
+										<a href="#">
+											<img src="../img/floorRightUlImg6.jpg" />
+										</a>
+									</div>
+									<div class="f-name">
+										<a href="#">
+											爱华仕oiwas 荷兰风车大容量旅行男女休闲双肩14寸15.6寸电脑背包4000黑色
+										</a>
+									</div>
+									<div class="f-price">
+										<span class="shop-price">
+											<em>￥</em> 83.80
+										</span>
+										<span class="original-price">
+											<del>￥118.80</del>
+										</span>
+									</div>
+								</li>
+								<li class="f-li">
+									<div class="f-img">
+										<a href="#">
+											<img src="../img/floorRightUlImg7.jpg" />
+										</a>
+									</div>
+									<div class="f-name">
+										<a href="#">
+											爱华仕oiwas 荷兰风车大容量旅行男女休闲双肩14寸15.6寸电脑背包4000黑色
+										</a>
+									</div>
+									<div class="f-price">
+										<span class="shop-price">
+											<em>￥</em> 83.80
+										</span>
+										<span class="original-price">
+											<del>￥118.80</del>
+										</span>
+									</div>
+								</li>
+								<li class="f-li">
+									<div class="f-img">
+										<a href="#">
+											<img src="../img/floorRightUlImg8.jpg" />
+										</a>
+									</div>
+									<div class="f-name">
+										<a href="#">
+											爱华仕oiwas 荷兰风车大容量旅行男女休闲双肩14寸15.6寸电脑背包4000黑色
+										</a>
+									</div>
+									<div class="f-price">
+										<span class="shop-price">
+											<em>￥</em> 83.80
+										</span>
+										<span class="original-price">
+											<del>￥118.80</del>
+										</span>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<!--------------第四层------------------------------->
+				<div class="floor-startPicture">
+					<div class="floor-startPictureImg w1200">
+						<a href="#">
+							
+						</a>
+					</div>
+				</div>
+				<div class="floor w1200" id="floor_4">
+					<div class="floor-title">
+						<h2>
+							<b class="floor-icon">4F</b>
+							<span class="floor-title-span" rev="8">鞋靴、箱包、钟表、奢侈品</span>
+						</h2>
+						<ul class="floorTab">
+							<li class="floorTab-li">
+								奢侈品
+								<span class="floorTab-span" style="width: 44px;"></span>
+							</li>
+							<li class="floorTab-li">
+								功能箱包
+								<span  class="floorTab-span" style="width: 60px;"></span>
+							</li>
+						</ul>
+					</div>
+					<div class="floor-content">
+						<div class="floor-left">
+							<div class="floor-left-banner"></div>
+							<div class="banner-nav">
+								<ul class="banner-nav-ul">
+									<li class="banner-nav-li">
+										<a href="#" class="banner-nav-a">奢侈品</a>
+										<i class="banner-nav-i">></i>
+									</li>
+									<li class="banner-nav-li">
+										<a href="#" class="banner-nav-a">功能箱包</a>
+										<i class="banner-nav-i">></i>
+									</li>
+									<li class="banner-nav-li">
+										<a href="#" class="banner-nav-a">流行男鞋</a>
+										<i class="banner-nav-i">></i>
+									</li>
+									<li class="banner-nav-li">
+										<a href="#" class="banner-nav-a">精品男包</a>
+										<i class="banner-nav-i">></i>
+									</li>
+									<li class="banner-nav-li">
+										<a href="#" class="banner-nav-a">奢侈品</a>
+										<i class="banner-nav-i">></i>
+									</li>
+									<li class="banner-nav-li">
+										<a href="#" class="banner-nav-a">奢侈品</a>
+										<i class="banner-nav-i">></i>
+									</li>
+									<li class="banner-nav-li">
+										<a href="#" class="banner-nav-a">时尚女鞋</a>
+										<i class="banner-nav-i">></i>
+									</li>
+									<li class="banner-nav-li">
+										<a href="#" class="banner-nav-a">礼品</a>
+										<i class="banner-nav-i">></i>
+									</li>
+									<li class="banner-nav-li">
+										<a href="#" class="banner-nav-a">潮流女包</a>
+										<i class="banner-nav-i">></i>
+									</li>
+									<li class="banner-nav-li">
+										<a href="#" class="banner-nav-a">钟表</a>
+										<i class="banner-nav-i">></i>
+									</li>
+								</ul>
+							</div>
+							<div class="floor-left-tab">
+								<ul class="floor-tab-ul">
+									<li class="floor-tab-li">
+										<a href="#">
+											<img src="../img/floor-left-tab1.jpg"/>
+										</a>
+									</li>
+									<li class="floor-tab-li">
+										<a href="#">
+											<img src="../img/floor-left-tab2.jpg"/>
+										</a>
+									</li>
+								</ul>
+								<ul class="floor-tab-ul">
+									<li class="floor-tab-li">
+										<a href="#">
+											<img src="../img/floor-left-tab1.jpg"/>
+										</a>
+									</li>
+									<li class="floor-tab-li">
+										<a href="#">
+											<img src="../img/floor-left-tab2.jpg"/>
+										</a>
+									</li>
+								</ul>
+								<div class="prev"> < </div>
+								<div class="next"> > </div>
+							</div>
+						</div>
+						<div class="floor-right">
+							<ul class="floor-right-ul">
+								<li class="f-li">
+									<div class="f-img">
+										<a href="#">
+											<img src="../img/floorRightUlImg2.jpg" />
+										</a>
+									</div>
+									<div class="f-name">
+										<a href="#">
+											爱华仕oiwas 荷兰风车大容量旅行男女休闲双肩14寸15.6寸电脑背包4000黑色
+										</a>
+									</div>
+									<div class="f-price">
+										<span class="shop-price">
+											<em>￥</em>83.80
+										</span>
+										<span class="original-price">
+											<del>￥118.80</del>
+										</span>
+									</div>
+								</li>
+								<li class="f-li">
+									<div class="f-img">
+										<a href="#">
+											<img src="../img/floorRightUlImg1.jpg" />
+										</a>
+									</div>
+									<div class="f-name">
+										<a href="#">
+											国产鞋子
+										</a>
+									</div>
+									<div class="f-price">
+										<span class="shop-price">
+											<em>￥</em> 83.80
+										</span>
+										<span class="original-price">
+											<del>￥118.80</del>
+										</span>
+									</div>
+								</li>
+								<li class="f-li">
+									<div class="f-img">
+										<a href="#">
+											<img src="../img/floorRightUlImg3.jpg" />
+										</a>
+									</div>
+									<div class="f-name">
+										<a href="#">
+											爱华仕oiwas 荷兰风车大容量旅行男女休闲双肩14寸15.6寸电脑背包4000黑色
+										</a>
+									</div>
+									<div class="f-price">
+										<span class="shop-price">
+											<em>￥</em> 83.80
+										</span>
+										<span class="original-price">
+											<del>￥118.80</del>
+										</span>
+									</div>
+								</li>
+								<li class="f-li">
+									<div class="f-img">
+										<a href="#">
+											<img src="../img/floorRightUlImg4.jpg" />
+										</a>
+									</div>
+									<div class="f-name">
+										<a href="#">
+											爱华仕oiwas 荷兰风车大容量旅行男女休闲双肩14寸15.6寸电脑背包4000黑色
+										</a>
+									</div>
+									<div class="f-price">
+										<span class="shop-price">
+											<em>￥</em> 83.80
+										</span>
+										<span class="original-price">
+											<del>￥118.80</del>
+										</span>
+									</div>
+								</li>
+								<li class="f-li">
+									<div class="f-img">
+										<a href="#">
+											<img src="../img/floorRightUlImg5.jpg" />
+										</a>
+									</div>
+									<div class="f-name">
+										<a href="#">
+											爱华仕oiwas 荷兰风车大容量旅行男女休闲双肩14寸15.6寸电脑背包4000黑色
+										</a>
+									</div>
+									<div class="f-price">
+										<span class="shop-price">
+											<em>￥</em> 83.80
+										</span>
+										<span class="original-price">
+											<del>￥118.80</del>
+										</span>
+									</div>
+								</li>
+								<li class="f-li">
+									<div class="f-img">
+										<a href="#">
+											<img src="../img/floorRightUlImg6.jpg" />
+										</a>
+									</div>
+									<div class="f-name">
+										<a href="#">
+											爱华仕oiwas 荷兰风车大容量旅行男女休闲双肩14寸15.6寸电脑背包4000黑色
+										</a>
+									</div>
+									<div class="f-price">
+										<span class="shop-price">
+											<em>￥</em> 83.80
+										</span>
+										<span class="original-price">
+											<del>￥118.80</del>
+										</span>
+									</div>
+								</li>
+								<li class="f-li">
+									<div class="f-img">
+										<a href="#">
+											<img src="../img/floorRightUlImg7.jpg" />
+										</a>
+									</div>
+									<div class="f-name">
+										<a href="#">
+											爱华仕oiwas 荷兰风车大容量旅行男女休闲双肩14寸15.6寸电脑背包4000黑色
+										</a>
+									</div>
+									<div class="f-price">
+										<span class="shop-price">
+											<em>￥</em> 83.80
+										</span>
+										<span class="original-price">
+											<del>￥118.80</del>
+										</span>
+									</div>
+								</li>
+								<li class="f-li">
+									<div class="f-img">
+										<a href="#">
+											<img src="../img/floorRightUlImg8.jpg" />
+										</a>
+									</div>
+									<div class="f-name">
+										<a href="#">
+											爱华仕oiwas 荷兰风车大容量旅行男女休闲双肩14寸15.6寸电脑背包4000黑色
+										</a>
+									</div>
+									<div class="f-price">
+										<span class="shop-price">
+											<em>￥</em> 83.80
+										</span>
+										<span class="original-price">
+											<del>￥118.80</del>
+										</span>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<!----网速不好时候弹出的的效果------------------------------------------------------>
+			<div id="floor-loading" class="floor1 w1200">
+				<div class="floor-loading">
+					<img src="../img/loading.gif"/>
+				</div>	
+			</div>
+			<div class="love-guess w1200">
+				<div class="in-title" style="border-bottom: 1px solid #DCDCDC;">
+					<span class="in-title-p">R</span>
+					<a href="#" class="in-title-text">猜你喜欢</a>
+				</div>
+				<div class="love-guess-tab">
+					<dl class="love-tab">
+						<dt class="love-title">
+							<i class="love-title-i"></i>
+							爱搜标签
+						</dt>
+						<dd class="love-content">
+							<ul class="loveContentUl-f1">
+								<li>
+									<a href="#" target="_blank">周大福</a>
+								</li>
+								<li>
+									<a href="#" target="_blank">内衣</a>
+								</li>
+								<li>
+									<a href="#" target="_blank">Seven Plus</a>
+								</li>
+								<li>
+									<a href="#" target="_blank">手机</a>
+								</li>
+							</ul>
+						</dd>
+					</dl>
+					<dl class="love-product-list">
+						<dt class="love-title">
+							<i class="love-title-i"></i>
+							喜欢的商品
+						</dt>
+						<dd class="love-content">
+							<div class="love-product-items">
+								<div class="product-item">
+									<div class="product-item-img">
+										<img src="../img/product-item-img1.jpg"/>
+									</div>
+									<div class="bgbox">
+										<div class="bg"></div>
+										<a href="###" target="_blank" class="bgbox-a">
+											<h3>2015春...</h3>
+											<p class="new-price">
+												<b>￥</b>50.00	
+											</p>
+										</a>
+									</div>
+								</div>
+								<div class="product-item">
+									<div class="product-item-img">
+										<img src="../img/product-item-img2.jpg"/>
+									</div>
+									<div class="bgbox">
+										<div class="bg"></div>
+										<a href="###" target="_blank" class="bgbox-a">
+											<h3>2016春...</h3>
+											<p class="new-price">
+												<b>￥</b>50.00	
+											</p>
+										</a>
+									</div>
+								</div>
+								<div class="product-item">
+									<div class="product-item-img">
+										<img src="../img/product-item-img3.jpg"/>
+									</div>
+									<div class="bgbox">
+										<div class="bg"></div>
+										<a href="###" target="_blank" class="bgbox-a">
+											<h3>2015春...</h3>
+											<p class="new-price">
+												<b>￥</b>50.00	
+											</p>
+										</a>
+									</div>
+								</div>
+								<div class="product-item">
+									<div class="product-item-img">
+										<img src="../img/product-item-img4.jpg"/>
+									</div>
+									<div class="bgbox">
+										<div class="bg"></div>
+										<a href="###" target="_blank" class="bgbox-a">
+											<h3>2015春...</h3>
+											<p class="new-price">
+												<b>￥</b>50.00	
+											</p>
+										</a>
+									</div>
+								</div>
+								<div class="product-item">
+									<div class="product-item-img">
+										<img src="../img/product-item-img5.jpg"/>
+									</div>
+									<div class="bgbox">
+										<div class="bg"></div>
+										<a href="###" target="_blank" class="bgbox-a">
+											<h3>2015春...</h3>
+											<p class="new-price">
+												<b>￥</b>50.00	
+											</p>
+										</a>
+									</div>
+								</div>
+								<div class="product-item">
+									<div class="product-item-img">
+										<img src="../img/product-item-img6.jpg"/>
+									</div>
+									<div class="bgbox">
+										<div class="bg"></div>
+										<a href="###" target="_blank" class="bgbox-a">
+											<h3>2015春...</h3>
+											<p class="new-price">
+												<b>￥</b>50.00	
+											</p>
+										</a>
+									</div>
+								</div>
+								<div class="product-item">
+									<div class="product-item-img">
+										<img src="../img/product-item-img7.jpg"/>
+									</div>
+									<div class="bgbox">
+										<div class="bg"></div>
+										<a href="###" target="_blank" class="bgbox-a">
+											<h3>2015春...</h3>
+											<p class="new-price">
+												<b>￥</b>50.00	
+											</p>
+										</a>
+									</div>
+								</div>
+								<div class="product-item">
+									<div class="product-item-img">
+										<img src="../img/product-item-img8.jpg"/>
+									</div>
+									<div class="bgbox">
+										<div class="bg"></div>
+										<a href="###" target="_blank" class="bgbox-a">
+											<h3>2015春...</h3>
+											<p class="new-price">
+												<b>￥</b>50.00	
+											</p>
+										</a>
+									</div>
+								</div>
+								<div class="product-item">
+									<div class="product-item-img">
+										<img src="../img/product-item-img9.jpg"/>
+									</div>
+									<div class="bgbox">
+										<div class="bg"></div>
+										<a href="###" target="_blank" class="bgbox-a">
+											<h3>2015春...</h3>
+											<p class="new-price">
+												<b>￥</b>50.00	
+											</p>
+										</a>
+									</div>
+								</div>
+							</div>
+						</dd>
+					</dl>
+					<dl class="love-store">
+						<dt class="love-title">
+							<i class="love-title-i"></i>
+							推荐给你的店铺
+						</dt>
+						<dd class="love-content">
+							<div class="love-store-list">
+								<div class="store-list-top love-store-item">
+									<div class="storeTop-left">
+										<a href="##">
+											<img src="../img/love-store-img1.png"/>
+										</a>
+									</div>
+									<div class="storeTop-right">
+										<div class="storeTop-right-logo">
+											<img src="../img/love-store-img2.jpg" />
+										</div>
+										<div class="storeTop-right-name">汤臣倍健保健...</div>
+										<div class="storeTop-right-btn">
+											<a href="###" target="_blank">进入 ></a>
+										</div>
+									</div>
+								</div>
+								<div class="store-list-bottom love-store-item">
+									<div class="storeTop-left">
+										<a href="##">
+											<img src="../img/love-store-img3.png"/>
+										</a>
+									</div>
+									<div class="storeTop-right">
+										<div class="storeTop-right-logo">
+											<img src="../img/love-store-img4.jpg" />
+										</div>
+										<div class="storeTop-right-name">博集天卷专营...</div>
+										<div class="storeTop-right-btn">
+											<a href="###" target="_blank">进入 ></a>
+										</div>
+									</div>
+									
+								</div>
+							</div>
+						</dd>
+					</dl>
+					<dl class="love-interest">
+						<dt class="love-title">
+							<i class="love-title-i"></i>
+							可能感兴趣
+						</dt>
+						<dd class="love-content">
+							<div class="love-interest-list">
+								<a href="##" target="_blank">
+									<img src="../img/store-interest1.jpg"/>
+								</a>
+								<a href="##" target="_blank">
+									<img src="../img/store-interest2.jpg"/>
+								</a>
+							</div>
+						</dd>
+					</dl>
+				</div>
+			</div>
+		</div>
+		
+<!----------尾部的处理--------------------------------------------------------------------------------->
+		<div class="footer">
+			<div class="footer-top">
+				<div class="conFooterTop">
+					<ul class="conFooterTop-ul">
+						<li class="conFooterTop-li">
+							<i class="fonter-i1"></i>
+							<span>正品保健</span>
+						</li>
+						<li class="conFooterTop-li">
+							<i class="fonter-i2"></i>
+							<span>七天包退</span>
+						</li>
+						<li class="conFooterTop-li">
+							<i class="fonter-i3"></i>
+							<span>好评如潮</span>
+						</li>
+						<li class="conFooterTop-li">
+							<i class="fonter-i4"></i>
+							<span>闪电发货</span>
+						</li>
+						<li class="conFooterTop-li footer-last">
+							<i class="fonter-i5"></i>
+							<span>权威荣誉</span>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="footer-bottom">
+				<div class="footer-ul-list">
+					<ul class="footer-ul">
+						<li class="footer-li">
+							<h4>新手上路</h3>
+							<p> <a href="##">> 售后流程</a> </p>
+							<p> <a href="##">> 购物流程</a></p>
+							<p> <a href="##">> 订购方式</a></p>
+							<p> <a href="##">> 隐私申明</a></p>
+						</li>
+						<li class="footer-li">
+							<h4>配送支付</h3>
+							<p> <a href="##">> 货到付款区域</a> </p>
+							<p> <a href="##">> 赔送支付智能查询</a></p>
+							<p> <a href="##">> 支付方式说明</a></p>
+							<p> <a href="##">> 上门自提</a></p>
+						</li>
+						<li class="footer-li">
+							<h4>会员中心</h3>
+							<p> <a href="##">> 资金管理</a> </p>
+							<p> <a href="##">> 我的收藏</a></p>
+							<p> <a href="##">> 我的订单</a></p>
+						</li>
+						<li class="footer-li">
+							<h4>服务保证</h3>
+							<p> <a href="##">> 退换货原则</a> </p>
+							<p> <a href="##">> 售后服务保证</a></p>
+							<p> <a href="##">> 产品质量保证</a></p>
+						</li>
+						<li class="footer-li" id="last-li2">
+							<h4>联系我们</h3>
+							<p> <a href="##">> 网站故障报告</a> </p>
+							<p> <a href="##">> 随机咨询</a></p>
+							<p> <a href="##">> 投诉与建议</a></p>
+						</li>
+						<li class="footer-li" id="last-li1">
+							<ul class="footer-tab">
+								<li class="current">Ecjia</li>
+								<li>Ectouch</li>
+							</ul>
+							<div class="footer-wrap">
+								<div class="ft-wp-1">
+									<img src="../img/ECJia_code.png" />
+								</div>
+								<div class="ft-wp-1" style="display: none;">
+									<img src="../img/ECtouch_code.png" />
+								</div>		
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div class="footer-copyright">
+					<p class="footer-p1">
+						<a href="##" target="_blank">首页</a>|
+						<a href="##" target="_blank">隐私保护</a>|
+						<a href="##" target="_blank">联系我们</a>|
+						<a href="##" target="_blank">免责条款</a>|
+						<a href="##" target="_blank">公司简介</a>|
+						<a href="##" target="_blank">商家入驻</a>|
+						<a href="##" target="_blank">意见反馈</a>
+					</p>
+					<p class="footer-p1">
+						<a href="##" target="_blank">模板堂</a>|
+						<a href="##" target="_blank">Ecjia</a>|
+						<a href="##" target="_blank">Ectouch</a>|
+						<a href="##" target="_blank">电商学院</a>|
+						<a href="##" target="_blank">ecshop模板堂</a>|
+						<a href="##" target="_blank">Ecjia</a>|
+						<a href="##" target="_blank">Ectouch</a>|
+						<a href="##" target="_blank">大商创</a>
+					</p>
+					<p class="footer-p1">
+						<a href="##" target="_blank">Poweered by <span>大商创1.0</span></a>
+					</p>
+					<p class="footer-bt-img">
+						<a href="#" target="_blank">
+							<img src="../img/banquan_1.jpg" />
+						</a>
+						<a href="#" target="_blank">
+							<img src="../img/banquan_2.jpg" />
+						</a>
+						<a href="#" target="_blank">
+							<img src="../img/banquan_3.jpg" />
+						</a>
+						<a href="#" target="_blank">
+							<img src="../img/banquan_4.jpg" />
+						</a>
+						<a href="#" target="_blank">
+							<img src="../img/banquan_5.jpg" />
+						</a>
+					</p>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

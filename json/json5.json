@@ -1,0 +1,14 @@
+{
+	"img1":{
+		"img":"../img/floor-tab1.jpg"
+	},
+	"img2":{
+		"img":"../img/floor-tab2.jpg"
+	},
+	"img3":{
+		"img":"../img/floor-tab3.jpg"
+	},
+	"img4":{
+		"img":"../img/floor-tab4.jpg"
+	}
+}

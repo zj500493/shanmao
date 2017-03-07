@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>购物流程_闪猫商城-你的一站式购物平台</title>
+		<link rel="shortcut icon" href="../img/index.gif" />
+		<link rel="stylesheet" href="../css/conHeaderFooter.css" />
+		<link rel="stylesheet" href="../css/shopCar.css" />
+		<script type="text/javascript" src="../JS/jquery-1.12.4.min.js" ></script>
+		<script type="text/javascript" src="../JS/jquery.cookie.js" ></script>
+		<script type="text/javascript" src="../JS/conIndex.js" ></script>
+		<script type="text/javascript" src="../JS/shopCar.js" ></script>
+	</head>
+	<body>
+		<div class="first-nav">
+			<div class="conFirstNav">
+				<ul class="RightFirstNavUl">
+					<li id="city-choice">
+						<dt>
+							<span>送货至：</span>
+							<div>
+								<span class="city-choice-span">成都 <img src="../img/searchTab1.jpg" /> </span>
+							</div>
+						</dt>
+					</li>
+				</ul>
+				<div class="LonginAndRegister">
+					<a href="#" class="login">请登录</a>
+					<a href="#" class="register">注册</a>
+				</div>
+				<ul class="LeftFirstNavUl">
+					<li><div id="dt"><a href="#">我的订单</a></div></li>
+					<li class="spacer"></li>
+					<li><div id="dt"><a href="#">我的浏览</a></div></li>
+					<li class="spacer"></li>
+					<li><div id="dt"><a href="#">我的收藏</a></div></li>
+					<li class="spacer"></li>
+					<li><div id="dt"><a href="#">客户服务</a></div></li>
+					<li class="spacer"></li>
+					<li class="li_dropdown">
+						<div id="dt">
+							<a href="#">促销活动</a>
+							<span class="spacer1"> > </span>
+						</div>
+						
+						<div class="dropdown">
+							<ul>
+								<li><a href="#">拍卖活动</a></li>
+								<li><a href="#">优惠活动</a></li>
+								<li><a href="#">批发市场</a></li>
+								<li><a href="#">超值礼包</a></li>
+							</ul>	
+						</div>
+					</li>
+					<script>
+						$(function(){
+							$(".li_dropdown").hover(function(){
+								$(this).css("background", "#FFFFFF");
+								$(".dropdown").stop().show();
+							},function(){
+								$(this).css("background", "#efefef");
+								$(".dropdown").stop().hide();
+							});
+						});
+					</script>
+				</ul>
+				<div class="shopcar">
+					<i class="shopcar-left"><img src="../img/shopcar1.jpg"></i>
+					<span class="shopcar-center">0</span>
+					<i class="shopcar-right"> > </i>
+					<a href="#">购物车</a>
+				</div>
+			</div>
+		</div>
+		
+		<!------主要部分的头部----------------------------------------------------------------->
+		<div class="header w1200">
+			<div class="headerLogo">
+				<a href="index.html" class="logo"><img src="../img/logo.gif"/></a>
+			</div>
+			<div class="headerJoin">
+				<a href="#" class="logo"><img src="../img/ecsc-join.gif"/></a>
+			</div>
+			<div class="headerSearch">
+				<form id="searchForm">
+					<div class="searchTab">
+						<i><img src="../img/searchTab1.jpg"></i>
+						<ul class="searchFormUl">
+							<li class="searchFormLi">
+								<span>商品</span>
+							</li>
+							<li class="curr">
+								<span>店铺</span>
+							</li>
+						</ul>
+					</div>
+					<input type="text" class="searchForm-input" placeholder="周大福" id="search"/>
+					<div id="tip">
+						<ul id="tipList">
+							<!-- <li>aaa</li>
+							<li>aaa</li>
+							<li>aaa</li>
+							<li>aaa</li>
+							<li>aaa</li>
+							<li>aaa</li>
+							<li>aaa</li>
+							<li>aaa</li>
+							<li>aaa</li>
+							<li>aaa</li>-->
+						</ul>
+					</div>
+					<button class="searchForm-button">
+						<i><img src="../img/searchForm-buttonImg.jpg"></i>
+					</button>
+				</form>
+				<div class="keyword">
+					<ul>
+						<li><a href="#">周大福</a></li>
+						<li><a href="#">内衣</a></li>
+						<li><a href="#">Five Plus</a></li>
+						<li><a href="#" class="keywordFina">手机</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="headerRight">
+				<a href="index.html" target="_blank" class="font">
+					<img src="../img/headerRight.jpg" />
+				</a>
+				
+			</div>
+		</div>
+		<div class="clear"></div>
+		
+		<!--******这上面的都是公用部分***************************-->
+		
+		
+		<!--------购物车中心的页面-------------------------------------------------------------------------->
+		<div class="contents">
+			<div class="w1200 content">
+				<div class="shopcar-logo">
+						<i class="shopcar-car"></i>
+						<h3 class="shopcarH3">购物车<span class="num">1</span></h3>
+				</div>
+			</div>
+			<div class="mainner w1200">
+				<!----购物车为空时候弹出来的效果------>
+				<div class="car-empty">
+					<div class="car-empty-text">购物车中没有商品，请去<span class="go-shopping">购物</span></div>
+				</div>
+				<!----购物车有商品时候弹出来的效果------>
+				<div class="shop-main w1200">
+					<div class="row column">
+						<div class="all cloumn">
+							<input type="checkbox" class="checkbox1" id="checkbox1"/>
+							<label for="checkbox1">全选</label>
+						</div>
+						<div class="shop-name cloumn">商品</div>
+						<div class="shop-attr cloumn">属性</div>
+						<div class="shop-price cloumn">单价（元）</div>
+						<div class="shop-num cloumn">数量</div>
+						<div class="shop-sub cloumn">小计（元）</div>
+						<div class="shop-action cloumn">操作</div>
+					</div>
+					<div id="cart-list">
+						<div class="cart-item-list">
+							<div class="cart-tbody">
+								<div class="shop">
+									<a href="##">闪猫商城</a>
+								</div>
+								<div class="item-list">
+									<!-------商品添加到页面所展示的部分-------------------------------->
+									<!--<div class="item-body">
+										<div class="item-item">
+											<div class="item-form">
+												<div class="p-checkbox cell">
+													<input type="checkbox" class="cart-checkbox"/>
+												</div>
+												<div class="p-img cell">
+													<a href="##">
+														<img src="" />
+													</a>	
+												</div>
+												<div class="p-name cell">
+													<a href="##"></a>
+												</div>
+												<div class="p-attr cell">
+													<span></span>
+												</div>
+												<div class="p-price cell">￥<span class="price-sum"></span></div>
+												<div class="p-quantity cell">
+													<div class="quantity-form">
+														<span class='minus' style='cursor:pointer'> - </span>
+														<input  class='amountIput' style='text-align:center' type='text' size='1' value='1'>
+														<span class='add' style='cursor:pointer'> + </span>
+													</div>
+												</div>
+												<div class="p-sum cell">￥<span class="sums"></div>
+												<div class="p-ops cell"><a href = 'javascript:;'>删除</a></div>
+											</div>
+										</div>
+									</div>-->
+									<!----------------------------------->
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="clear"></div>
+				<div class="carBottom">
+					<div class="cart-toolbar">
+						<div class="select-all cloumn">
+							<input type="checkbox" class="checkbox2" id="checkbox2"/>
+							<label for="checkbox2">全选</label>
+						</div>
+						<div class="clearshop cloumn">
+							<a href="##" class="clearshop-a">删除选中的商品  |</a>
+							<a href="#" class="go-shopping">继续购物</a>
+						</div>
+						<div class="select-shopnum cloumn">
+							已经选择<span class="amount-sum"></span>商品
+						</div>
+						<div class="select-pricenum cloumn" >
+							总计（不含运费）:￥<span class="amount-price"></span>
+						</div>
+						<div class="select-payfor">
+							去结算
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		
+		
+		<!----------尾部的处理------------------------------------------------------------------------------>
+		<div class="footer">
+			<div class="footer-top">
+				<div class="conFooterTop">
+					<ul class="conFooterTop-ul">
+						<li class="conFooterTop-li">
+							<i class="fonter-i1"></i>
+							<span>正品保健</span>
+						</li>
+						<li class="conFooterTop-li">
+							<i class="fonter-i2"></i>
+							<span>七天包退</span>
+						</li>
+						<li class="conFooterTop-li">
+							<i class="fonter-i3"></i>
+							<span>好评如潮</span>
+						</li>
+						<li class="conFooterTop-li">
+							<i class="fonter-i4"></i>
+							<span>闪电发货</span>
+						</li>
+						<li class="conFooterTop-li footer-last">
+							<i class="fonter-i5"></i>
+							<span>权威荣誉</span>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="footer-bottom">
+				<div class="footer-ul-list">
+					<ul class="footer-ul">
+						<li class="footer-li">
+							<h4>新手上路</h3>
+							<p> <a href="##">> 售后流程</a> </p>
+							<p> <a href="##">> 购物流程</a></p>
+							<p> <a href="##">> 订购方式</a></p>
+							<p> <a href="##">> 隐私申明</a></p>
+						</li>
+						<li class="footer-li">
+							<h4>配送支付</h3>
+							<p> <a href="##">> 货到付款区域</a> </p>
+							<p> <a href="##">> 赔送支付智能查询</a></p>
+							<p> <a href="##">> 支付方式说明</a></p>
+							<p> <a href="##">> 上门自提</a></p>
+						</li>
+						<li class="footer-li">
+							<h4>会员中心</h3>
+							<p> <a href="##">> 资金管理</a> </p>
+							<p> <a href="##">> 我的收藏</a></p>
+							<p> <a href="##">> 我的订单</a></p>
+						</li>
+						<li class="footer-li">
+							<h4>服务保证</h3>
+							<p> <a href="##">> 退换货原则</a> </p>
+							<p> <a href="##">> 售后服务保证</a></p>
+							<p> <a href="##">> 产品质量保证</a></p>
+						</li>
+						<li class="footer-li" id="last-li2">
+							<h4>联系我们</h3>
+							<p> <a href="##">> 网站故障报告</a> </p>
+							<p> <a href="##">> 随机咨询</a></p>
+							<p> <a href="##">> 投诉与建议</a></p>
+						</li>
+						<li class="footer-li" id="last-li1">
+							<ul class="footer-tab">
+								<li class="current">Ecjia</li>
+								<li>Ectouch</li>
+							</ul>
+							<div class="footer-wrap">
+								<div class="ft-wp-1">
+									<img src="../img/ECJia_code.png" />
+								</div>
+								<div class="ft-wp-1" style="display: none;">
+									<img src="../img/ECtouch_code.png" />
+								</div>		
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div class="footer-copyright">
+					<p class="footer-p1">
+						<a href="##" target="_blank">首页</a>|
+						<a href="##" target="_blank">隐私保护</a>|
+						<a href="##" target="_blank">联系我们</a>|
+						<a href="##" target="_blank">免责条款</a>|
+						<a href="##" target="_blank">公司简介</a>|
+						<a href="##" target="_blank">商家入驻</a>|
+						<a href="##" target="_blank">意见反馈</a>
+					</p>
+					<p class="footer-p1">
+						<a href="##" target="_blank">模板堂</a>|
+						<a href="##" target="_blank">Ecjia</a>|
+						<a href="##" target="_blank">Ectouch</a>|
+						<a href="##" target="_blank">电商学院</a>|
+						<a href="##" target="_blank">ecshop模板堂</a>|
+						<a href="##" target="_blank">Ecjia</a>|
+						<a href="##" target="_blank">Ectouch</a>|
+						<a href="##" target="_blank">大商创</a>
+					</p>
+					<p class="footer-p1">
+						<a href="##" target="_blank">Poweered by <span>大商创1.0</span></a>
+					</p>
+					<p class="footer-bt-img">
+						<a href="#" target="_blank">
+							<img src="../img/banquan_1.jpg" />
+						</a>
+						<a href="#" target="_blank">
+							<img src="../img/banquan_2.jpg" />
+						</a>
+						<a href="#" target="_blank">
+							<img src="../img/banquan_3.jpg" />
+						</a>
+						<a href="#" target="_blank">
+							<img src="../img/banquan_4.jpg" />
+						</a>
+						<a href="#" target="_blank">
+							<img src="../img/banquan_5.jpg" />
+						</a>
+					</p>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>用户中心_注册新用户名</title>
+		<link rel="shortcut icon" href="../img/index.gif" />
+		<link rel="stylesheet" href="../css/register.css" />
+		<script type="text/javascript" src="../JS/jquery-1.12.4.min.js" ></script>
+		<script type="text/javascript" src="../JS/jquery.cookie.js" ></script>
+		<script type="text/javascript" src="../JS/rejister.js" ></script>
+	</head>
+	<body>
+		<div class="registerLogin">
+			<div class="register-header w1200">
+				<a href="index.html"><img src="../img/logo_2015.png"></a>
+				<b></b>
+				<span class="registerHeader-lg">
+					有账号
+					<a href="loginIn.html">请在此登录</a>
+				</span>
+			</div>
+		</div>
+		<div class="main-register w1200">
+			<!--登录成功要显示的东西-->
+			<!------------出错时候的弹出框---------->
+				<div class="bg"></div>
+				<div class="showSuccess">
+					<a href="##">注册成功，正在跳向登录页面...</a>
+				</div>
+			
+			<div class="mainRegister-pic">
+				<a href="#">
+					<img src="../img/regist-banner.jpg" />
+				</a>
+			</div>
+			<div class="mainRegister-formtext">
+				<div class="registerForm">
+					<ul class="tab">
+						<li class="curr">邮箱注册</li>
+						<li>手机注册</li>
+					</ul>
+					<div class="registerTxet">
+						<div class="EMAILREGISTER">
+							<form>
+								<!------注册的用户名-------------------------->
+								<div class="all-item" style="padding-top: 0;">
+									<div class="item">
+											<input type="text" placeholder="用户名" class="text username"/>
+										<i class="item-i1"></i>
+									</div>
+									<div class="error user-notice1"> 
+										<i style="top: 30px;"></i>
+										用户名不能为空
+									</div>
+									<div class="error user-notice2"> 
+										<i></i>
+										用户名长度不能少于3个字符
+									</div>	
+									<div class="error user-notice3" > 
+										<i></i>
+										用户名长度不能大于10个字符
+									</div>
+									<div class="error user-notice4"> 
+										<i></i>
+										已经存在该用户
+									</div>	
+									<div class="success username-success" > 
+										<span class="success-span"></span>
+									</div>
+								</div>
+								<!------注册的邮箱-------------------------->
+								<div class="all-item">
+									<div class="item">
+										<input type="text" placeholder="邮箱地址" class="text email"/>
+										<i class="item-i2"></i>
+									</div>
+									<div class="error email-notice1">
+										<i></i>
+										邮件地址不能为空
+									</div>
+									<div class="error email-notice2">
+										<i></i>
+										格式错误，请输入正确的邮箱地址
+									</div>
+									<div class="error email-notice3">
+										<i></i>
+										该邮箱已经被注册
+									</div>
+									<div class="success email-success" > 
+										<span class="success-span"></span>
+									</div>
+								</div>	
+								<!------注册的密码-------------------------->
+								<div class="all-item">	
+									<div class="item">
+										<input type="password" placeholder="设置密码" class="text password"/>
+										<i class="item-i3"></i>
+									</div>
+									<div class="error password-notice1">
+										<i></i>
+										请输入密码
+									</div>
+									<div class="error password-notice2">
+										<i></i>
+										登录密码在6位~18位之间
+									</div>
+									<div class="success password-success"  > 
+										<span class="success-span"></span>
+									</div>
+								</div>	
+								<!------确认密码-------------------------->
+								<div class="all-item">	
+									<div class="item">
+										<input type="password" placeholder="确认密码" class="text confirm"/>
+										<i class="item-i4"></i>
+									</div>
+									<div class="error confirm-notice1">
+										<i></i>
+										确认密码不能为空
+									</div>
+									<div class="error confirm-notice2">
+										<i></i>
+										两次输入密码不一致
+									</div>
+									<div class="success confirm-success" > 
+										<span class="success-span"></span>
+									</div>
+								</div>	
+								<!------复选框的操作-------------------------->
+								<div class="all-item">	
+									<div class="item-info">
+										<input type="checkbox" value="1" class="checkbox"/>
+										<label class="hoel">
+											阅读并同意
+											<a target="_blank" href="article.php?id=57" class="agreement">《服务协议》</a>
+										</label>
+									</div>	
+									<div class="error checkbox-notice1" >
+										<i></i>
+										你没有接受协议
+									</div>
+								</div>	
+								<!------提交按钮的操作-------------------------->
+								<div class="all-item">	
+									<div class="item-info">
+										<a href="##"" class="registerSubmit"> 同意协议并注册 </a>
+									</div>
+								</div>	
+							</form>
+						</div>
+						<div class="PHONEREGISTER" style="display: none;">
+							<form>
+								<!------注册的用户名-------------------------->
+								<div class="all-item" style="padding-top: 0;">
+									<div class="item">
+											<input type="text" placeholder="用户名" class="text username1"/>
+										<i class="item-i1"></i>
+									</div>
+									<div class="error user-notice11"> 
+										<i style="top: 30px;"></i>
+										用户名不能为空
+									</div>
+									<div class="error user-notice21"> 
+										<i></i>
+										用户名长度不能少于3个字符
+									</div>	
+									<div class="error user-notice31" > 
+										<i></i>
+										用户名长度不能大于10个字符
+									</div>
+									<div class="error user-notice41" > 
+										<i></i>
+										该用户名已存在
+									</div>
+									<div class="success username-success1" > 
+										<span class="success-span"></span>
+									</div>
+								</div>
+								<!------注册的手机-------------------------->
+								<div class="all-item">		
+									<div class="item">
+										<input type="text" placeholder="手机号码" class="text phone"/>
+										<i class="item-i5"></i>
+									</div>
+									<div class="error phone-notice1">
+										<i></i>
+										手机号码不能为空
+									</div>
+									<div class="error phone-notice2" >
+										<i></i>
+										手机号码不正确，请重新输入
+									</div>
+									<div class="error phone-notice3" >
+										<i></i>
+										该手机号码已被注册
+									</div>
+									<div class="success phone-success" > 
+										<span class="success-span"></span>
+									</div>
+								</div>	
+								
+								<!------注册的密码-------------------------->
+								<div class="all-item">	
+									<div class="item">
+										<input type="password" placeholder="设置密码" class="text password1"/>
+										<i class="item-i3"></i>
+									</div>
+									<div class="error password-notice11">
+										<i></i>
+										请输入密码
+									</div>
+									<div class="error password-notice21">
+										<i></i>
+										登录密码在6位~18位之间
+									</div>
+									<div class="success password-success1"  > 
+										<span class="success-span"></span>
+									</div>
+								</div>	
+								<!------确认密码-------------------------->
+								<div class="all-item">	
+									<div class="item">
+										<input type="password" placeholder="确认密码" class="text confirm1"/>
+										<i class="item-i4"></i>
+									</div>
+									<div class="error confirm-notice11">
+										<i></i>
+										确认密码不能为空
+									</div>
+									<div class="error confirm-notice21">
+										<i></i>
+										两次输入密码不一致
+									</div>
+									<div class="success confirm-success1" > 
+										<span class="success-span"></span>
+									</div>
+								</div>
+								<!------短信验证-------------------------->
+								<div class="all-item">	
+									<div class="item">
+										<input type="text" placeholder="短信验证" class="text-1"/>
+										<a href="##" class="zphone">获取短信验证码</a>
+									</div>
+									<div class="error dx-notice1">
+										<i></i>
+										短信验证码不能为空
+									</div>
+									<div class="success dx-success" > 
+										<span class="success-span"></span>
+									</div>
+								</div>
+								<!------复选框的操作-------------------------->
+								<div class="all-item">	
+									<div class="item-info">
+										<input type="checkbox" value="1" class="checkbox1"/>
+										<label class="hoel">
+											阅读并同意
+											<a target="_blank" href="article.php?id=57" class="agreement">《服务协议》</a>
+										</label>
+									</div>
+									<div class="error checkbox-notice2" >
+										<i></i>
+										你没有接受协议
+									</div>
+								</div>	
+								<!------提交按钮的操作-------------------------->
+								<div class="all-item">	
+									<div class="item-info">
+										<a href="##"" class="registerSubmit1"> 同意协议并注册 </a>
+									</div>
+								</div>	
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--------尾部----------------------------------------------->
+		<div class="registerFooter">
+			<div class="conFooter">
+				<p class="footerFirst">
+					<a href="#">首页</a> |
+					<a href="#">隐私保护</a> |
+					<a href="#">联系我们</a> |
+					<a href="#">免责条款</a> |
+					<a href="#">公司简介</a> |
+					<a href="#">商家入驻</a> |
+					<a href="#">意见反馈</a> 
+				</p>
+				<p class="footerSecend">
+					<a href="#">模版堂</a> |
+					<a href="#">EcJia</a> |
+					<a href="#">ECTouch</a> |
+					<a href="#">电商学院</a> |
+					<a href="#">escshop模版堂</a> |
+					<a href="#">Ecjia</a> |
+					<a href="#">ECtouch</a> |
+					<a href="#">大商创</a> 
+				</p>
+				<b>
+					ICP备案证书号：
+					<a href="http://www.miibeian.gov.cn/" target="_blank">DSC000001</a>
+				</b>
+				<p class="footerThird">Powered by <a href="#">大商创1.0</a></p>
+				<p class="footer-img">
+					<a href="#">
+						<img src="../img/banquan_1.jpg" />
+					</a>
+					<a href="#">
+						<img src="../img/banquan_2.jpg" />
+					</a>
+					<a href="#">
+						<img src="../img/banquan_3.jpg" />
+					</a>
+					<a href="#">
+						<img src="../img/banquan_4.jpg" />
+					</a>
+					<a href="#">
+						<img src="../img/banquan_5.jpg" />
+					</a>
+				</p>
+			</div>
+		</div>
+	</body>
+</html>
